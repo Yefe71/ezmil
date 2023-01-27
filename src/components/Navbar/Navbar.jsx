@@ -15,14 +15,10 @@ library.add(faFacebook, faInstagram, faTwitter, faYoutube, faSearch, faBars)
 
 function Navbar() {
   const [navbarActive, setNavbarActive] = useState(false);
-
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
 
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.querySelector('.menu');
-    menuBtn.addEventListener('click', () => {
-        menu.classList.toggle('menu-open')
-    });
+
 
     const handleScroll = () => {
       const offset = 50;
@@ -42,7 +38,7 @@ function Navbar() {
   
     return (
         <nav id="navbar" className={navbarActive ? 'navbar-active' : ''}>
-        <div className="menu">
+          <div className={`menu ${menuOpen ? 'menu-open' : ''}`}>
           <div>
             <img src={logo} className="logo" alt="" />
             <ul>
@@ -114,13 +110,13 @@ function Navbar() {
             <form>
               <div className="input-wrap">
                 <input placeholder="Search..." type="search" />
-                <button type="submit">
+                <button type="reset">
                   <FontAwesomeIcon icon="search" />
                 </button>
               </div>
             </form>
           </div>
-          <i className="fas fa-bars" id="menu-btn"><FontAwesomeIcon icon={faBars} /></i>
+          <i className="fas fa-bars" id="menu-btn" onClick={() => setMenuOpen(!menuOpen)}><FontAwesomeIcon icon={faBars} /></i>
         </div>
       </nav>
     )
