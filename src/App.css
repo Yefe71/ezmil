@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+header {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background: url(
+      "./img/EzMil.jpg"
+  ) no-repeat center;
+  background-size: cover;
+}
+
+main {
+  padding: 2em;
+  background: #111 ;
+}
+
+main p{
+  font-size: 1.1em;
+  line-height: 27px;
+  color: #fff;
+}
+
+.container, .container-inner{
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.container{
+  max-width: 1750px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+}
+
+.container-inner{
+  max-width: 1500px;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+  z-index: 9;
+  transition: 0.7s;
+  color: #fff;
+}
+
+.brand {
+  font-size: 1.6em;
+}
+
+nav .container-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav .container ul {
+  width: 100%;
+  margin: 0 1em;
+}
+
+nav .container ul:nth-child(2){
+  text-align: right;
+}
+
+nav .container ul li {
+  display: inline-block;
+  margin: 0 0.7em;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.9em;
+  transform: 0.3s;
+  font-weight: 600;
+  color: #fff;
+}
+
+nav a:hover{
+  color: #e54416;
+}
+
+.input-wrap{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 0.5em 0;
 }
 
-.App-link {
-  color: #61dafb;
+form input,
+form button{
+  background: none;
+  border: none;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form button{
+  cursor: poiner;
+}
+
+form input::placeholder{
+  color: #fff;
+}
+
+form input:focus{
+  outline: none;
+}
+
+nav .fa-bars{
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: right;
+}
+
+nav .fa-bars:hover{
+  color: #e54416;
+}
+
+.menu {
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  height: 0;
+  transition: 
+      0.7s
+      cubic-bezier(.74,-0.03,.83,.67);
+  overflow-y: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+.logo{
+  width: 3em;
+}
+
+.brand{
+  align-self: center;
+  width: 7rem;
+}
+
+.menu ul, .menu form{
+  margin: 1em auto;
+}
+
+.menu li{
+  margin: 1em 0;
+}
+
+.menu > div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 6em 1em 3em 1em;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.menu > div::-webkit-scrollbar{
+  display: none;
+}
+
+.menu .social-medias {
+  margin: 2rem 0;
+}
+
+.social-medias li {
+  display: inline-block;
+  margin: 0 0.5;
+}
+
+/* js classes */
+.menu-open {
+  height: 100vh;
+  opacity: 1;
+}
+
+.navbar-active {
+  background: #111;
+  padding: 0.5em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+
+  nav .container-inner {
+      display: none;
+  }
+
+  nav .container{
+      grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (max-width: 800px) {
+
+  .menu form{
+      display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  html{
+      font-size: 13px;
+  }
+}
+
