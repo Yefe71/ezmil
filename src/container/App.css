@@ -13,13 +13,13 @@ ul{
   padding: 0;
 }
 
-header {
+/* header {
   min-height: 100vh;
   background: url(
       "./img/EzMil.jpg"
   ) no-repeat center;
   background-size: cover;
-}
+} */
 
 main {
   padding: 2em;

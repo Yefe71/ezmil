@@ -15,9 +15,9 @@ body{
   
   header {
     min-height: 100vh;
-    background: url(
+    /* background: url(
         "../../img/EzMil.jpg"
-    ) no-repeat center;
+    ) no-repeat center; */
     background-size: cover;
   }
   
