@@ -94,7 +94,11 @@ function Navbar() {
               <Link to="#">Home</Link>
             </li>
             <li>
-              <Link to="#">Discography</Link>
+            <a href="#" onClick={(e) => {
+                e.preventDefault();
+                const swiper = document.getElementById('swiper-comp');
+                swiper.scrollIntoView({ behavior: 'smooth' });
+              }}>Discography</a>
             </li>
             <li>
               <Link to="#">Contact</Link>

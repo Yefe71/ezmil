@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route } from 'react-router-dom';
-
 import Navbar from "../components/Navbar/Navbar";
+import SwiperComp from "../components/SwiperComp/SwiperComp";
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
       <title>Ez Mil</title>
       <header>
       <Navbar />
-      </header>
+      </header>  
+      <SwiperComp/>
       <main>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto

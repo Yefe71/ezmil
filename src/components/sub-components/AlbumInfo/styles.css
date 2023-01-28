@@ -1,0 +1,41 @@
+
+.album-info{
+    position: relative;
+    text-align: left;
+    position: absolute;
+    width: 40rem;
+    z-index: 1;
+    color: white;
+    left: 34rem;
+}
+
+.album-info h3{
+    font-size: 1rem;
+}
+
+.album-info p{
+    font-size: 1rem;
+}
+.album-info p span{
+    font-size: 0.8rem;
+}
+
+.bottom-info{
+    display: flex;
+}
+
+.apple{
+    position: relative;
+    top: -4px;
+    margin-left: 20px;
+}
+
+.stream-info{
+    position: relative;
+    left: 5rem;
+    top: -0.8rem;
+}
+
+.logos img{
+    width: 5rem;
+}
