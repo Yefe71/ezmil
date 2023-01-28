@@ -1,10 +1,13 @@
 import "./App.css";
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className = "app">
+      
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,6 +58,7 @@ function App() {
         </p>
       </main>
     </div>
+    </BrowserRouter>
   );
 }
 
