@@ -16,7 +16,7 @@ import "./Navbar.css";
 
 library.add(faFacebook, faInstagram, faTwitter, faYoutube, faSearch, faBars);
 
-function Navbar() {
+function Navbar(props) {
   const [navbarActive, setNavbarActive] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
@@ -35,6 +35,7 @@ function Navbar() {
     };
   }, []);
 
+  const {changePage} = props;
   return (
     <nav id="navbar" className={navbarActive ? "navbar-active" : ""}>
       <div className={`menu ${menuOpen ? "menu-open" : ""}`}>
@@ -91,7 +92,7 @@ function Navbar() {
         <div className="container-inner">
           <ul>
             <li>
-              <Link to="#">Home</Link>
+              <Link to="#" onClick={() => changePage('home')}>Home</Link>
             </li>
             <li>
             <a href="#" onClick={(e) => {

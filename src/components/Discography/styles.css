@@ -1,0 +1,20 @@
+.bg{
+    background-color: black;
+    min-height: 100vh;
+    background: url(
+        "../../container/img/bgduality.jpg"
+    ) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.tracks-gallery{
+ position: relative;
+ top: 15rem;
+ width: 90%;
+ height: 100vh;
+
+ padding: 10rem;
+ background: rgb(116, 116, 250);
+}

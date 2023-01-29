@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 #app { height: 100% }
 html,
 body {
@@ -22,7 +25,80 @@ body {
   height: 100%;
 }
 
+#swiper-comp{
+  position: relative;
+  height: 76vh;
+}
 
+.swiper-title{
+  position: absolute;
+  top: 16rem;
+  left: -3.5rem;
+  font-size: 3rem;
+  z-index: 2;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+.button-container{
+  position: absolute;
+  right: 50.1rem;
+  top: 36rem;
+  z-index: 9;
+}
+.swiper-pagination {
+  display: none;
+}
+.bn13 {
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 10s infinite linear;
+  cursor: pointer;
+
+  
+
+}
+  
+.bn13:hover {
+  background-color: white;
+  color: #000000;
+  
+}
+  
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
 
 .swiper-slide {
   position: relative;
@@ -52,7 +128,7 @@ body {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: 60vh;
+
   filter: brightness(40%);
   object-fit: cover;
 }

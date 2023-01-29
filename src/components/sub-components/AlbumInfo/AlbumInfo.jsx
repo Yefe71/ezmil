@@ -3,7 +3,7 @@ import "./styles.css";
 export default function AlbumInfo(props) {
   return (
     <div className="album-info">
-      <h1>{props.title}</h1>
+      <h1 className="album-title">{props.title}</h1>
       <p>
         DU4LI7Y explains how he is as a person and his music journey which
         hasn't been the easiest for him. The reason his album title spelled

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -152,6 +154,14 @@ nav .fa-bars:hover{
   overflow-y: hidden;
   }
 
+
+header {
+  min-height: 100vh;
+  background: url(
+      "../../src/container/img/EzMil.jpg"
+  ) no-repeat center;
+  background-size: cover;
+}
 .logo{
   width: 3em;
 }
@@ -203,8 +213,30 @@ nav .fa-bars:hover{
   padding: 0.5em;
 }
 
-/* media queries */
+.home-info{
+  
+  position: absolute;
+  color: white;
+  width: 30rem;
+  top: 18rem;
+  left: 5rem;
+}
+.home-info h1{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  text-align: justify;
+  left: -4px
+}
 
+.home-info p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  position: relative;
+  top: -2.2rem;
+}
+
+/* media queries */
 @media screen and (max-width: 800px) {
 
   nav .container-inner {

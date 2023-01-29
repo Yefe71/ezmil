@@ -1,0 +1,26 @@
+.card-container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  
+  img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+    
+  h4 {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 1rem;
+  }
+    
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
