@@ -231,6 +231,7 @@ header {
 
 .home-info p{
   font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   font-weight: 500;
   position: relative;
   top: -2.2rem;
