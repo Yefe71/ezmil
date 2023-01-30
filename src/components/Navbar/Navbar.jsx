@@ -92,14 +92,10 @@ function Navbar(props) {
         <div className="container-inner">
           <ul>
             <li>
-              <Link to="#" onClick={() => changePage('home')}>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-            <a href="#" onClick={(e) => {
-                e.preventDefault();
-                const swiper = document.getElementById('swiper-comp');
-                swiper.scrollIntoView({ behavior: 'smooth' });
-              }}>Discography</a>
+            <Link to="/discography">Discography</Link>
             </li>
             <li>
               <Link to="#">Contact</Link>

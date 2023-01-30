@@ -1,11 +1,7 @@
 
 
 .imgAlbum{
-  position: absolute;
   width: 22rem;
   height: 22rem;
-  z-index: 1;
-  left: 10rem;
-  top: 8.7rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

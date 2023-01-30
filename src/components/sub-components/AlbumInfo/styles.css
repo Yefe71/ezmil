@@ -1,23 +1,64 @@
 
-.album-info{
-    position: relative;
+.imgAlbum{
+    width: 22rem;
+    height: 22rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-self: center;
+    margin-right: 2rem;
+    margin-left: 15rem;
+    
+  }
+
+.album-info-left{
+    display: flex;
     text-align: left;
-    position: absolute;
-    width: 40rem;
-    z-index: 1;
+    width: 80rem;
     color: white;
-    left: 34rem;
-    top: 7rem;
+    flex-direction: column;
+    
+}
+.album-info-middle{
+    text-align: left;
+    align-items: left;    
+    color: white;
+    width: 40rem;
+    margin-top: 15px;
 }
 
+.album-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-info{
+    display: flex;
+}
 
+.right-top-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.albumEmbed{
+    margin-top: 2rem;
+    margin-left: 8rem;
+    width: 380px;
+    height: 420px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
 
 .album-info h3{
     font-size: 1rem;
 }
 
 .album-info p{
+    margin-top: -0.7rem;
     font-size: 1rem;
+    line-height: 1.5;
+
+
 }
 .album-info p span{
     font-size: 0.8rem;
@@ -28,15 +69,13 @@
 }
 
 .apple{
-    position: relative;
-    top: -4px;
+    margin-bottom: 5.5px;
     margin-left: 20px;
 }
 
 .stream-info{
-    position: relative;
-    left: 5rem;
-    top: -0.8rem;
+    margin-top: -0.8rem;
+    margin-left: 2rem;
 }
 
 .logos img{

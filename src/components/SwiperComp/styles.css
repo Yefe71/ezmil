@@ -2,14 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 #app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   background: #eee;
@@ -20,14 +13,10 @@ body {
   padding: 0;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
 #swiper-comp{
   position: relative;
-  height: 76vh;
+  display: flex;
 }
 
 .swiper-title{
@@ -40,17 +29,18 @@ body {
   transform: rotate(-90deg);
 }
 
-.button-container{
-  position: absolute;
-  right: 50.1rem;
-  top: 36rem;
-  z-index: 9;
-}
+a:link { text-decoration: none; }
 .swiper-pagination {
   display: none;
 }
+
+.btn-container{
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  bottom: 5%;
+}
 .bn13 {
-  display: inline-block;
   padding: 0.65em 1.6em;
   border: 3px solid #ffffff;
   margin: 0 0.3em 0.3em 0;
@@ -66,7 +56,6 @@ body {
   animation: bn13bouncy 10s infinite linear;
   cursor: pointer;
 
-  
 
 }
   
@@ -105,7 +94,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,12 +101,11 @@ body {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  min-height: 70vh;
 
 }
 
@@ -126,11 +113,10 @@ body {
 
   position: relative;
   display: block;
-  width: 100%;
-  max-width: 100%;
-
   filter: brightness(40%);
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
 }
 
 
