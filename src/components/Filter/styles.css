@@ -1,17 +1,47 @@
-.filter-container button{
-    margin-right: 2rem;
-    min-width: 5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background: white;
-    color: rgb(65, 98, 168);
-    border-radius: 1rem;
-    border: 2px solid rgb(28, 36, 53);
-    font-weight: bold;
-    cursor: pointer;
-}
 
-button.active{
-    background: rgb(65, 98, 168);
+
+
+
+
+  button {
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
     color: white;
-}
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 10s infinite linear;
+    cursor: pointer;
+    background-color: black;
+  
+  
+  }
+  button:hover {
+    background-color: white;
+    color: white;
+    color: #000000;
+    
+  }
+
+  button.active{
+    background-color: rgb(255, 255, 255);
+
+    color: #000000;
+  }
+  button{
+    position: relative;
+    left: -10px;
+    margin-left: 10px;
+  }
+
+
+
+  .filter-container{
+    margin-bottom: 2rem;
+  }

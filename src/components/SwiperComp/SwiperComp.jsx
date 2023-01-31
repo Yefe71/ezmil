@@ -3,7 +3,7 @@ import bgact from "../../container/img/bgact1.jpg";
 import bgres from "../../container/img/bgresonances.jpg";
 import bgdual from "../../container/img/bgduality.jpg";
 import duality from "../../container/img/duality.jpg";
-import act from "../../container/img/act.jpg";
+import act1 from "../../container/img/act1.jpg";
 import resonances from "../../container/img/resonances.jpg";
 import Album from "../sub-components/Album/Album";
 import SpotifyPlayer from "../sub-components/SpotifyPlayer/SpotifyPlayer";
@@ -64,7 +64,7 @@ export default function SwiperComp(props) {
           <img className="bg" src={bgdual} alt="" /> */}
         </SwiperSlide>
         <SwiperSlide style={{ backgroundImage: `url(${bgact})` }}>
-        <AlbumInfo title={titleAct} img={act} albumId = {idact}/>
+        <AlbumInfo title={titleAct} img={act1} albumId = {idact}/>
           {/* <Album className="album" img={act} />
           <SpotifyPlayer albumid={idact} />
           <AlbumInfo title={titleAct} />

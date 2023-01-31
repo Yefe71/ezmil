@@ -1,365 +1,372 @@
 const tracks = [
   {
     name: "Rapture",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["Rock", "Deathcore"]
   },
   {
     name: "Ridin' With The Moonlight",
-    img: "'../../src/container/track_imgs/rwtm.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
     type: "Single",
     genre: ["RnB"]
   },
   {
     name: "Can You Keep A Secret",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["RnB"]
   },
   {
     name: "Spining",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["Rap"]
   },
   {
     name: "27 Bodies",
-    img: "'../../src/container/track_imgs/27bodies.jpg'",
+    img: "pub-imgs/bodies.jpg",
     date: "July 27, 2022",
     type: "Single",
     genre: ["Rap"]
   },
   {
-    name: "Dalampu't Dalawang Oo (2200)",
-    img: "'../../src/container/track_imgs/2200.jpg'",
+    name: "Dalamput Dalawang Oo (2200)",
+    img: "pub-imgs/dalawa.jpg",
     date: "July 27, 2022",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Re-Up",
-    img: "'../../src/container/track_imgs/reup.jpg'",
+    img: "pub-imgs/reup.jpg",
     date: "July 27, 2022",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Up Down (Step & Walk)",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["Rap"]
   },
   {
     name: "Greed",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["RnB"]
   },
   
   {
     name: "Will You",
-    img: "'../../src/container/track_imgs/duality.jpg'",
+    img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
-    type: "Album: DU4LI7Y",
+    type: "DU4LI7Y Album",
     genre: ["RnB"]
   },
-//Act1
+//pub-imgs/act1.jpg
   {
     name: "Omoshiroi!",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
-    name: "All Hallow's Eve",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    name: "All Hallows Eve",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Easy-Going Millions",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["RnB"]
   },
   {
     name: "Waste My Time",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Lonely Days",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["RnB"]
   },
   {
     name: "Superly Real",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rock"]
   },
   {
     name: "Panalo (Trap Cariñosa)",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Idk",
-    img: "'../../src/container/track_imgs/idk.jpg'",
+    img: "pub-imgs/idk.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Come Through",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["RnB"]
   },
   {
     name: ",,,,,,,",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Laboy",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["RnB"]
   },
   {
     name: "The Slashy Show",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "Far Away from Home",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/fafh.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["RnB"]
   },
   {
     name: "Fraud",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
   {
     name: "King I Be",
-    img: "'../../src/container/track_imgs/act1.jpg'",
+    img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
-    type: "Album: Act 1",
+    type: "Act 1 Album",
     genre: ["Rap"]
   },
 
-  //EP: Resonances
+  //pub-imgs/resonances.jpg
 
   {
     name: "Plenty More",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
   {
     name: "Strength",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["Rap"]
   },
   {
     name: "As You",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
   {
     name: "Into It All",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
   {
     name: "1st & Last",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
   {
-    name: "I've Known You Not",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    name: "Ive Known You Not",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
   {
     name: "Brittle",
-    img: "'../../src/container/track_imgs/EP: Resonances.jpg'",
+    img: "pub-imgs/resonances.jpg",
     date: "October 25, 2020",
-    type: "EP: Resonances",
+    type: "Resonances EP",
     genre: ["RnB"]
   },
 
   //singles
-
+  
+  {
+    name: "1st and Last (Live Take)",
+    img: "pub-imgs/1standlastlive.jpg",
+    date: "October 25, 2020",
+    type: "Single",
+    genre: ["Rap"]
+  },
   {
     name: "Closer To Love",
-    img: "'../../src/container/track_imgs/closertolove.jpg'",
+    img: "pub-imgs/closertolove.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["RnB"]
   },
   {
     name: "Colleen",
-    img: "'../../src/container/track_imgs/colleen.jpg'",
+    img: "pub-imgs/colleen.jpg",
     date: "October 25, 2020",
     type: "Remix",
     genre: ["Rap"]
   },
   {
     name: "Cultura",
-    img: "'../../src/container/track_imgs/cultura.jpg'",
+    img: "pub-imgs/cultura.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["RnB"]
   },
   {
     name: "Fire in the Booth",
-    img: "'../../src/container/track_imgs/fitb.jpg'",
+    img: "pub-imgs/fitb.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Freeze",
-    img: "'../../src/container/track_imgs/freeze.jpg'",
+    img: "pub-imgs/freeze.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Fuck Your Encouragement",
-    img: "'../../src/container/track_imgs/fuckyourencouragement.jpg'",
+    img: "pub-imgs/fuckyourencouragement.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Panalo (Pacquiao version)",
-    img: "'../../src/container/track_imgs/panalopac.jpg'",
+    img: "pub-imgs/panalopac.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Panalo (1500/Nothing Remix) ",
-    img: "'../../src/container/track_imgs/panaloremix.jpg'",
+    img: "pub-imgs/panaloremix.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Righteous & Ratchet",
-    img: "'../../src/container/track_imgs/rnr.jpg'",
+    img: "pub-imgs/rnr.jpg",
     date: "October 25, 2020",
     type: "Feature",
     genre: ["Rap"]
   },
   {
-    name: "Runnin'",
-    img: "'../../src/container/track_imgs/runnin'.jpg'",
+    name: "Runnin",
+    img: "pub-imgs/runnin.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "She and I",
-    img: "'../../src/container/track_imgs/she and i.jpg'",
+    img: "pub-imgs/sheandi.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["RnB"]
   },
   {
-    name: "Smooth N' Fenty ",
-    img: "'../../src/container/track_imgs/smoothnfenty.jpg'",
+    name: "Smooth N Fenty ",
+    img: "pub-imgs/smoothnfenty.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["RnB"]
   },
   {
     name: "Sona",
-    img: "'../../src/container/track_imgs/sona.jpg'",
+    img: "pub-imgs/sona.jpg",
     date: "October 25, 2020",
     type: "Feature",
     genre: ["Rap"]
   },
   {
     name: "Storm",
-    img: "'../../src/container/track_imgs/storm.jpg'",
+    img: "pub-imgs/storm.jpg",
     date: "October 25, 2020",
     type: "Feature",
     genre: ["RnB"]
   },
   {
     name: "Tell The Truth",
-    img: "'../../src/container/track_imgs/tellthetruth.jpg'",
+    img: "pub-imgs/tellthetruth.jpg",
     date: "October 25, 2020",
     type: "Feature",
     genre: ["Rap"]
   },
   {
-    name: "Till You're Dead",
-    img: "'../../src/container/track_imgs/tillyourdead.jpg'",
+    name: "Till Youre Dead",
+    img: "pub-imgs/tillyourdead.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Tribal Calls",
-    img: "'../../src/container/track_imgs/tribal.jpg'",
+    img: "pub-imgs/tribal.jpg",
     date: "October 25, 2020",
     type: "Feature",
     genre: ["Rap"]
   },
   {
     name: "Trilogy",
-    img: "'../../src/container/track_imgs/trilogy.jpg'",
+    img: "pub-imgs/trilogy.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]
   },
   {
     name: "Victorious",
-    img: "'../../src/container/track_imgs/victorious.jpg'",
+    img: "pub-imgs/victorious.jpg",
     date: "October 25, 2020",
     type: "Single",
     genre: ["Rap"]

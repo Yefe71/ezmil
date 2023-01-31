@@ -1,26 +1,25 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import Movie from "../../Data/Movie";
+import tracks from "../../Data/Tracks";
+import Track from "../../Data/Track";
 import Filter from "../Filter/Filter";
 import { motion, AnimatePresence } from 'framer-motion'
 import "./styles.css";
 
 const GridTracks = () => {
   
-  const [popular, setPopular] = useState([]);
+  const [track, setTracks] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [activeGenre, setActiveGenre] = useState(0)
+  const [activeGenre, setActiveGenre] = useState('')
 
   useEffect(() => {
-    fetchPopular();
+    fetchTracks();
   }, [])
 
-  const fetchPopular = async () => {
+  const fetchTracks = async () => {
 
-    const data = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=46d07fc7d71b2a6c994404d2af16531c&language=en-US&page=1")
-    const movies = await data.json();
-    setPopular(movies.results);
-    setFiltered(movies.results);
+    setTracks(tracks.sort( () => .5 - Math.random() ));
+    setFiltered(tracks.sort( () => .5 - Math.random() ));
 
 
   }
@@ -28,11 +27,12 @@ const GridTracks = () => {
   return (
     <div className = "GridTracks">
       <div className = "container-div">
-      <Filter popular={popular} setFiltered={setFiltered} activeGenre = {activeGenre} setActiveGenre = {setActiveGenre}/>
-        <motion.div layout className="popular-movies">
+        <h1>Discography</h1>
+      <Filter track={track} setFiltered={setFiltered} activeGenre = {activeGenre} setActiveGenre = {setActiveGenre}/>
+        <motion.div className="popular-movies">
           <AnimatePresence>
-          {filtered.map(movie => {
-            return <Movie key ={movie.id} movie = {movie}/>
+          {filtered.map(track => {
+            return <Track key ={track.id} track = {track}/>
           })}
           </AnimatePresence>
         </motion.div>
