@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lexend+Giga:wght@500&display=swap');
+
+#app { height: 100% }
+
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+
+#swiper-comp{
+  position: relative;
+  display: flex;
+}
+
+.swiper-title{
+  position: absolute;
+  top: 13.5rem;
+  left: -6.5rem;
+  font-size: 2.4rem;
+  z-index: 2;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+a:link { text-decoration: none; }
+.swiper-pagination {
+  display: none;
+}
+
+.btn-container{
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  bottom: 7%;
+}
+.bn13 {
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 10s infinite linear;
+  cursor: pointer;
+
+
+}
+  
+.bn13:hover {
+  background-color: white;
+  color: #000000;
+  
+}
+  
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.swiperSlide {
+  
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 0, 0);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  
+
+}
+
+.swiperSlide .bg {
+
+  position: relative;
+  display: block;
+ 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+
+
+
+.bt{
+    position: absolute;
+}
+
+.dualpic{
+  width: 31rem;
+  height: 31rem;
+margin-bottom: 1rem;
+  align-self: center;
+  margin-right: 2rem;
+  margin-left: 9.4rem;
+  -webkit-box-shadow: 0 0 7px 5px rgb(0, 0, 0.515);
+  -moz-box-shadow: 0 0 7px 5px rgb(0, 0, 0.515);
+  box-shadow: 0 0 1000px 400px rgba(0, 0, 0, 0.515);
+}
+
+
+.album{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 4.5rem;
+
+}
+
+
+
+
+.top{
+  font-family: 'Lexend Giga', sans-serif;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 10.2rem;
+  left: 17.5rem;
+}
+
+.left{
+  font-family: 'Lexend Giga', sans-serif;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  transform: rotate(-90deg);
+  top:25rem;
+  left: 5.5rem;
+
+}
+
+.bottom{
+  font-family: 'Lato', sans-serif;
+  color: rgb(224, 224, 224);
+  font-size: 35px;
+  position: absolute;
+  top:13.5rem;
+  left: 55.6rem;
+}
+
+.dualtitle{
+  width: 30rem;
+  position: absolute;
+  transform: rotate(-5deg);
+  left: 46.3rem;
+  top: 3.5rem;
+  filter: brightness(85%);
+}
+
+.logos{
+  display: flex;
+  margin-left: 11.7rem;
+  
+
+}
+.logos img{
+  width: 6rem;
+  margin-left: 2rem;
+}

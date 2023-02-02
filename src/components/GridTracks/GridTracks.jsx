@@ -25,7 +25,7 @@ const GridTracks = () => {
   }
 
   return (
-    <div className = "GridTracks">
+    <motion.div initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity:0}} className = "GridTracks">
       <div className = "container-div">
         <h1>Discography</h1>
       <Filter track={track} setFiltered={setFiltered} activeGenre = {activeGenre} setActiveGenre = {setActiveGenre}/>
@@ -38,7 +38,7 @@ const GridTracks = () => {
         </motion.div>
       </div>
 
-    </div>
+    </motion.div>
 
   )
   

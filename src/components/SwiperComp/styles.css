@@ -21,9 +21,9 @@ body {
 
 .swiper-title{
   position: absolute;
-  top: 16rem;
-  left: -3.5rem;
-  font-size: 3rem;
+  top: 13.5rem;
+  left: -6.5rem;
+  font-size: 2.4rem;
   z-index: 2;
   color: white;
   transform: rotate(-90deg);
@@ -38,7 +38,7 @@ a:link { text-decoration: none; }
   position: absolute;
   z-index: 2;
   right: 50%;
-  bottom: 5%;
+  bottom: 7%;
 }
 .bn13 {
   padding: 0.65em 1.6em;
@@ -105,7 +105,7 @@ a:link { text-decoration: none; }
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 55vh;
 
 }
 
@@ -119,7 +119,9 @@ a:link { text-decoration: none; }
   background-size: cover;
 }
 
-
+.dualpic{
+  
+}
 
 .bt{
     position: absolute;

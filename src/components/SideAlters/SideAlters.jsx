@@ -1,28 +1,69 @@
 import React from 'react';
 import './styles.css'
-import image1 from "../../container/img/ez drip.jpg"
-import image2 from "../../container/img/EzMil.jpg"
-import image3 from "../../container/img/ez white.jpg"
-
-const SideAlters = () => {
+const Diagonal = ({ id, src, text }) => {
   return (
-    <div className="images">
-      <div className="image-container">
-        <img src={image1} alt="image1" className="image img1" />
-        <div className="image-overlay" />
-      </div>
-
-      <div className="image-container">
-        <img src={image2} alt="image2" className="image" />
-        <div className="image-overlay" />
-      </div>
-
-      <div className="image-container">
-        <img src={image1} alt="image2" className="image" />
-        <div className="image-overlay" />
-      </div>
+    <div className="diagonal" id={id}>
+      <img src={src} />
+      <p className="overlay">{text}</p>
     </div>
   );
-}
+};
 
-export default SideAlters;
+const Container = () => {
+  return (
+    <div className="container1">
+      <Diagonal
+        id="d0"
+        src="http://www.shortpacked.com/comics/2013-02-08-prologue.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d1"
+        src="http://www.questionablecontent.net/comics/2381.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d2"
+        src="http://www.shortpacked.com/comics/2005-01-17-bow-before-your-master.gif"
+        text="TEST"
+      />
+      <Diagonal
+        id="d3"
+        src="http://www.questionablecontent.net/comics/2021.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d4"
+        src="http://www.shortpacked.com/comics/2009-03-27-fourohfour.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d5"
+        src="http://www.questionablecontent.net/comics/2021.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d6"
+        src="http://www.shortpacked.com/comics/2009-03-27-fourohfour.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d7"
+        src="http://www.questionablecontent.net/comics/2021.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d8"
+        src="http://www.shortpacked.com/comics/2009-03-27-fourohfour.png"
+        text="TEST"
+      />
+      <Diagonal
+        id="d9"
+        src="http://www.shortpacked.com/comics/2009-03-27-fourohfour.png"
+        text="TEST"
+      />
+    </div>
+  );
+};
+
+export default Container;

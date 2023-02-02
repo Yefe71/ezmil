@@ -22,12 +22,7 @@ export default function AlbumInfo(props) {
               necessarily have to be too much of anything else [and] just be
               myself. I feel like I’m two people which explains the album art.
               I’m excited for everyone to listen to the first song on this
-              album specifically because it just breaks me down,” he added.The
-              latest 10-track project is a continuation of his first album,
-              Act 1, which was released in 2020. In his first album, EZ was
-              enveloped by a haze of darkness and in DU4LI7Y, he is seen to
-              emerge from the darkness and back to light as he goes back to
-              his roots and to himself.
+              album specifically because it just breaks me down,” he added.
             </p>
             <div className="bottom-info">
               <div className="desc">

@@ -17,7 +17,7 @@ import "./styles.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "./styles.css";
+
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
@@ -33,7 +33,7 @@ export default function SwiperComp(props) {
 
   return (
     <div id="swiper-comp">
-      <h1 className="swiper-title">ALBUMS</h1>
+      <h1 className="swiper-title">ALBUMS AND EP</h1>
      <Link to="/discography" className = "btn-container">
 
      <a className="bn13">           
@@ -63,7 +63,7 @@ export default function SwiperComp(props) {
           <AlbumInfo title={titleDual} />
           <img className="bg" src={bgdual} alt="" /> */}
         </SwiperSlide>
-        <SwiperSlide style={{ backgroundImage: `url(${bgact})` }}>
+        <SwiperSlide style={{ backgroundImage: `url(${bgact})`}}>
         <AlbumInfo title={titleAct} img={act1} albumId = {idact}/>
           {/* <Album className="album" img={act} />
           <SpotifyPlayer albumid={idact} />

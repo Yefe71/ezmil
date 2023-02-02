@@ -1,7 +1,7 @@
 
 .imgAlbum{
-    width: 22rem;
-    height: 22rem;
+    width: 21rem;
+    height: 21rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-self: center;
     margin-right: 2rem;
@@ -34,16 +34,21 @@
 }
 
 .right-top-info{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+
+}
+.right-top-info h1{
+    font-size: 2.2rem;
 
 }
 
 .albumEmbed{
     margin-top: 2rem;
-    margin-left: 8rem;
-    width: 380px;
-    height: 420px;
+    margin-left: 12rem;
+    width: 350px;
+    height: 390px;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  
