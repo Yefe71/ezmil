@@ -116,6 +116,20 @@ a:link { text-decoration: none; }
 
 }
 
+.mask{
+  position: absolute;
+  width: 30rem;
+  top: 20.8rem;
+  left: 82rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+.mask:hover{
+  opacity: 1;
+}
+
 .swiperSlide .bg {
 
   position: relative;
@@ -148,7 +162,7 @@ margin-bottom: 1rem;
 .album{
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-top: 4.5rem;
 
 }
@@ -182,14 +196,14 @@ margin-bottom: 1rem;
   font-size: 35px;
   position: absolute;
   top:13.5rem;
-  left: 55.6rem;
+  left: 54.6rem;
 }
 
 .dualtitle{
   width: 30rem;
   position: absolute;
   transform: rotate(-5deg);
-  left: 46.3rem;
+  left: 37.5vw;
   top: 3.5rem;
   filter: brightness(85%);
 }
@@ -200,7 +214,54 @@ margin-bottom: 1rem;
   
 
 }
-.logos img{
+
+
+
+.logos img:nth-child(1){
   width: 6rem;
   margin-left: 2rem;
+}
+.logos img:nth-child(2){
+  width: 6rem;
+  margin-left: 2rem;
+}
+.logos img:nth-child(3){
+  width: 6rem;
+  margin-left: 2rem;
+}
+
+.merchpic{
+  width: 35rem;
+  margin: 0 5rem 0 5rem;
+}
+
+.merchparent{
+  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.merchparent .pic{
+  width: 14rem;
+  
+
+}
+
+.left2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.right2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }

@@ -9,7 +9,7 @@ export const Home = () => {
   return (
   <motion.div initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity:0}}>
     <Hero/>
-    <SideAlters />
+    {/* <SideAlters /> */}
     <SwiperComp />
   </motion.div>
   )
