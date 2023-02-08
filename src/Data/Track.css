@@ -14,3 +14,87 @@
 .track-title{
     font-size: 1.4rem;
 }
+
+.albumwrapper{
+    position: relative;
+}
+.item-and-button{
+    position: relative;
+
+}
+.popular-movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  row-gap: 2rem;
+  column-gap: 5rem;
+     
+}
+
+.movie-item{
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+  margin-bottom: 1rem;
+}
+
+
+.buy {
+    padding: 0.65em 1.6em;
+    border: 2px solid #e5e5e5;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.45rem;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 10s infinite linear;
+    cursor: pointer;
+    background:#00000092;
+    opacity: 0;
+  
+  }
+
+  .btncontainerlisten a{
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+
+  }
+  .btncontainerlisten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+
+
+  }
+
+
+
+
+
+  .buy:hover {
+    background-color: rgba(255, 255, 255, 0.542);
+    color: #000000;
+  }
+  .movie-item{
+    transition: all 0.1s ease-in;
+  }
+  .movie-item:hover{
+    filter: brightness(50%);
+  }
+
+
+  .albumwrapper:hover .buy{
+    opacity: 1;
+
+  }
+

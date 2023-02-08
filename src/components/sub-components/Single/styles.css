@@ -24,3 +24,26 @@
     font-weight: bold;
     margin-top: 1rem;
   }
+
+  .btncontainerlisten a{
+    font-size: 1.3rem;
+  }
+
+  .buy {
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.45rem;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 10s infinite linear;
+    cursor: pointer;
+  
+  
+  }

@@ -10,7 +10,7 @@ export const Home = () => {
   <motion.div initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity:0}}>
     <Hero/>
     {/* <SideAlters /> */}
-    <SwiperComp />
+    {/* <SwiperComp /> */}
   </motion.div>
   )
 }
