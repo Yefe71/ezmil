@@ -9,7 +9,7 @@ function Track({track}){
 
     const handleMouseEnter = () => {
       setBrightness(50);
-      console.log('hello')
+      console.log('hello hi')
     };
 
     const handleMouseLeave = () => {
@@ -17,6 +17,7 @@ function Track({track}){
     };
 
 
+//test change
 
     return(
         <motion.div animate = {{opacity: 1}} initial = {{opacity: 0}} exit = {{opacity: 0}}>
