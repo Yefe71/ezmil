@@ -696,17 +696,16 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  transition:all .05s ease;
 
 }
 
 
 
 .swiperbuttonprev img:hover{
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 .swiperbuttonnext img:hover{
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 
 /* .swiperbuttonprev:before,
@@ -727,9 +726,26 @@ flex-direction: column;
 
 .swiperbuttonprev {
   left: 10px;
+  filter: opacity(90%);
+  transition: all 0.2s ease-in-out ;
 }
+
 
 .swiperbuttonnext {
   right: 10px;
+  filter: opacity(90%);
+  transition: all 0.2s ease-in-out ;
+
+
 }
 
+
+
+.navButtons {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.showNavigationButtons {
+  opacity: 1;
+}

@@ -43,7 +43,7 @@ import dalawa from "../../container/img/videos/dalawa.mp4";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
-export default function SwiperComp(props) {
+export default function SwiperComp() {
   const ridin2 = "2EEj4xqP1kOOxN2xK4cQ4i";
   const bodies2 = "1JHzqHLBk7vwY2Ee3dShyX";
   const reup2 = "3fOXmBSYqdTAyS6ShT7MMp";
@@ -53,21 +53,7 @@ export default function SwiperComp(props) {
   const videoRef3 = useRef(null);
   const videoRef4 = useRef(null);
   const swiperRef = useRef(null);
-  const navbuttons = useRef(null);
-
-
-
-  const toggleButton = () => {
-
-    
-
-  }
-
-  let timeout;
-  let whenMouseMoves = () => {
-    clearTimeout(timeout);
-    timeout = setTimeout(toggleButton(), 50);
-  }
+  const [isMouseMoving, setIsMouseMoving] = useState(false);
 
   useEffect(() => {
     videoRef1.current.pause();
@@ -76,6 +62,7 @@ export default function SwiperComp(props) {
     videoRef4.current.pause();
   }, []);
 
+  
 
 
   const handleNext = () => {
@@ -480,7 +467,7 @@ export default function SwiperComp(props) {
           </div>
         </SwiperSlide>
 
-        <div className="navbuttons">
+
 
         <div className={HeroCSS.swiperbuttonprev}>
           <img src={arrow} className={HeroCSS.swiperbuttonprev}  onClick={handlePrev} alt="" />
@@ -491,7 +478,6 @@ export default function SwiperComp(props) {
         </div>
 
 
-        </div>
 
       </Swiper>
     </div>
