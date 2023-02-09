@@ -77,6 +77,12 @@ export default function SwiperComp() {
     console.log(swiper, 'hello')
     console.log(swiper.activeIndex)
     switch (swiper.activeIndex) {
+      case 0:
+      videoRef1.current.pause();
+      videoRef2.current.pause();
+      videoRef3.current.pause();
+      videoRef4.current.play();
+      break;
       case 1:
         videoRef1.current.pause();
         videoRef2.current.pause();
@@ -123,12 +129,6 @@ export default function SwiperComp() {
           videoRef4.current.play();
           break;
 
-          case 8:
-            videoRef1.current.pause();
-            videoRef2.current.pause();
-            videoRef3.current.pause();
-            videoRef4.current.pause();
-            break;
       
       default:
       // code block
@@ -138,7 +138,6 @@ export default function SwiperComp() {
   return (
     <div id="swiper-comp">
       <Swiper
-        style={{visibility:"hidden"}}
         loop={true}
         ref={swiperRef}
         autoplay={{ delay: 10000 }}

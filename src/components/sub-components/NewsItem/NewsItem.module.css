@@ -5,7 +5,14 @@
 
 
 
-.newsParent{
+.newsWrapper{
+    display: flex;
+    flex-direction: column;
     color: white;
-    margin: 5rem;
+    width: 15rem;
+}
+
+.newsWrapper p {
+    font-size: 0.8rem;
+    
 }
