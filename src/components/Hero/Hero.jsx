@@ -266,7 +266,7 @@ export default function SwiperComp() {
             </div>
 
             <div className={HeroCSS.left3}>
-              <img src={illalogo} alt="" className={HeroCSS.illalogo} />
+              <a href="https://www.illazillaz.com/"><img src={illalogo} alt="" className={HeroCSS.illalogo} /></a>
               <div className={HeroCSS.pwrapper}>
                 <p>
                   Slashzilla holders will receive a copy of an original story
@@ -277,7 +277,7 @@ export default function SwiperComp() {
             </div>
 
             <div className={HeroCSS.right3}>
-              <img src={nftdud} alt="" className={HeroCSS.nftdud} />
+              <a href="https://app.niftykit.com/drops/illazillazelementz"><img src={nftdud} alt="" className={HeroCSS.nftdud} /></a>
             </div>
           </div>
         </SwiperSlide>

@@ -264,8 +264,10 @@ a:link { text-decoration: none; }
 
 }
 
+
 .dualpic:hover{
-  filter: brightness(80%);
+  filter: brightness(90%);
+  scale: 1.01;
 }
 
 
@@ -273,6 +275,14 @@ a:link { text-decoration: none; }
   width: 35rem;
   margin: 0 5rem 0 5rem;
   border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+
+}
+
+.merchpic:hover{
+  filter: brightness(90%);
+  scale: 1.01;
 }
 
 .merchparent{
@@ -520,11 +530,39 @@ a:link { text-decoration: none; }
 
 .illalogo{
   width: 50rem;
+  transition: all 0.4s ease;
+
+}
+.illalogo:hover{
+  scale: 1.02;
 }
 
 
 .nftdud{
   width: 50rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+}
+
+
+
+.nftdud:hover{
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  scale: 1.02;
+
+
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+ 20% { transform: rotate(0deg); }
+ 60% { transform: rotate(3deg); }
+ 80% { transform: rotate(-3deg); }
+100% { transform: rotate(0deg); }
 }
 
 .left3{
@@ -735,10 +773,7 @@ flex-direction: column;
   right: 10px;
   filter: opacity(90%);
   transition: all 0.2s ease-in-out ;
-
-
 }
-
 
 
 .navButtons {
