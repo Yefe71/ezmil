@@ -98,24 +98,38 @@ export default function SwiperComp() {
         videoRef4.current.pause();
         break;
       case 4:
-        videoRef1.current.pause();
-        videoRef2.current.play();
+        videoRef1.current.play();
+        videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
         break;
       case 5:
         videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.play();
+        videoRef2.current.play();
+        videoRef3.current.pause();
         videoRef4.current.pause();
         break;
       case 6:
         videoRef1.current.pause();
         videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.play();
+        videoRef3.current.play();
+        videoRef4.current.pause();
         break;
 
+        case 7:
+          videoRef1.current.pause();
+          videoRef2.current.pause();
+          videoRef3.current.pause();
+          videoRef4.current.play();
+          break;
+
+          case 8:
+            videoRef1.current.pause();
+            videoRef2.current.pause();
+            videoRef3.current.pause();
+            videoRef4.current.pause();
+            break;
+      
       default:
       // code block
     }
@@ -124,6 +138,8 @@ export default function SwiperComp() {
   return (
     <div id="swiper-comp">
       <Swiper
+        style={{visibility:"hidden"}}
+        loop={true}
         ref={swiperRef}
         autoplay={{ delay: 10000 }}
         modules={[Pagination, Autoplay, Navigation]}
@@ -223,7 +239,7 @@ export default function SwiperComp() {
             </div>
 
             <div className={HeroCSS.mid2}>
-              <img className={HeroCSS.merchpic} src={merchpic} alt="" />
+              <a href="https://shop.virginmusic.com/collections/ez-mil" rel="noreferrer" target="_blank"><img className={HeroCSS.merchpic} src={merchpic} alt="" /></a>
             </div>
 
             <div className={HeroCSS.left2}>
