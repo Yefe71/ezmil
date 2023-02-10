@@ -1,6 +1,11 @@
 .newsImg{
 
-    width: 15rem;
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.8rem;
 }
 
 
@@ -16,3 +21,15 @@
     font-size: 0.8rem;
     
 }
+
+.date, .title, .caption{
+    margin: 0.2rem;
+
+    font-family: "Poppins";
+}
+
+.date{
+    color: rgba(255, 255, 255, 0.69);
+    margin-top: 1rem;
+}
+

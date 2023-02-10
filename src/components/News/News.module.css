@@ -7,27 +7,28 @@
 .newsParent{
   display: flex;
   flex-direction: column;
-    min-height: 60vh;
+    min-height: 70vh;
 }
 
 
 
 .headerTitle {
     color: white;
-    margin: 3rem 0rem 2rem 3rem ;
+    margin: 3rem 0rem 2rem 0rem ;
+    align-self: center;
 
 }
 .headerTitle h1{
     color: white;
-    font-size: 2rem;
+    font-size: 2.8rem;
 
 }
 
 
 
 .newsGrid {
-    height: 46vh;
-    width: 80%;
+    height: 50vh;
+    width: 100%;
     align-self: center;
 }
 
@@ -40,6 +41,7 @@
 }
 
 .swiperSlide {
+  user-select: none;
   font-size: 18px;
   background: #00000000;
   text-align: left;
@@ -47,17 +49,58 @@
 justify-content: start;
 align-items: center;
 flex-direction: column;
-
+cursor: pointer;
 min-height: 46vh;
+transition: all 0.3s ease-in;
 
 
+}
+
+.swiperSlide:hover{
+  filter: brightness(80%);
 }
 
 .swiperSlide img{
   width: 15rem;
+ 
+
+}
+
+.swiperbuttonprev2,
+.swiperbuttonnext2 {
+  position: absolute;
+  top: 35%;
+  width: 60px;
+  height: 60px;
+
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
 
 }
 
 
 
+.swiperbuttonprev2 img:hover{
+  filter: brightness(70%);
+}
+.swiperbuttonnext2 img:hover{
+  filter: brightness(70%);
+}
 
+
+.swiperbuttonprev2 {
+  left: 5px;
+  filter: opacity(90%);
+  transition: all 0.2s ease-in-out ;
+}
+
+
+.swiperbuttonnext2 {
+  right:5px;
+  filter: opacity(90%);
+  transition: all 0.2s ease-in-out ;
+}

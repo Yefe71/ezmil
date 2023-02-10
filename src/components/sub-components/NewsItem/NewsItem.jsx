@@ -8,10 +8,10 @@ export const NewsItem = (props) => {
     <div >
       
       <div className={styles.newsWrapper}>
-      <img src={img} className = {styles.newsImg} alt="" />
-      <p>February 10, 2023</p>
-      <h3>Up Down OMV Out Now</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eligendi est exercitationem illo laudantium quia!</p>
+      <img src={props.img} className = {styles.newsImg} alt="" />
+      <p className={styles.date}>{props.date}</p>
+      <h3 className={styles.title}>{props.title}</h3>
+      <p className={styles.caption}>{props.caption}</p>
       </div>
     
     </div>

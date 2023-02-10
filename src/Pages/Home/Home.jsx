@@ -5,14 +5,15 @@ import './styles.css'
 import {motion} from 'framer-motion'
 import Hero from "../../components/Hero/Hero";
 import News from '../../components/News/News';
-
+import Footer from '../../components/Footer/Footer';
 export const Home = () => {
   return (
   <motion.div initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity:0}}>
     <Hero/>
-    {/* <SideAlters />
-    <SwiperComp /> */}
+    {/* <SideAlters /> */}
     <News />
+    {/* <SwiperComp /> */}
+    <Footer/>
   </motion.div>
   )
 }

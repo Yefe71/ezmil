@@ -54,6 +54,7 @@ export default function SwiperComp() {
   const videoRef4 = useRef(null);
   const swiperRef = useRef(null);
   const [isMouseMoving, setIsMouseMoving] = useState(false);
+  
 
   useEffect(() => {
     videoRef1.current.pause();
@@ -98,7 +99,7 @@ export default function SwiperComp() {
         break;
 
       case 3:
-        videoRef1.current.play();
+        videoRef1.current.pause();
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
@@ -127,6 +128,12 @@ export default function SwiperComp() {
           videoRef2.current.pause();
           videoRef3.current.pause();
           videoRef4.current.play();
+          break;
+        case 8:
+          videoRef1.current.pause();
+          videoRef2.current.pause();
+          videoRef3.current.pause();
+          videoRef4.current.pause();
           break;
 
       
