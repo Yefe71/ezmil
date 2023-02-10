@@ -20,6 +20,32 @@ import "swiper/css";
 import "swiper/css/pagination";
 import NewsData from "../../Data/NewsData"
 const News = () => {
+
+  // add state to track the visibility of the Swiper component
+  const [isVisible, setIsVisible] = useState(false);
+  // useRef to reference the Swiper component
+  const swiperRef2 = useRef(null);
+
+  // effect to handle the fade in animation
+  useEffect(() => {
+    const handleScroll = () => {
+      if (swiperRef.current) {
+        // get the position of the Swiper component
+        const { top } = swiperRef.current.getBoundingClientRect();
+        // if the top of the Swiper component is within the viewport, set the visibility to true
+        if (top <= window.innerHeight) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   const [slidesPerView, setSlidesPerView] = useState(4);
   const swiperRef = useRef(null);
   const handleNext = () => {
@@ -54,9 +80,13 @@ const News = () => {
   }, []);
   return (
     <div
+
       className={styles.newsParent}
       style={{ backgroundImage: `url(${bg})`,  }}
     >
+      <div    ref={swiperRef}
+      style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
+
       <div className={styles.headerTitle}>
         <h1>LATEST NEWS</h1>
       </div>
@@ -99,6 +129,7 @@ const News = () => {
           </div>
         </Swiper>
 
+      </div>
       </div>
     </div>
   );

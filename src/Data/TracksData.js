@@ -46,7 +46,7 @@ const tracks = [
     stream: "https://open.spotify.com/track/1DtzPOWTRDU6ywUvgaT317?si=0bb6a2334d534682",
   },
   {
-    name: "Dalamput Dalawang Oo (2200)",
+    name: "Dalamput Dalawang Oo",
     img: "pub-imgs/dalawa.jpg",
     date: "July 27, 2022",
     type: "Single",
