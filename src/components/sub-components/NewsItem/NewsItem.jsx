@@ -3,7 +3,7 @@ import styles from './NewsItem.module.css'
 import img from '../../../container/img/act1.jpg'
 
 
-export const NewsItem = () => {
+export const NewsItem = (props) => {
   return (
     <div >
       

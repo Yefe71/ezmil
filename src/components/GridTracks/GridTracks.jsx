@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import React from "react";
-import tracks from "../../Data/Tracks";
-import Track from "../../Data/Track";
+import tracks from "../../Data/TracksData";
+import Track from "../sub-components/TrackItem/Track";
 import Filter from "../Filter/Filter";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
