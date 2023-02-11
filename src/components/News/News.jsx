@@ -95,6 +95,7 @@ const News = () => {
         {/* < NewsItem/> */}
 
         <Swiper
+        
           autoplay={{ delay: 5000 }}
           ref={swiperRef}
           slidesPerView={slidesPerView}

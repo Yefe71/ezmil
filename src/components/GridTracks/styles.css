@@ -1,19 +1,10 @@
 
-.search{
-    width: 1.5rem;
-    height: 1.5rem;
-    position: relative;
-    top:6px;
-    margin-right: 10px;
-
-}
-
-
 
 
 .wrapper{
     display: flex;
-    margin-left: 5px;
+
+  
 }
 .input-group:hover{
     transform: scale(1.04);
@@ -28,14 +19,7 @@
     }
     
     .input-group .search {
-    
 
-    background: rgb(255, 255, 255);
-    border: 0;
-    border-radius: 70%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
-    cursor: pointer;
-color: white;
     
     }
     
@@ -46,8 +30,19 @@ color: white;
     }
     
     .input-group .search {
-  
-    width: 200px;
+    
+   
+        height: 3.5rem;
+        position: relative;
+        top:6px;
+        margin-right: 10px;
+    background: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 70%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
+    cursor: pointer;
+color: white;
+    width: 20rem;
     border-radius: 0.5rem;
 
     font-family: "Poppins";
@@ -75,11 +70,15 @@ color: white;
 
     }
 
-
+.GridTracks{
+    margin: 0% 11%;
+}
 .container-div{
- 
-        color: white;
-        margin: 8% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+      
         
   
 }
@@ -102,8 +101,8 @@ h1{
 
 .search2{
     margin-right: 0.7rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
     top: 5.5px;
     cursor: pointer;
@@ -114,6 +113,12 @@ h1{
     transform: scale(1.1);
 }
 
-.header-wrapper h1{
-    margin: 0;
+.header-wrapper{
+    margin-bottom: 3rem;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

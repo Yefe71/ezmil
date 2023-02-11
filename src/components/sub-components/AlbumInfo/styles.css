@@ -1,88 +1,44 @@
-
-.imgAlbum{
-    width: 21rem;
-    height: 21rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    align-self: center;
-    margin-right: 2rem;
-    margin-left: 15rem;
-    
-  }
-
-.album-info-left{
-    display: flex;
-    text-align: left;
-    width: 80rem;
-    color: white;
-    flex-direction: column;
-    
-}
-.album-info-middle{
-    text-align: left;
-    align-items: left;    
-    color: white;
-    width: 40rem;
-    margin-top: 15px;
-}
-
 .album-info{
     display: flex;
     flex-wrap: wrap;
-}
-.top-info{
-    display: flex;
+    margin: 0 10rem 0 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.right-top-info{
-    margin-top: 1rem;
+
+.album-info * {
+    text-align: left;
+}
+
+.left-info{
+    width: 21rem;
+    max-width: 100%;
+
+    margin-right: 10rem;
+    margin-top: 3rem;
+}
+
+.imgAlbum{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+}
+
+.middle-info{
     display: flex;
     flex-direction: column;
 
-}
-.right-top-info h1{
-    font-size: 2.2rem;
-
-}
-
-.albumEmbed{
-    margin-top: 2rem;
-    margin-left: 12rem;
-    width: 350px;
-    height: 390px;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- 
+    margin-right: 10rem;
+    color: white;
+    width: 40rem;
+    
 }
 
-.album-info h3{
-    font-size: 1rem;
-}
-
-.album-info p{
-    margin-top: -0.7rem;
-    font-size: 1rem;
-    line-height: 1.3;
-
-
-}
-.album-info p span{
-    font-size: 0.8rem;
-}
-
-.bottom-info{
+.middle-info-bottom{
     display: flex;
 }
 
-.apple{
-    margin-bottom: 5.5px;
-    margin-left: 20px;
-}
-
-.stream-info{
-    margin-top: -0.12rem;
-    margin-left: 2rem;
-}
-
-.logos img{
-    width: 5rem;
+.right-info{
+    margin-top: 3rem;
 }

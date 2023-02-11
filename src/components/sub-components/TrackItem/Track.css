@@ -26,13 +26,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   row-gap: 2rem;
-  column-gap: 5rem;
+  column-gap: 5.75rem;
+  justify-content: center;
      
 }
 
 .movie-item{
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
   margin-bottom: 1rem;

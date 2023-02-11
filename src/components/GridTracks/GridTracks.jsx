@@ -6,7 +6,7 @@ import Filter from "../Filter/Filter";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
 import search from "../../container/img/search.svg";
-
+import SwiperComp from "../../components/SwiperComp/SwiperComp"
 const GridTracks = () => {
   const [track, setTracks] = useState([]);
   const [filtered, setFiltered] = useState([]);
@@ -60,10 +60,11 @@ const GridTracks = () => {
       exit={{ opacity: 0 }}
       className="GridTracks"
     >
-      <div className="container-div">
-        <div className="header-wrapper">
-          <h1>Discography</h1>
 
+      <div className="container-div">
+        
+        <div className="header-wrapper">
+   
           <div className="wrapper">
           <div className="leftgroup">
               <img onClick={handleImageClick} src={search} className="search2" alt="" />
@@ -73,7 +74,7 @@ const GridTracks = () => {
                   ref={searchInput}
                   onClick={resetGenre}
                   onChange={(e) => searchTracks(e)}
-                  placeholder="Search"
+                  placeholder="Search all of em tracks"
                   className="search"
                 />
               </div>
