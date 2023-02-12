@@ -12,26 +12,28 @@
 }
 
 .left-info{
-    width: 21rem;
+    width: 22rem;
     max-width: 100%;
 
-    margin-right: 10rem;
-    margin-top: 3rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
 }
 
 .imgAlbum{
       width: 100%;
       height: auto;
       object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+
 }
 
 .middle-info{
     display: flex;
     flex-direction: column;
 
-    margin-right: 10rem;
+    margin-right: 5rem;
     color: white;
-    width: 40rem;
+    width: 45rem;
     
 }
 
@@ -40,5 +42,32 @@
 }
 
 .right-info{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+}
+
+.desc{
+    margin-right: 3rem;
+}
+.desc h3{
+    margin: 0 0rem 0.5rem 0 ;
+    font-size: 1rem;
+}
+.stream-info h2{
+    margin: 0 0rem 0.5rem 0 ;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.logos img{
+       margin-right: 0.8rem;
+}
+
+.logos .apple{
+position: relative;
+top: -1px;
 }
