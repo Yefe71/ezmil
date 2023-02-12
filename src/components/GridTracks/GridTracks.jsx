@@ -74,7 +74,7 @@ const GridTracks = () => {
                   ref={searchInput}
                   onClick={resetGenre}
                   onChange={(e) => searchTracks(e)}
-                  placeholder="Search all of em tracks"
+                  placeholder="Search all EZ's murzik"
                   className="search"
                 />
               </div>

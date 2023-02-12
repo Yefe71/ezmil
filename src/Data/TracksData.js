@@ -456,7 +456,7 @@ const tracks = [
     type: "Feature",
     genre: ["Rap"],
     lyrics: "null",
-    stream: "https://soundcloud.com/rigor-mendrez/tribal-calls-ez-mil-ft-mfn",
+    stream: "https://www.youtube.com/watch?v=_ST3dnIRWPc",
   },
   {
     name: "Trilogy",

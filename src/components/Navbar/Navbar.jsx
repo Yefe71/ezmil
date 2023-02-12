@@ -66,7 +66,7 @@ function Navbar(props) {
               <Link to="#">About</Link>
             </li>
             <li>
-              <Link to="#">Contacat</Link>
+              <Link to="#">Contact</Link>
             </li>
           </ul>
           <ul className="social-medias">
@@ -98,7 +98,7 @@ function Navbar(props) {
             <Link to="/discography">Discography</Link>
             </li>
             <li>
-              <Link to="#">Contact</Link>
+              <Link to="/ezmil">Ez Mil</Link>
             </li>
           </ul>
           <form>

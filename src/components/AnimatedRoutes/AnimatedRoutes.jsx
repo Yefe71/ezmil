@@ -4,6 +4,7 @@ import { Home } from "../../Pages/Home/Home";
 import { Discography } from "../../Pages/Discography/Discography";
 
 import {AnimatePresence} from 'framer-motion';
+import { Ezmil } from "../../Pages/Ezmil/Ezmil";
 
 function AnimatedRoutes() {
 
@@ -15,6 +16,7 @@ function AnimatedRoutes() {
     <Routes location={location} key = {location.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="discography" element={<Discography />} />
+      <Route path="ezmil" element={<Ezmil />} />
     </Routes>
     </AnimatePresence>
   );

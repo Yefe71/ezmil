@@ -159,26 +159,21 @@ export default function SwiperComp() {
           className={HeroCSS.swiperSlide}
           style={{ backgroundImage: `url(${ezmil})` }}
         >
-          <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
-
-          <h2 className={HeroCSS.bottom}>OUT NOW</h2>
-          <img className={HeroCSS.mask} src={mask} alt="" />
-
           <div className={HeroCSS.albumcontainer}>
-            <a
-              href="https://ezmil.lnk.to/DU4LI7Y"
-              rel="noreferrer"
-              target="_blank"
-            >
+
+            <div className={HeroCSS.imgWrapper}>
+
               <img
                 onClick="https://ezmil.lnk.to/DU4LI7Y"
                 rel="noreferrer"
                 target="_blank"
-                className={HeroCSS.dualpic}
+                className={HeroCSS.dualpic2}
                 src={duality}
                 alt=""
               />
-            </a>
+
+            </div>
+         
 
             <div className={HeroCSS.logos}>
               <a
@@ -204,6 +199,21 @@ export default function SwiperComp() {
               </a>
             </div>
           </div>
+
+          <div className={HeroCSS.mainHeader}>
+
+          <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
+          <h2 className={HeroCSS.bottom}>OUT NOW</h2>
+
+          </div>
+
+          <div className={HeroCSS.blankSection}>
+
+          </div>
+
+
+          {/* <img className={HeroCSS.mask} src={mask} alt="" /> */}
+
         </SwiperSlide>
 
         <SwiperSlide
@@ -222,7 +232,7 @@ export default function SwiperComp() {
               </a>
             </div>
 
-            <div className={HeroCSS.right2}>
+            {/* <div className={HeroCSS.right2}>
               <div className={`${HeroCSS.item} ${HeroCSS.five}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-black-hoodie" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={blackhoodie} alt="" /></a>
                 <h1 className={HeroCSS.fivetitle}>Ez Mil - Black Hoodie</h1>
@@ -267,7 +277,7 @@ export default function SwiperComp() {
                   Ez Mil - All Over Print Shorts
                 </h1>
               </div>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
 
