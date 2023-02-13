@@ -155,6 +155,32 @@ export default function SwiperComp() {
           style={{ backgroundImage: `url(${ezmil})` }}
         >
           <div className={HeroCSS.albumcontainer}>
+
+
+          <div className={HeroCSS.mainHeader2}>
+              <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
+
+             <div className={HeroCSS.outpic}>
+
+
+                <h2 className={HeroCSS.bottom}>OUT NOW</h2>
+                <div className={HeroCSS.dualpicphonewrapper}>
+                <img
+                  onClick="https://ezmil.lnk.to/DU4LI7Y"
+                  rel="noreferrer"
+                  target="_blank"
+                  className={HeroCSS.dualpicphone}
+                  src={duality}
+                  alt=""
+                />
+              </div>
+
+             </div>
+
+         
+            </div>
+
+
             <div className={HeroCSS.imgWrapper}>
               <img
                 onClick="https://ezmil.lnk.to/DU4LI7Y"
