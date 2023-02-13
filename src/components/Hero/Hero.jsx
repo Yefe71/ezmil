@@ -142,7 +142,7 @@ export default function SwiperComp() {
       <Swiper
         loop={true}
         ref={swiperRef}
-        autoplay={{ delay: 10000 }}
+        // autoplay={{ delay: 10000 }}
         modules={[Pagination, Autoplay, Navigation]}
         onSlideChange={checkRef}
         className={HeroCSS.swiper}
