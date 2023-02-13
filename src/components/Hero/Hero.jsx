@@ -54,7 +54,6 @@ export default function SwiperComp() {
   const videoRef4 = useRef(null);
   const swiperRef = useRef(null);
   const [isMouseMoving, setIsMouseMoving] = useState(false);
-  
 
   useEffect(() => {
     videoRef1.current.pause();
@@ -63,27 +62,24 @@ export default function SwiperComp() {
     videoRef4.current.pause();
   }, []);
 
-  
-
-
   const handleNext = () => {
-   swiperRef.current.swiper.slideNext()
+    swiperRef.current.swiper.slideNext();
   };
 
   const handlePrev = () => {
-    swiperRef.current.swiper.slidePrev()
+    swiperRef.current.swiper.slidePrev();
   };
 
   const checkRef = (swiper) => {
-    console.log(swiper, 'hello')
-    console.log(swiper.activeIndex)
+    console.log(swiper, "hello");
+    console.log(swiper.activeIndex);
     switch (swiper.activeIndex) {
       case 0:
-      videoRef1.current.pause();
-      videoRef2.current.pause();
-      videoRef3.current.pause();
-      videoRef4.current.play();
-      break;
+        videoRef1.current.pause();
+        videoRef2.current.pause();
+        videoRef3.current.pause();
+        videoRef4.current.play();
+        break;
       case 1:
         videoRef1.current.pause();
         videoRef2.current.pause();
@@ -123,20 +119,19 @@ export default function SwiperComp() {
         videoRef4.current.pause();
         break;
 
-        case 7:
-          videoRef1.current.pause();
-          videoRef2.current.pause();
-          videoRef3.current.pause();
-          videoRef4.current.play();
-          break;
-        case 8:
-          videoRef1.current.pause();
-          videoRef2.current.pause();
-          videoRef3.current.pause();
-          videoRef4.current.pause();
-          break;
+      case 7:
+        videoRef1.current.pause();
+        videoRef2.current.pause();
+        videoRef3.current.pause();
+        videoRef4.current.play();
+        break;
+      case 8:
+        videoRef1.current.pause();
+        videoRef2.current.pause();
+        videoRef3.current.pause();
+        videoRef4.current.pause();
+        break;
 
-      
       default:
       // code block
     }
@@ -156,13 +151,11 @@ export default function SwiperComp() {
         }}
       >
         <SwiperSlide
-          className={HeroCSS.swiperSlide}
+          className={`${HeroCSS.swiperSlide} ${HeroCSS.bgclass}`}
           style={{ backgroundImage: `url(${ezmil})` }}
         >
           <div className={HeroCSS.albumcontainer}>
-
             <div className={HeroCSS.imgWrapper}>
-
               <img
                 onClick="https://ezmil.lnk.to/DU4LI7Y"
                 rel="noreferrer"
@@ -171,9 +164,7 @@ export default function SwiperComp() {
                 src={duality}
                 alt=""
               />
-
             </div>
-         
 
             <div className={HeroCSS.logos}>
               <a
@@ -201,19 +192,31 @@ export default function SwiperComp() {
           </div>
 
           <div className={HeroCSS.mainHeader}>
+            <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
 
-          <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
-          <h2 className={HeroCSS.bottom}>OUT NOW</h2>
+           <div className={HeroCSS.outpic}>
 
+
+              <h2 className={HeroCSS.bottom}>OUT NOW</h2>
+              <div className={HeroCSS.dualpicphonewrapper}>
+              <img
+                onClick="https://ezmil.lnk.to/DU4LI7Y"
+                rel="noreferrer"
+                target="_blank"
+                className={HeroCSS.dualpicphone}
+                src={duality}
+                alt=""
+              />
+            </div>
+
+           </div>
+
+         
           </div>
 
-          <div className={HeroCSS.blankSection}>
-
-          </div>
-
+          <div className={HeroCSS.blankSection} />
 
           {/* <img className={HeroCSS.mask} src={mask} alt="" /> */}
-
         </SwiperSlide>
 
         <SwiperSlide
@@ -298,7 +301,9 @@ export default function SwiperComp() {
             </div>
 
             <div className={HeroCSS.left3}>
-              <a href="https://www.illazillaz.com/"><img src={illalogo} alt="" className={HeroCSS.illalogo} /></a>
+              <a href="https://www.illazillaz.com/">
+                <img src={illalogo} alt="" className={HeroCSS.illalogo} />
+              </a>
               <div className={HeroCSS.pwrapper}>
                 <p>
                   Slashzilla holders will receive a copy of an original story
@@ -309,7 +314,9 @@ export default function SwiperComp() {
             </div>
 
             <div className={HeroCSS.right3}>
-              <a href="https://app.niftykit.com/drops/illazillazelementz"><img src={nftdud} alt="" className={HeroCSS.nftdud} /></a>
+              <a href="https://app.niftykit.com/drops/illazillazelementz">
+                <img src={nftdud} alt="" className={HeroCSS.nftdud} />
+              </a>
             </div>
           </div>
         </SwiperSlide>
@@ -499,18 +506,23 @@ export default function SwiperComp() {
           </div>
         </SwiperSlide>
 
-
-
         <div className={HeroCSS.swiperbuttonprev}>
-          <img src={arrow} className={HeroCSS.swiperbuttonprev}  onClick={handlePrev} alt="" />
+          <img
+            src={arrow}
+            className={HeroCSS.swiperbuttonprev}
+            onClick={handlePrev}
+            alt=""
+          />
         </div>
 
         <div className={HeroCSS.swiperbuttonnext}>
-          <img src={arrow2} className={HeroCSS.swiperbuttonnext}   onClick={handleNext} alt="" />
+          <img
+            src={arrow2}
+            className={HeroCSS.swiperbuttonnext}
+            onClick={handleNext}
+            alt=""
+          />
         </div>
-
-
-
       </Swiper>
     </div>
   );
