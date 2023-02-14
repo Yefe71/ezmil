@@ -242,7 +242,7 @@ export default function SwiperComp() {
 
           <div className={HeroCSS.blankSection} />
 
-          {/* <img className={HeroCSS.mask} src={mask} alt="" /> */}
+          <img className={HeroCSS.mask} src={mask} alt="" />
         </SwiperSlide>
 
         <SwiperSlide
@@ -261,25 +261,29 @@ export default function SwiperComp() {
               </a>
             </div>
 
-            {/* <div className={HeroCSS.right2}>
-              <div className={`${HeroCSS.item} ${HeroCSS.five}`}>
+          <div className={HeroCSS.shopWrapper}>
+
+
+
+            <div className={HeroCSS.left2}>
+              <div className={`${HeroCSS.item} ${HeroCSS.one}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-black-hoodie" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={blackhoodie} alt="" /></a>
-                <h1 className={HeroCSS.fivetitle}>Ez Mil - Black Hoodie</h1>
+                <h1 className={HeroCSS.onetitle}>Ez Mil - Black Hoodie</h1>
               </div>
 
-              <div className={`${HeroCSS.item} ${HeroCSS.six}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.two}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-red-hoodie" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={redhoodie} alt="" /></a>
-                <h1 className={HeroCSS.sixtitle}>Ez Mil - Red Hoodie</h1>
+                <h1 className={HeroCSS.twotitle}>Ez Mil - Red Hoodie</h1>
               </div>
 
-              <div className={`${HeroCSS.item} ${HeroCSS.seven}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.three}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-towel" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={towel} alt="" /></a>
-                <h1 className={HeroCSS.seventitle}>Ez Mil - Towel</h1>
+                <h1 className={HeroCSS.threetitle}>Ez Mil - Towel</h1>
               </div>
 
-              <div className={`${HeroCSS.item} ${HeroCSS.eight}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.four}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-pillow" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={pillow} alt="" /></a>
-                <h1 className={HeroCSS.eighttitle}>Ez Mil - Pillow</h1>
+                <h1 className={HeroCSS.fourtitle}>Ez Mil - Pillow</h1>
               </div>
             </div>
 
@@ -287,26 +291,33 @@ export default function SwiperComp() {
               <a href="https://shop.virginmusic.com/collections/ez-mil" rel="noreferrer" target="_blank"><img className={HeroCSS.merchpic} src={merchpic} alt="" /></a>
             </div>
 
-            <div className={HeroCSS.left2}>
-              <div className={`${HeroCSS.item} ${HeroCSS.one}`}>
+            <div className={HeroCSS.right2}>
+              <div className={`${HeroCSS.item} ${HeroCSS.five}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-t-shirt" rel="noreferrer" target="_blank"><img className={`${HeroCSS.pic}`} src={tshirt} alt="" /></a>
-                <h1 className={HeroCSS.onetitle}>Ez Mil - T-Shirt</h1>
+                <h1 className={HeroCSS.fivetitle}>Ez Mil - T-Shirt</h1>
               </div>
-              <div className={`${HeroCSS.item} ${HeroCSS.two}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.six}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-tank" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={tank} alt="" /></a>
-                <h1 className={HeroCSS.twotitle}>Ez Mil - Tank</h1>
+                <h1 className={HeroCSS.sixtitle}>Ez Mil - Tank</h1>
               </div>
-              <div className={`${HeroCSS.item} ${HeroCSS.three}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.seven}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-longsleeve" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={longsleeve} alt="" /></a>
-                <h1 className={HeroCSS.threetitle}>Ez Mil - Longsleeve</h1>
+                <h1 className={HeroCSS.seventitle}>Ez Mil - Longsleeve</h1>
               </div>
-              <div className={`${HeroCSS.item} ${HeroCSS.four}`}>
+              <div className={`${HeroCSS.item} ${HeroCSS.eight}`}>
                 <a href="https://shop.virginmusic.com/collections/ez-mil/products/ez-mil-all-over-print-shorts" rel="noreferrer" target="_blank"><img className={HeroCSS.pic} src={shorts} alt="" /></a>
-                <h1 className={HeroCSS.fourtitle}>
+                <h1 className={HeroCSS.eighttitle}>
                   Ez Mil - All Over Print Shorts
                 </h1>
               </div>
-            </div> */}
+            </div>
+
+
+          </div>
+
+
+
+          
           </div>
         </SwiperSlide>
 
