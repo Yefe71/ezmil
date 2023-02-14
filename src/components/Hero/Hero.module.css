@@ -119,7 +119,7 @@ a:link { text-decoration: none; }
   background-position:right center;
   background-size: cover;
   justify-content: center;
-  flex-wrap: wrap;
+
   
   
 
@@ -430,6 +430,7 @@ padding-left: 4rem;
   height: auto;
 }
 
+
 .merchpic {
   width: 100%;
   height: auto;
@@ -572,7 +573,9 @@ padding-left: 4rem;
 .six{
   position: relative;
 }
-
+.illaparent{
+  gap: 8rem;
+}
 .sixtitle{
   font-family: Poppins;
   color: white;
@@ -629,17 +632,31 @@ padding-left: 4rem;
   color: rgb(255, 255, 255);
 }
 
+.left3{
+  width: 50rem ;
+}
+.right3{
+  width: 90rem;
+}
+.illawrapper{
+  display: flex;
+  gap: 4rem;
+}
+
+
 
 
 
 .illaparent{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
+
+
 .illalogo{
-  width: 50rem;
+  width: 100%;
+  height: auto;
   transition: all 0.4s ease;
 
 }
@@ -647,14 +664,21 @@ padding-left: 4rem;
   scale: 1.02;
 }
 
+.right3{
+  width: 50rem;
+}
 
 .nftdud{
-  width: 50rem;
+  width: 100%;
+height: auto;
   cursor: pointer;
   transition: all 0.4s ease;
 
 }
 
+.pwrapper p{
+  font-size: 1vw;
+}
 
 
 .nftdud:hover{
@@ -702,6 +726,7 @@ flex: 1 1 43rem;
   font-family: 'Lato';
   font-weight: 200;
   color: #847c74;
+  margin: 0;
 }
 
 .pwrapper{
@@ -725,7 +750,7 @@ flex: 1 1 43rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 1.45rem;
+  font-size: 2.1rem;
   color: #888077;
   text-align: center;
   transition: all 0.2s;
@@ -901,12 +926,19 @@ flex-direction: column;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 1027px) and (max-height: 1080px){
 
-  
+
+  .swiperbuttonnext, .swiperbuttonprev{
+    filter: opacity(50%);
+  }
   .mask{
     visibility: hidden;
   
   }
-  
+.btncontainer{
+  position: absolute;
+  z-index: 2;
+  bottom: 1%;
+}
 
 .swiperSlide{
   background-position: 90% center;
@@ -972,7 +1004,7 @@ transform: rotate(-0deg);
 
   justify-content: end;
   align-items: center;
-  margin-top: 0rem;
+  margin-top: -20rem;
   
   flex: 10;
   order: 1;
@@ -1006,7 +1038,7 @@ transform: rotate(-0deg);
   }
 
 .swiperSlide{
-height: 94vh;
+height: 100vh;
 }
 
 .outpic{
@@ -1214,6 +1246,61 @@ width: 9rem;
  
  }
 
+
+ @media only screen and  (min-width: 2560px){
+  .dualtitle{
+    width: 38rem;
+  }
+
+  .mainHeader{
+    margin-top: -48rem;
+  }
+
+.mask{
+  position: absolute;
+  width: 39rem;
+  top: 36%;
+  left: 68.5%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+  .imgWrapper{
+    width: 38rem;
+  }
+.logos{
+  margin-top: 0.5rem;
+}
+  .spotlogo{
+    position: relative;
+    width: 8.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: -2px;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
+  .ytlogo{
+    width: 9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
+  .applelogo{
+    position: relative;
+    width: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: 1px;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
+ }
+
  @media only screen and  (min-width: 1366px) and (max-width: 1666px) {
 .mainHeader{
   margin-top: -30rem;
@@ -1323,15 +1410,12 @@ visibility: hidden;
  }
 
 
- @media only screen and (min-width: 800px) and (max-width: 1024px){
+ @media only screen and (min-width: 560px) and (max-width: 822px){
 
-.slideMerch{
-  height: 100vh;
-}
   .shopWrapper {
     display: grid; 
     grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr; 
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr; 
+    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr; 
     /* gap: 2rem 0px;  */
     align-items: center;
 
@@ -1367,6 +1451,23 @@ visibility: hidden;
     gap: 1rem;
   }
 
+  .seven{
+    position: relative;
+    top: -7px
+  }
+  .eight{
+    position: relative;
+    top: -2px
+  }
+  .three{
+    position: relative;
+    top: -24px
+  }
+  .four{
+    position: relative;
+    top: -8px
+  }
+  
 
   .item {
     display: flex;
@@ -1389,25 +1490,28 @@ visibility: hidden;
 
 
  }
- @media only screen and (min-width: 320px) and (max-width: 800px){
+ @media only screen and (min-width: 320px) and (max-width: 560px){
 
-.slideMerch{
-  height: 100vh;
+ 
+.buy{
+  font-size: 1.7vh;
 }
   .shopWrapper {
+
+    margin-top: 1rem;
     display: grid; 
-    grid-template-columns: 0.3fr 1fr 1.5fr 1.5fr 1fr 0.3fr; 
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr; 
-    gap: 2rem 0px; 
+    grid-template-columns: 0.5fr 1fr 1.5fr 1.5fr 1fr 0.5fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
     align-items: center;
 
     grid-template-areas: 
-    ".. .. .. .. .. .."
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
     ".  .  mp mp .  . "
     ".  .  mp mp .  . "
-    ".  i1 i1 i2 i2 . "
-    ".  i1 i1 i2 i2 . "
-    ".. .. .. .. .. .."
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
     ;
 
   }
@@ -1418,8 +1522,12 @@ visibility: hidden;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
+    
   }
-
+  .merchparent h1{
+    position: absolute;
+    visibility: hidden;
+  }
   .mid2 {
     grid-area: mp;
   }
@@ -1453,6 +1561,26 @@ visibility: hidden;
     transition: all 0.1s ease-in;
   }
 
+  .eight{
+    position: relative;
+    top: 2px
+  }
+
+  .three{
+    position: relative;
+    top: -13px
+  }
+
+  .btncontainer{
+    position: absolute;
+    z-index: 2;
+    bottom:5%;
+  }
+
+  .four{
+    position: relative;
+    top: -5px
+  }
 
  }
 
@@ -1462,6 +1590,49 @@ visibility: hidden;
 
 
 
+ @media only screen and  (max-width: 900px) {
+  .illawrapper{
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left3 p{
+    font-size: 1.4vh;
+  }
+  .left3{
+    margin-top: 20rem;
+    width: 25rem;
+    flex: 1;
+  }
+  .right3{
+    margin-top: 1rem;
+    width: 20rem;
+  }
+
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:6%;
+    left: 30%;
+  }
+
+  .mint{
+    font-size: 5vw;
+  }
+ }
 
 
 
+ @media only screen and  (min-width: 426px) {
+  .mint{
+    font-size: 1.3rem;
+  }
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:6%;
+    left: 40%;
+  }
+ }

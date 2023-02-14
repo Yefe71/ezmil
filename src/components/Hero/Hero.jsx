@@ -385,25 +385,32 @@ export default function SwiperComp() {
               </a>
             </div>
 
-            <div className={HeroCSS.left3}>
-              <a href="https://www.illazillaz.com/">
-                <img src={illalogo} alt="" className={HeroCSS.illalogo} />
-              </a>
-              <div className={HeroCSS.pwrapper}>
-                <p>
-                  Slashzilla holders will receive a copy of an original story
-                  board booklet from the music video of his upcoming single
-                  "Rapture". Stay tuned for more announcements.
-                </p>
-              </div>
-            </div>
+<div className={HeroCSS.illawrapper}>
 
-            <div className={HeroCSS.right3}>
-              <a href="https://app.niftykit.com/drops/illazillazelementz">
-                <img src={nftdud} alt="" className={HeroCSS.nftdud} />
-              </a>
-            </div>
-          </div>
+
+<div className={HeroCSS.left3}>
+      <a href="https://www.illazillaz.com/">
+        <img src={illalogo} alt="" className={HeroCSS.illalogo} />
+      </a>
+      <div className={HeroCSS.pwrapper}>
+        <p>
+          Slashzilla holders will receive a copy of an original story
+          board booklet from the music video of his upcoming single
+          "Rapture". Stay tuned for more announcements.
+        </p>
+      </div>
+    </div>
+
+    <div className={HeroCSS.right3}>
+      <a href="https://app.niftykit.com/drops/illazillazelementz">
+        <img src={nftdud} alt="" className={HeroCSS.nftdud} />
+      </a>
+    </div>
+  </div>
+
+
+</div>
+
         </SwiperSlide>
 
         <SwiperSlide className={HeroCSS.swiperSlide}>
