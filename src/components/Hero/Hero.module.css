@@ -334,7 +334,7 @@ padding-left: 4rem;
 
 .merchpic:hover{
   filter: brightness(90%);
-  scale: 1.01;
+  scale: 1.04;
 }
 
 .merchparent{
@@ -384,15 +384,15 @@ padding-left: 4rem;
 /* button */
 .shopWrapper {
   display: grid;
-  grid-template-columns: 0.8fr 1.1fr 1.1fr 0.2fr 1.3fr 1.3fr 0.2fr 1.1fr 1.1fr 0.8fr;
+  grid-template-columns: 0.8fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 0.8fr;
   grid-template-rows: 1fr;
   gap: 1rem;
   align-items: center;
-  margin-top: 3.5rem;
+  margin-top: rem;
 }
 
 .left2 {
-  margin-top: 2rem;
+  margin-top: 4rem;
   grid-column: 2 / span 2;
   grid-row: 1;
   display: grid;
@@ -407,7 +407,7 @@ padding-left: 4rem;
 }
 
 .right2 {
-  margin-top: 2rem;
+  margin-top: 4rem;
   grid-column: 8 / span 2;
   grid-row: 1;
   display: grid;
@@ -426,12 +426,14 @@ padding-left: 4rem;
 
 .pic {
   width: 100%;
+  transition: all 0.3s ease-in-out;
   height: auto;
 }
 
 .merchpic {
   width: 100%;
   height: auto;
+  transition: all 0.1s ease-in;
 }
 
 
@@ -471,7 +473,10 @@ padding-left: 4rem;
 }
 
 
-
+.imgTitleWrapper{
+  display: flex;
+  flex-direction: column;
+}
 
 .one{
   position: relative;
@@ -480,10 +485,6 @@ padding-left: 4rem;
 .onetitle{
   font-family: Poppins;
   color: white;
-  font-size: 1rem;
-  position: absolute;
-  left: 3.8rem;
-  top: 15rem;
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -501,9 +502,7 @@ padding-left: 4rem;
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 4.3rem;
-  top: 15rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -521,9 +520,7 @@ padding-left: 4rem;
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 2.5rem;
-  top: 13rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -535,6 +532,7 @@ padding-left: 4rem;
 
 .four{
   position: relative;
+  top: 1rem;
   filter: brightness(130%);
 }
 
@@ -542,9 +540,7 @@ padding-left: 4rem;
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 0.6rem;
-  top: 12.8rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -556,15 +552,14 @@ padding-left: 4rem;
 
 .five{
   position: relative;
+  top: 0.3rem;
 }
 
 .fivetitle{
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 2rem;
-  top: 15.1rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -582,9 +577,7 @@ padding-left: 4rem;
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 2.6rem;
-  top: 15.1rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -603,9 +596,7 @@ padding-left: 4rem;
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 4.3rem;
-  top: 11rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -615,18 +606,20 @@ padding-left: 4rem;
   color: rgb(255, 255, 255);
 }
 
+.towel{
+}
+
 .eight{
   position: relative;
   filter: brightness(180%);
+  top: 0.9rem;
 }
 
 .eighttitle{
   font-family: Poppins;
   color: white;
   font-size: 1rem;
-  position: absolute;
-  left: 4.1rem;
-  top: 11.5rem;
+
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -702,7 +695,7 @@ flex: 1 1 43rem;
 
 
 .merchparent h1{
-  font-size: 1rem;
+  font-size: 0.8vw;
 }
 
 .left3 p{
@@ -1330,78 +1323,145 @@ visibility: hidden;
  }
 
 
+ @media only screen and (min-width: 800px) and (max-width: 1024px){
 
+.slideMerch{
+  height: 100vh;
+}
+  .shopWrapper {
+    display: grid; 
+    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr; 
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr; 
+    /* gap: 2rem 0px;  */
+    align-items: center;
 
-
-
-
- /* slide 2 css queries*/
-/* 
- @media only screen and (max-width: 1731px) {
-  .item{
-    width: 13.3rem;
-
-  }
-
-  .merchpic{
-    width: 26rem;
-    margin: 5rem 5rem;
-  }
-
-
-}  */
-
-/* 
- @media only screen and (max-width: 1460px) {
-  .item{
-    width: 11.3rem;
+    grid-template-areas: 
+    ".. .. .. .. .. .."
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  i1 i1 i2 i2 . "
+    ".  i1 i1 i2 i2 . "
+    ".. .. .. .. .. .."
+    ;
 
   }
-
-  .merchpic{
-    width: 23rem;
-    margin: 5rem 5rem;
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   }
 
-}  */
- /* @media only screen and (max-width: 1460px) {
-  .item{
-    width: 10.3rem;
-
+  .mid2 {
+    grid-area: mp;
   }
 
-  .merchpic{
-    width: 23rem;
-    margin: 5rem 3rem;
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   }
 
 
-}  */
-
-/* @media only screen and (min-width: 320px) and (max-width: 1027px) and (max-height: 1080px){
-
-  .item{
-    width: 5.5rem;
-
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .buy{
-    font-size: 0.8rem;
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
   }
 
-  .merchpic{
-    width: 15rem;
-    border-radius: 0px;
-    margin: 0rem 5rem;
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
   }
 
-  
-  .left2{
-    margin: 0.5rem 5rem  2rem 6rem;
+
+ }
+ @media only screen and (min-width: 320px) and (max-width: 800px){
+
+.slideMerch{
+  height: 100vh;
+}
+  .shopWrapper {
+    display: grid; 
+    grid-template-columns: 0.3fr 1fr 1.5fr 1.5fr 1fr 0.3fr; 
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr; 
+    gap: 2rem 0px; 
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. .. .. .. .."
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  i1 i1 i2 i2 . "
+    ".  i1 i1 i2 i2 . "
+    ".. .. .. .. .. .."
+    ;
 
   }
-  .right2{
-    margin: 3rem 5rem  0rem 6rem;
-
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   }
-} */
+
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
