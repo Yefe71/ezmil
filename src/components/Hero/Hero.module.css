@@ -1409,7 +1409,7 @@ visibility: hidden;
   
  }
 
-
+/* TABLET MERCH */
  @media only screen and (min-width: 560px) and (max-width: 822px){
 
   .shopWrapper {
@@ -1490,17 +1490,30 @@ visibility: hidden;
 
 
  }
- @media only screen and (min-width: 320px) and (max-width: 560px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 320px) and (max-width: 384px){
 
  
 .buy{
-  font-size: 1.7vh;
+  font-size: 1.2rem;
 }
   .shopWrapper {
 
     margin-top: 1rem;
     display: grid; 
-    grid-template-columns: 0.5fr 1fr 1.5fr 1.5fr 1fr 0.5fr; 
+    grid-template-columns: 0.7fr 1fr 1.5fr 1.5fr 1fr 0.7fr; 
     grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
     gap: 1.5rem 0px; 
     align-items: center;
@@ -1583,6 +1596,462 @@ visibility: hidden;
   }
 
  }
+ @media only screen and (min-width: 385px) and (max-width: 499px){
+
+ 
+.buy{
+  font-size: 1.2rem;
+}
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+
+  }
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  .merchparent h1{
+    position: absolute;
+    visibility: hidden;
+  }
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+
+  .eight{
+    position: relative;
+    top: 2px
+  }
+
+  .three{
+    position: relative;
+    top: -13px
+  }
+
+  .btncontainer{
+    position: absolute;
+    z-index: 2;
+    bottom:5%;
+  }
+
+  .four{
+    position: relative;
+    top: -5px
+  }
+
+ }
+ @media only screen and (min-width: 405px) and (max-width: 499px){
+
+ 
+.buy{
+  font-size: 1.2rem;
+}
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 0.8fr 1fr 1.5fr 1.5fr 1fr 0.8fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+
+  }
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  .merchparent h1{
+    position: absolute;
+    visibility: hidden;
+  }
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+
+  .eight{
+    position: relative;
+    top: 2px
+  }
+
+  .three{
+    position: relative;
+    top: -13px
+  }
+
+  .btncontainer{
+    position: absolute;
+    z-index: 2;
+    bottom:5%;
+  }
+
+  .four{
+    position: relative;
+    top: -5px
+  }
+
+ }
+ @media only screen and (min-width: 441px) and (max-width: 499px){
+
+ 
+.buy{
+  font-size: 1.2rem;
+}
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+
+  }
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  .merchparent h1{
+    position: absolute;
+    visibility: hidden;
+  }
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+
+  .eight{
+    position: relative;
+    top: 2px
+  }
+
+  .three{
+    position: relative;
+    top: -13px
+  }
+
+  .btncontainer{
+    position: absolute;
+    z-index: 2;
+    bottom:5%;
+  }
+
+  .four{
+    position: relative;
+    top: -5px
+  }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 500px) and (max-width: 559px){
+
+
+.buy{
+  font-size: 1.2rem;
+}
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1.6fr 1fr 1.5fr 1.5fr 1fr 1.6fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+
+  }
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  .merchparent h1{
+    position: absolute;
+    visibility: hidden;
+  }
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+
+  .eight{
+    position: relative;
+    top: 2px
+  }
+
+  .three{
+    position: relative;
+    top: -13px
+  }
+
+  .btncontainer{
+    position: absolute;
+    z-index: 2;
+    bottom:5%;
+  }
+
+  .four{
+    position: relative;
+    top: -5px
+  }
+
+ }
+ 
+
+
+
+ @media (min-width: 300px) and (max-width: 321px) and (max-height: 630px) {
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1.1fr 1fr 1.5fr 1.5fr 1fr 1.1fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+  
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+  
+  }}
+
+ @media (min-width: 321px) and (max-width: 355px) and (max-height: 630px) {
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+  
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+  
+  }}
+
+ @media (min-width: 356px) and (max-width: 450px) and (max-height: 630px) {
+  .shopWrapper {
+
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-columns: 1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr; 
+    gap: 1.5rem 0px; 
+    align-items: center;
+  
+    grid-template-areas: 
+    ".. .. i2 i2 .. .."
+    ".  .  i2 i2 .  . "
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  .  i1 i1 .  . "
+    ".. .. i1 i1 .. .."
+    ;
+  
+  }}
+
+
+
 
 
 
