@@ -14,7 +14,6 @@ export const Home = () => {
     {/* <SideAlters /> */}
     <News />
     {/* <SwiperComp /> */}
-    <Footer/>
   </motion.div>
   )
 }

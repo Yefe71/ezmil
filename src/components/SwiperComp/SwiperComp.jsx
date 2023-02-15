@@ -49,21 +49,21 @@ export default function SwiperComp(props) {
         className="mySwiper"
       >
 
-        <SwiperSlide style={{background: `rgba(0, 0, 0, 0)` }}>
+        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
         <AlbumInfo title={titleDual} img={duality} albumId = {du4li7y}/>
           {/* <Album className="album" img={duality} />
           <SpotifyPlayer albumid={du4li7y} />
           <AlbumInfo title={titleDual} />
           <img className="bg" src={bgdual} alt="" /> */}
         </SwiperSlide>
-        <SwiperSlide style={{background: `rgba(0, 0, 0, 0)` }}>
+        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
         <AlbumInfo title={titleAct} img={act1} albumId = {idact}/>
           {/* <Album className="album" img={act} />
           <SpotifyPlayer albumid={idact} />
           <AlbumInfo title={titleAct} />
           <img className="bg" src={bgact} alt="" /> */}
         </SwiperSlide>
-        <SwiperSlide style={{background: `rgba(0, 0, 0, 0)` }}>
+        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
         <AlbumInfo title={titleRes} img={resonances} albumId = {idres}/>
           {/* <Album className="album" img={resonances} />
           <SpotifyPlayer albumid={idres} />

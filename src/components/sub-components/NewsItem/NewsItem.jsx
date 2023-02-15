@@ -5,7 +5,7 @@ import img from '../../../container/img/act1.jpg'
 
 export const NewsItem = (props) => {
   return (
-    <div >
+    <div className= {styles.swiperNews}>
       
       <div className={styles.newsWrapper}>
       <img src={props.img} className = {styles.newsImg} alt="" />

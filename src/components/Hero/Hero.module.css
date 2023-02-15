@@ -633,14 +633,15 @@ padding-left: 4rem;
 }
 
 .left3{
-  width: 50rem ;
+  width: 50rem ;  
+
 }
 .right3{
   width: 90rem;
 }
 .illawrapper{
   display: flex;
-  gap: 4rem;
+  gap: 12rem;
 }
 
 
@@ -655,6 +656,7 @@ padding-left: 4rem;
 
 
 .illalogo{
+
   width: 100%;
   height: auto;
   transition: all 0.4s ease;
@@ -2102,6 +2104,84 @@ visibility: hidden;
     position: absolute;
     z-index: 2;
     bottom:6%;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ }
+ @media only screen and (min-width: 900px) and (max-width: 1600px) {
+.illawrapper{
+  gap: 5rem;
+}
+ }
+ @media only screen and (max-width: 1010px) {
+.illawrapper{
+  gap: -2rem;
+}
+
+ }
+
+
+
+
+
+ @media only screen and (min-width: 320px) and (max-width: 1021px){
+  .spotifyContainer {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 240px;
+    height: 80px;
+    filter: opacity(70%);
+    transform: translate(-50%, -50%);
+  }
+  .btns{
+    margin: 25px;
+  }
+
+
+  .title{
+    
+    font-size: 24px;
+  }
+
+.textContainer{
+  top: 87%;
+}
+  .btncontainerlisten a{
+    font-size: 17px;
+  }
+  .btncontainerwatch a{
+    font-size: 17px;
+  }
+ }
+
+ @media only screen and (min-width: 776px) and (max-width: 1021px){
+  .spotifyContainer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 224px;
+    height: 80px;
+    filter: opacity(70%);
+    transform: translate(-50%, -50%);
+  }
+  .btns{
+    margin: 25px;
+  }
+
+
+  .title{
+    
+    font-size: 33px;
+  }
+
+.textContainer{
+  top: 87%;
+}
+  .btncontainerlisten a{
+    font-size: 17px;
+  }
+  .btncontainerwatch a{
+    font-size: 17px;
   }
  }

@@ -68,6 +68,9 @@ const News = () => {
       else if (window.innerWidth <= 1279) {
         setSlidesPerView(3);
       } 
+      else if (window.innerWidth >= 1280 && window.innerWidth <= 1800) {
+        setSlidesPerView(4);
+      } 
 
       else {
         setSlidesPerView(5);
@@ -96,7 +99,7 @@ const News = () => {
 
         <Swiper
         
-          autoplay={{ delay: 5000 }}
+         
           ref={swiperRef}
           slidesPerView={slidesPerView}
           spaceBetween={0}
@@ -109,7 +112,7 @@ const News = () => {
 
       {NewsData.map((newsItem) => {
             return (          
-              <SwiperSlide className={styles.swiperSlide}>
+              <SwiperSlide className={`${styles.swiperSlide} `}>
               <NewsItem title={newsItem.title} date={newsItem.date} caption = {newsItem.caption} img = {newsItem.img}/>
           
             </SwiperSlide>

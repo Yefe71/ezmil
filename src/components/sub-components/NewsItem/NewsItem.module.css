@@ -36,3 +36,9 @@
 .right-top-info *{
     color: white;
 }
+
+.swiperNews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
