@@ -58,7 +58,7 @@ export default function AlbumInfo(props) {
           <iframe
             className="albumEmbed"
             src={`https://open.spotify.com/embed/album/${props.albumId}`}
-            width="100%"
+            width="300"
             height="352"
             frameBorder="0"
             allow="encrypted-media"

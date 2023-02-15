@@ -1,6 +1,6 @@
 .album-info{
     display: flex;
-    flex-wrap: wrap;
+  
     margin: 0 10rem 0 10rem;
     justify-content: center;
     align-items: center;
@@ -11,12 +11,28 @@
     text-align: left;
 }
 
+
+.album-title{
+    font-size: 2.1vw;
+    
+}
+
+.middle-info-top p {
+font-size: 0.9vw;
+}
+
+.disco-title{
+    font-size: 2.7rem;
+}
+
+
 .left-info{
     width: 22rem;
     max-width: 100%;
 
     margin-right: 5rem;
     margin-top: 2rem;
+    margin-left: 5rem;
 }
 
 .imgAlbum{
@@ -37,12 +53,16 @@
     
 }
 
+
 .middle-info-bottom{
     display: flex;
 }
 
 .right-info{
     margin-top: 2.5rem;
+    width: 20rem;
+    height: 352px;
+    margin-right: 5rem;
 }
 
 .desc{
@@ -50,10 +70,11 @@
 }
 .desc h3{
     margin: 0 0rem 0.5rem 0 ;
-    font-size: 1rem;
+    font-size: 0.9vw;
 }
 .stream-info h2{
     margin: 0 0rem 0.5rem 0 ;
+    font-size: 1.1vw;
 }
 
 .logos{
@@ -61,6 +82,12 @@
     justify-content: center;
     align-items: center;
  
+}
+
+.right-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logos img{
@@ -71,3 +98,15 @@
 position: relative;
 top: -1px;
 }
+
+
+@media only screen and  (max-width: 1400px){
+   
+  .albumEmbed{
+    width: 300px;
+    height: 160px;
+  }
+    
+   }
+
+

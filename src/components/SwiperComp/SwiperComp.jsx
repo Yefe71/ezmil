@@ -33,44 +33,42 @@ export default function SwiperComp(props) {
 
   return (
     <div id="swiper-comp">
+  
 
-
- 
-
-
-
-      <Swiper
-        loop={true}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        autoplay={{ delay: 10000 }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
-      >
-
-        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
-        <AlbumInfo title={titleDual} img={duality} albumId = {du4li7y}/>
-          {/* <Album className="album" img={duality} />
-          <SpotifyPlayer albumid={du4li7y} />
-          <AlbumInfo title={titleDual} />
-          <img className="bg" src={bgdual} alt="" /> */}
-        </SwiperSlide>
-        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
-        <AlbumInfo title={titleAct} img={act1} albumId = {idact}/>
-          {/* <Album className="album" img={act} />
-          <SpotifyPlayer albumid={idact} />
-          <AlbumInfo title={titleAct} />
-          <img className="bg" src={bgact} alt="" /> */}
-        </SwiperSlide>
-        <SwiperSlide className = "slideSwiperComp" style={{background: `rgba(0, 0, 0, 0)` }}>
-        <AlbumInfo title={titleRes} img={resonances} albumId = {idres}/>
-          {/* <Album className="album" img={resonances} />
-          <SpotifyPlayer albumid={idres} />
-          <AlbumInfo title={titleRes} />
-          <img className="bg" src={bgres} alt="" /> */}
-        </SwiperSlide>
-      </Swiper>
+  
+        <div className="largeContent">
+          <Swiper
+            loop={true}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            autoplay={{ delay: 10000 }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide
+              className="slideSwiperComp"
+              style={{ background: `rgba(0, 0, 0, 0)` }}
+            >
+              <AlbumInfo title={titleDual} img={duality} albumId={du4li7y} />
+            </SwiperSlide>
+            <SwiperSlide
+              className="slideSwiperComp"
+              style={{ background: `rgba(0, 0, 0, 0)` }}
+            >
+              <AlbumInfo title={titleAct} img={act1} albumId={idact} />
+            </SwiperSlide>
+            <SwiperSlide
+              className="slideSwiperComp"
+              style={{ background: `rgba(0, 0, 0, 0)` }}
+            >
+              <AlbumInfo title={titleRes} img={resonances} albumId={idres} />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      <div className="smallContent">
+        <h1>HELLO IT'S ME</h1>
+      </div>
     </div>
   );
 }

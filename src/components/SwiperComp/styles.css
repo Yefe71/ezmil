@@ -124,3 +124,21 @@ a:link {
 
 .mySwiper {
 }
+
+.smallContent{
+  position: absolute;
+  visibility: hidden;
+}
+@media only screen and  (max-width: 1280px){
+   
+  .largeContent{
+position: absolute;
+visibility: hidden;
+  }
+
+  .smallContent{
+    position: static;
+    visibility: visible;
+  }
+      
+   }
