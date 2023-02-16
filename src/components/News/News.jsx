@@ -1,6 +1,6 @@
 import styles from "./News.module.css";
 import {React, useState, useEffect, useRef} from "react";
-import bg from "../../container/img/bgdark.jpg";
+import bg from "../../container/img/bgdark2.jpg";
 import img from "../../container/img/act1.jpg";
 import { NewsItem } from "../sub-components/NewsItem/NewsItem";
 import { Swiper, SwiperSlide } from "swiper/react";

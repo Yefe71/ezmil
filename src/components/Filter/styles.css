@@ -59,10 +59,10 @@
     }
   }
 
-  @media only screen and (max-width: 867px){
+  @media only screen and (max-width: 928px){
     .filter-container {
       margin-top: 2.5rem;
-      margin-left: 3.7rem;
+      margin-left: 3.5rem;
       
     }
     button{

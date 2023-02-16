@@ -1,0 +1,101 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.swiperCubeMain {
+    width: 300px;
+    height: 300px;
+
+
+  }
+  
+  .swiperCube {
+    background-position: center;
+    background-size: cover;
+
+  }
+  
+  .swiperCube img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiperWrapper{
+
+    width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  
+
+
+  .overlayInfo1 *{
+    font-family: "Poppins";
+    color: white;
+ 
+  }
+
+  .title{
+    font-family: "Poppins";
+    
+    font-size: 1.4rem;
+  }
+  .overlayInfo1 * {
+    margin: 0;
+  
+
+  }
+
+  .caption{
+    font-size:0.75rem;
+    width: 90%;
+  }
+  .date{
+    color: rgba(255, 255, 255, 0.319);
+    margin-bottom: 3px;
+    font-size:0.75rem;
+  }
+
+  
+  .overlayInfo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .streamIcons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+
+  .streamIcons img{
+    width: 20px;
+    margin-bottom: 7px;
+    height: 20px;
+
+
+  }
+
+  .contentWrapper * {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .swiperCube:hover .contentWrapper * {
+    opacity: 1;
+  }

@@ -21,6 +21,7 @@ import "swiper/css/autoplay";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
+import Cube from "../sub-components/Cube/Cube";
 
 export default function SwiperComp(props) {
   const du4li7y = "4kAZzYkAxND103ygB4tZ3a";
@@ -67,7 +68,7 @@ export default function SwiperComp(props) {
           </Swiper>
         </div>
       <div className="smallContent">
-        <h1>HELLO IT'S ME</h1>
+      <Cube />
       </div>
     </div>
   );
