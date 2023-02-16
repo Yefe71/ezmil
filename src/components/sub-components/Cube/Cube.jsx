@@ -22,6 +22,7 @@ export default function Cube() {
     <div className={cubeCSS.swiperWrapper}>
       <Swiper
         effect={"cube"}
+        loop = {true}
         grabCursor={true}
         cubeEffect={{
           shadow: true,
