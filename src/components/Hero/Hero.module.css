@@ -1179,12 +1179,7 @@ width: 9rem;
    width:20rem;
   }
   .mask{
-    position: absolute;
-    width: 20rem;
-    top: 38%;
-    left: 68%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    visibility: hidden;
 
   }
   .mainHeader{

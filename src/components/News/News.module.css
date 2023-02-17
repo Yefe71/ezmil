@@ -67,6 +67,17 @@ transition: all 0.3s ease-in;
 
 }
 
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  min-height: 66vh !important;
+
+}
+
 .swiperbuttonprev2,
 .swiperbuttonnext2 {
   position: absolute;
@@ -82,17 +93,6 @@ transition: all 0.3s ease-in;
   border-radius: 0.5rem;
 
 }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  min-height: 66vh !important;
-
-}
-
 .swiperbuttonprev2 img:hover{
   filter: brightness(70%);
 }

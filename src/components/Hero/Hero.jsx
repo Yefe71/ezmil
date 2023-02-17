@@ -40,6 +40,7 @@ import bodies from "../../container/img/videos/bodies.mp4";
 import ridin from "../../container/img/videos/ridin.mp4";
 import reup from "../../container/img/videos/reup.mp4";
 import dalawa from "../../container/img/videos/dalawa.mp4";
+import updown from "../../container/img/videos/updownmv.mp4";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
@@ -48,10 +49,12 @@ export default function SwiperComp() {
   const bodies2 = "1JHzqHLBk7vwY2Ee3dShyX";
   const reup2 = "3fOXmBSYqdTAyS6ShT7MMp";
   const dalawa2 = "54BJkClH2MXQoG0tb5yWUZ";
+  const updown2 = "5RD5K23WM4YSqAUGsHJjis";
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
   const videoRef3 = useRef(null);
   const videoRef4 = useRef(null);
+  const videoRef5 = useRef(null);
   const swiperRef = useRef(null);
   const [isMouseMoving, setIsMouseMoving] = useState(false);
 
@@ -78,13 +81,15 @@ export default function SwiperComp() {
         videoRef1.current.pause();
         videoRef2.current.pause();
         videoRef3.current.pause();
-        videoRef4.current.play();
+        videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
       case 1:
         videoRef1.current.pause();
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
 
       case 2:
@@ -92,6 +97,7 @@ export default function SwiperComp() {
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
 
       case 3:
@@ -99,24 +105,28 @@ export default function SwiperComp() {
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
       case 4:
         videoRef1.current.play();
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
       case 5:
         videoRef1.current.pause();
         videoRef2.current.play();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
       case 6:
         videoRef1.current.pause();
         videoRef2.current.pause();
         videoRef3.current.play();
         videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
 
       case 7:
@@ -124,12 +134,21 @@ export default function SwiperComp() {
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.play();
+        videoRef5.current.pause();
         break;
       case 8:
         videoRef1.current.pause();
         videoRef2.current.pause();
         videoRef3.current.pause();
         videoRef4.current.pause();
+        videoRef5.current.play();
+        break;
+      case 9:
+        videoRef1.current.pause();
+        videoRef2.current.pause();
+        videoRef3.current.pause();
+        videoRef4.current.pause();
+        videoRef5.current.pause();
         break;
 
       default:
@@ -423,8 +442,55 @@ export default function SwiperComp() {
               loop
               muted
               playsInline
-              src={ridin}
+              src={updown}
               ref={videoRef1}
+            />
+            <div className={HeroCSS.spotifyContainer}>
+              <SpotifySnippet
+                tracklink={updown2}
+                className={HeroCSS.spotifySnippet}
+              />
+            </div>
+
+            <div className={HeroCSS.textContainer}>
+              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
+              <h1 className={HeroCSS.title}>Up Down (Step & Walk)</h1>
+              <div className={HeroCSS.btns}>
+                <div className={HeroCSS.btncontainerlisten}>
+                  <a
+                    href="https://open.spotify.com/track/5RD5K23WM4YSqAUGsHJjis"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={HeroCSS.buy}
+                  >
+                    Listen
+                  </a>
+                </div>
+                <div className={HeroCSS.btncontainerwatch}>
+                  <a
+                    href="https://www.youtube.com/watch?v=f4YWrr2gmAs"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={HeroCSS.buy}
+                  >
+                    Watch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={HeroCSS.swiperSlide}>
+          <div className={HeroCSS.videoContainer}>
+            <video
+              className={HeroCSS.video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              src={ridin}
+              ref={videoRef2}
             />
             <div className={HeroCSS.spotifyContainer}>
               <SpotifySnippet
@@ -465,7 +531,7 @@ export default function SwiperComp() {
         <SwiperSlide className={HeroCSS.swiperSlide}>
           <div className={HeroCSS.videoContainer}>
             <video
-              ref={videoRef2}
+              ref={videoRef3}
               className={HeroCSS.video}
               autoPlay
               loop
@@ -511,7 +577,7 @@ export default function SwiperComp() {
         <SwiperSlide className={HeroCSS.swiperSlide}>
           <div className={HeroCSS.videoContainer}>
             <video
-              ref={videoRef3}
+              ref={videoRef4}
               className={HeroCSS.video}
               autoPlay
               loop
@@ -557,7 +623,7 @@ export default function SwiperComp() {
         <SwiperSlide className={HeroCSS.swiperSlide}>
           <div className={HeroCSS.videoContainer}>
             <video
-              ref={videoRef4}
+              ref={videoRef5}
               className={HeroCSS.video}
               autoPlay
               loop

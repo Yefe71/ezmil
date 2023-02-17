@@ -485,6 +485,15 @@ const tracks = [
     lyrics: "https://www.azlyrics.com/lyrics/ezmil/beatboxfreestyle.html",
     stream: "https://www.youtube.com/watch?v=1kBPeaGkiAY",
   },
+  {
+    name: "Maskara",
+    img: "https://i.scdn.co/image/ab67616d00001e02a6d93e4a6df0470a523928a6",
+    date: "October 25, 2020",
+    type: "Feature",
+    genre: ["Rap"],
+    lyrics: "https://www.azlyrics.com/lyrics/ezmil/beatboxfreestyle.html",
+    stream: "https://open.spotify.com/track/7nhkr1apJrgR9tuq6gKjPa",
+  },
 
 
 

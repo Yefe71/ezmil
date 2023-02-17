@@ -9,6 +9,8 @@ import Album from "../sub-components/Album/Album";
 import SpotifyPlayer from "../sub-components/SpotifyPlayer/SpotifyPlayer";
 import AlbumInfo from "../sub-components/AlbumInfo/AlbumInfo";
 import { Link } from "react-router-dom";
+import arrow from "../../container/img/arrow.png";
+import arrow2 from "../../container/img/arrow2.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -31,7 +33,14 @@ export default function SwiperComp(props) {
   const titleRes = "RESONANCES";
   const titleAct = "ACT 1";
   const { changePage } = props;
-
+  const swiperRef = useRef(null);
+  const handleNext = () => {
+    swiperRef.current.swiper.slideNext()
+   };
+ 
+   const handlePrev = () => {
+     swiperRef.current.swiper.slidePrev()
+   };
   return (
     <div id="swiper-comp">
   
@@ -39,11 +48,13 @@ export default function SwiperComp(props) {
   
         <div className="largeContent">
           <Swiper
+          ref={swiperRef}
             loop={true}
             pagination={{
+              clickable: true,
               dynamicBullets: true,
             }}
-            autoplay={{ delay: 10000 }}
+            autoplay={{ delay: 8000, disableOnInteraction: false }}
             modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
@@ -65,6 +76,15 @@ export default function SwiperComp(props) {
             >
               <AlbumInfo title={titleRes} img={resonances} albumId={idres} />
             </SwiperSlide>
+
+            <div className="swiperbuttonprev4">
+              <img src={arrow} className="swiperbuttonprev4"  onClick={handlePrev} alt="" />
+            </div>
+
+            <div className="swiperbuttonnext4">
+              <img src={arrow2} className="swiperbuttonnext4"   onClick={handleNext} alt="" />
+            </div>
+            
           </Swiper>
         </div>
       <div className="smallContent">

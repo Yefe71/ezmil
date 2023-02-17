@@ -6,6 +6,8 @@ import resonances from "../../../container/img/resonances.jpg";
 import spotify from "../../../container/img/swiper-logos/spotify.png";
 import youtube from "../../../container/img/swiper-logos/youtube.png";
 import apple from "../../../container/img/swiper-logos/apple.png";
+import arrow from "../../../container/img/arrow.png";
+import arrow2 from "../../../container/img/arrow2.png";
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,12 +23,19 @@ import { EffectCube, Pagination, Autoplay } from "swiper";
 import { delay } from "framer-motion";
 
 export default function Cube() {
-  const [isHovered, setIsHovered] = useState(false);
+  const swiperRef = useRef(null);
+  const handleNext = () => {
+    swiperRef.current.swiper.slideNext()
+   };
+ 
+   const handlePrev = () => {
+     swiperRef.current.swiper.slidePrev()
+   };
   return (
     <div className={cubeCSS.swiperWrapper}>
       <Swiper
         effect={"cube"}
-      
+        ref={swiperRef}
         grabCursor={true}
         cubeEffect={{
           shadow: true,
@@ -105,7 +114,13 @@ export default function Cube() {
             
     
         </SwiperSlide>
+        <div className={cubeCSS.swiperbuttonprev3}>
+          <img src={arrow}  onClick={handlePrev} alt="" />
+        </div>
 
+        <div className={cubeCSS.swiperbuttonnext3}>
+          <img src={arrow2} onClick={handleNext} alt="" />
+        </div>
       </Swiper>
     </div>
   );

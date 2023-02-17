@@ -124,7 +124,7 @@ const News = () => {
             <NewsItem />
           </SwiperSlide> */}
 
-<div className={styles.swiperbuttonprev2}>
+          <div className={styles.swiperbuttonprev2}>
             <img src={arrow} className={styles.swiperbuttonprev2}  onClick={handlePrev} alt="" />
           </div>
 

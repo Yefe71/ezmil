@@ -147,5 +147,47 @@ visibility: hidden;
     margin-bottom: 3vh;
   }
 
-      
+   
+  
+   }
+
+
+   .swiperbuttonprev4,
+   .swiperbuttonnext4 {
+     position: absolute;
+     top: 45%;
+     width: 60px;
+     height: 60px;
+   
+     z-index: 10;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 0.5rem;
+   
+   }
+   .swiperbuttonprev4 img:hover{
+     filter: brightness(70%);
+   }
+   .swiperbuttonnext4 img:hover{
+     filter: brightness(70%);
+   }
+   
+   
+   .swiperbuttonprev4 {
+     left: 8px;
+     filter: opacity(70%);
+     transition: all 0.2s ease-in-out ;
+     width: 45px;
+     height: 45px;
+   }
+   
+   
+   .swiperbuttonnext4 {
+     width: 45px;
+     height: 45px;
+     right:8px;
+     filter: opacity(70%);
+     transition: all 0.2s ease-in-out ;
    }

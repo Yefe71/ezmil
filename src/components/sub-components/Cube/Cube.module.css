@@ -48,6 +48,10 @@
 
   }
 
+
+
+
+
   .caption{
     font-size:9px;
     width: 90%;
@@ -95,6 +99,50 @@
     transition: opacity 0.2s ease-in-out;
   }
   
+
+  .swiperbuttonprev3,
+  .swiperbuttonnext3 {
+    position: absolute;
+    top: 45%;
+ 
+
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+
+  }
+  .swiperbuttonprev3 img:hover{
+    filter: brightness(70%);
+  }
+  .swiperbuttonnext3 img:hover{
+    filter: brightness(70%);
+  }
+
+
+  .swiperbuttonprev3 {
+    left: 0.5rem;
+    filter: opacity(40%);
+    transition: all 0.2s ease-in-out ;
+
+  }
+
+
+  .swiperbuttonnext3 {
+
+    right:0.5rem;
+    filter: opacity(40%);
+    transition: all 0.2s ease-in-out ;
+  }
+
+
+  .swiperbuttonnext3 img, .swiperbuttonprev3 img{
+    width: 30px;
+    height: 30px;
+  }
+
   /* .swiperCube:hover .contentWrapper * {
     opacity: 1;
   } */
