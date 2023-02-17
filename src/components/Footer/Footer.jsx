@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faFacebook,
   faInstagram,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../container/img/logo.svg";
 import logocombo from "../../container/img/logocombnobg.svg";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faFacebook,
   faInstagram,
