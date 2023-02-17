@@ -4,7 +4,7 @@ import duality from "../../../container/img/duality.jpg";
 import act1 from "../../../container/img/act1.jpg";
 import resonances from "../../../container/img/resonances.jpg";
 import spotify from "../../../container/img/swiper-logos/spotify.png";
-import youtube from "../../../container/img/swiper-logos/youtube.png";
+import youtube from "../../../container/img/swiper-logos/youtube.svg";
 import apple from "../../../container/img/swiper-logos/apple.png";
 import arrow from "../../../container/img/arrow.png";
 import arrow2 from "../../../container/img/arrow2.png";
@@ -62,9 +62,9 @@ export default function Cube() {
 
           <div className={cubeCSS.streamIcons}>
 
-            <img src={apple} alt="apple" />
-            <img src={youtube} alt="youtube" />
-            <img src={spotify} alt="spotify" />
+            <a href="https://music.apple.com/us/album/du4li7y/1634313076"><img src={apple} className = {cubeCSS.applelogo} alt="apple" /></a>
+            <a href="https://www.youtube.com/watch?v=zBrbpKTycxo&list=OLAK5uy_l0l04yvdjpayOH1lkdg5d2NgptB-83pjs"><img src={youtube} className = {cubeCSS.youtubelogo} alt="youtube" /></a>
+            <a href="https://open.spotify.com/album/4kAZzYkAxND103ygB4tZ3a"><img src={spotify} className = {cubeCSS.spotifylogo}alt="spotify" /></a>
 
           </div>
 
@@ -82,9 +82,9 @@ export default function Cube() {
 
           <div className={cubeCSS.streamIcons}>
 
-            <img src={apple} alt="apple" />
-            <img src={youtube} alt="youtube" />
-            <img src={spotify} alt="spotify" />
+            <a href="https://music.apple.com/us/album/act-1/1582733812"><img src={apple} alt="apple" /></a>
+            <a href="https://www.youtube.com/watch?v=kLwO2ueepZs&list=OLAK5uy_n-eeQ5uVj-FqTzNIApPTnLkTpK7o5PYUs"><img src={youtube} className = {cubeCSS.youtubelogo} alt="youtube" /></a>
+            <a href="https://open.spotify.com/album/7dL6eZG0rMjmXUOwzUfarY"><img src={spotify} alt="spotify" /></a>
 
           </div>
 
@@ -104,9 +104,9 @@ export default function Cube() {
 
             <div className={cubeCSS.streamIcons}>
 
-              <img src={apple} alt="apple" />
-              <img src={youtube} alt="youtube" />
-              <img src={spotify} alt="spotify" />
+              <a href="https://music.apple.com/us/album/resonances/1566972776"><img src={apple} alt="apple" /></a>
+              <a href="https://www.youtube.com/watch?v=oIFlt0Ha_1I&list=OLAK5uy_mES81lC6j9XK6YHaJKHTwq-V0tWM6lcb4"><img src={youtube} className = {cubeCSS.youtubelogo} alt="youtube" /></a>
+              <a href="https://open.spotify.com/album/3JUIV1peZnOQlNF0cqRPvZ"><img src={spotify} alt="spotify" /></a>
 
             </div>
           </div>

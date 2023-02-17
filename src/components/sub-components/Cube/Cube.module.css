@@ -90,8 +90,17 @@
     width: 20px;
     margin-bottom: 7px;
     height: 20px;
+    transition: all 0.4 ease-in-out;
 
+  }
+  .streamIcons img:hover{
+    filter: brightness(80%);
+  }
 
+  .youtubelogo{
+    width: 25px !important;
+    height: 25px !important;
+    margin-left: -2px;
   }
 
   .contentWrapper * {

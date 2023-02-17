@@ -238,7 +238,7 @@ header {
 }
 
 /* media queries */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
   nav .container-inner {
       display: none;
@@ -260,4 +260,4 @@ header {
       font-size: 13px;
   }
 }
-
+ */

@@ -77,14 +77,7 @@ function Navbar(props) {
             <Link to="#"><FontAwesomeIcon icon={["fab", "twitter"]} /></Link>
         
           </ul>
-          <form>
-            <div className="input-wrap">
-              <input type="search" placeholder="Search..." />
-              <button type="submit">
-                <i className="fas fa-search" />
-              </button>
-            </div>
-          </form>
+
         </div>
       </div>
       <div className="container">
@@ -97,18 +90,11 @@ function Navbar(props) {
             <li>
             <Link to="/discography">Discography</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/ezmil">Ez Mil</Link>
-            </li>
+            </li> */}
           </ul>
-          <form>
-            <div className="input-wrap">
-              <input placeholder="Search..." type="search" />
-              <button type="reset">
-                <FontAwesomeIcon icon="search" />
-              </button>
-            </div>
-          </form>
+
         </div>
         <i
           className="fas fa-bars"

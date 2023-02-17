@@ -113,7 +113,7 @@ const News = () => {
       {NewsData.map((newsItem) => {
             return (          
               <SwiperSlide className={`${styles.swiperSlide} `}>
-              <NewsItem title={newsItem.title} date={newsItem.date} caption = {newsItem.caption} img = {newsItem.img}/>
+              <NewsItem title={newsItem.title} date={newsItem.date} caption = {newsItem.caption} img = {newsItem.img} link = {newsItem.link}/>
           
             </SwiperSlide>
             )

@@ -15,6 +15,13 @@
     flex-direction: column;
     color: white;
     width: 15rem;
+    transition: all 0.5 ease-in-out;
+
+}
+
+.newsWrapper:hover{
+    filter: brightness(80%);
+
 }
 
 .newsWrapper p {
