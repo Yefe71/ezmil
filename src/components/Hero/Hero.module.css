@@ -805,7 +805,7 @@ flex: 1 1 43rem;
 display: flex;
 flex-direction: column;
   position: absolute;
-  top: 85%;
+  top: 85vh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -817,7 +817,7 @@ flex-direction: column;
 .spotifyContainer{
   
   position: absolute;
-  top: 89.5%;
+  top: 89.5vh;
   left: 1%;
  
   width: 25rem;
@@ -1118,6 +1118,7 @@ height: 100vh;
   }
 
 }
+
 
 @media only screen and (min-height: 1280px){
   .swiperSlide{
@@ -2185,3 +2186,79 @@ visibility: hidden;
     font-size: 17px;
   }
  }
+
+
+
+ @media only screen and (max-width: 1300px) and (max-height: 680px){
+  .dualtitle{
+    width: 15rem;
+  }
+  .mask{
+    visibility: hidden;
+  
+
+  }
+
+ .dualpic2{
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 50px 15px;
+  margin-bottom: 0.5rem;
+ }
+  .spotlogo{
+    width: 3.7rem;
+    position: relative;
+    top: 4%;
+    margin-left: 2%;
+    margin-right: 5%;
+
+  }
+.buy{
+  font-size: 1rem;
+}
+
+.mint{
+  font-size: 1rem;
+}
+  .bottom{
+    font-size: 1rem;
+  }
+  .ytlogo{
+    width: 4rem;
+
+  }
+  .applelogo{
+
+    width: 3rem;
+    top: -7%;
+    
+  }
+  .mainHeader {
+    margin-top: 4rem;
+  }
+
+.imgWrapper{
+  width: 15rem;
+}
+.spotifyContainer{
+  
+  position: absolute;
+  top: 83vh;
+  left: 1%;
+
+
+  width: 15rem;
+}
+.textContainer{
+  top: 80vh;
+}
+
+.title{
+  font-size: 30px;
+}
+.btncontainerlisten a, .btncontainerwatch a{
+  font-size: 1rem;
+}
+
+.left3{
+  width:15rem;
+}
+}

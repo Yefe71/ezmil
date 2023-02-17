@@ -26,8 +26,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
   row-gap: 2.5rem;
-  column-gap: 4.5rem;
+  column-gap:7rem;
   justify-content: center;
+  margin: 0 7rem;
+ 
      
 }
 

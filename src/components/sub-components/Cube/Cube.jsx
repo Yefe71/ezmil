@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 import duality from "../../../container/img/duality.jpg";
 import act1 from "../../../container/img/act1.jpg";
 import resonances from "../../../container/img/resonances.jpg";
@@ -8,6 +7,9 @@ import spotify from "../../../container/img/swiper-logos/spotify.png";
 import youtube from "../../../container/img/swiper-logos/youtube.png";
 import apple from "../../../container/img/swiper-logos/apple.png";
 // Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css/autoplay";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
@@ -15,14 +17,16 @@ import "swiper/css/pagination";
 
 // import required modules
 import cubeCSS from './Cube.module.css'
-import { EffectCube, Pagination } from "swiper";
+import { EffectCube, Pagination, Autoplay } from "swiper";
+import { delay } from "framer-motion";
 
 export default function Cube() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={cubeCSS.swiperWrapper}>
       <Swiper
         effect={"cube"}
-        loop = {true}
+      
         grabCursor={true}
         cubeEffect={{
           shadow: true,
@@ -30,8 +34,9 @@ export default function Cube() {
           shadowOffset: 20,
           shadowScale: 0.94,
         }}
+        autoplay = {{delay: 8000,disableOnInteraction: false}}
         pagination={true}
-        modules={[EffectCube, Pagination]}
+        modules={[EffectCube, Pagination, Autoplay]}
         className={cubeCSS.swiperCubeMain}
       >
         <SwiperSlide className={cubeCSS.swiperCube}>

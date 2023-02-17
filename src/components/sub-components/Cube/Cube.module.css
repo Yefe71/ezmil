@@ -49,14 +49,13 @@
   }
 
   .caption{
-    font-size:0.75rem;
+    font-size:9px;
     width: 90%;
   }
   .date{
     color: rgba(255, 255, 255, 0.319);
     margin-bottom: 3px;
-    font-size:0.75rem;
-  }
+    font-size: 9px;  }
 
   
   .overlayInfo1 {
@@ -69,7 +68,7 @@
     flex-direction: column;
     justify-content: end;
     align-items: left;
-    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px -80px 140px  black; 
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -92,10 +91,10 @@
   }
 
   .contentWrapper * {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.2s ease-in-out;
   }
   
-  .swiperCube:hover .contentWrapper * {
+  /* .swiperCube:hover .contentWrapper * {
     opacity: 1;
-  }
+  } */
