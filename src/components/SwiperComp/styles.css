@@ -127,21 +127,25 @@ a:link {
 }
 
 .smallContent *{
-  position: absolute;
-  visibility: hidden;
+  display: none;
+}
+
+.smallContent{
+  display: none;
 }
 @media only screen and  (max-width: 1280px){
    
   .largeContent{
-position: absolute;
-visibility: hidden;
+    display: none;
   }
 
   .smallContent *{
-    position: static;
-    visibility: visible;
+    display: block;
   }
 
+  .smallContent{
+    display: block;
+  }
   .smallContent{
     margin-top: 6vh;
     margin-bottom: 3vh;
