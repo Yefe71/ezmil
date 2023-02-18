@@ -225,3 +225,28 @@ body{
   
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .container, .container-inner {
+      margin: 0 auto;
+      width: 96% !important;
+    }
+
+    nav .container ul li {
+      display: inline-block;
+      margin: 0 0.4em !important;
+    }
+    .brand{
+      align-self: center;
+      width: 5rem !important;
+    }
+
+
+    nav a {
+      text-decoration: none;
+      font-size: 0.8em !important;
+      transform: 0.3s;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
