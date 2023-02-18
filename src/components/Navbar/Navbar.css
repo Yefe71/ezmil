@@ -237,7 +237,9 @@ body{
       margin: 0 0.4em !important;
     }
     .brand{
+      position: relative;
       align-self: center;
+      left: -0.6rem;
       width: 5rem !important;
     }
 
