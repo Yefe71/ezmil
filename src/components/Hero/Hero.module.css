@@ -2499,4 +2499,8 @@ visibility: hidden;
   .textContainer{
       top: 80vh;
   }
+
+  .spotifyContainer{
+    top: 87vh;
+  }
 }
