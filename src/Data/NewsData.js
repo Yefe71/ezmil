@@ -52,7 +52,7 @@ const tracks = [
       title: "Ridin' With The Moonlight OMV Out Now!",
       date: "July 27, 2022",
       caption: "A taste of the unique side of R&B. Enveloped in the elysian piano...",
-      img: "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/295299663_576696014028528_7375158556033747078_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGaanyBK77B3Cu8uYHIZoXe1e7gfnOIyiTV7uB-c4jKJEwhFpezkQZ0P3H0nw_y2dG5Nsrj3ZN6juBsX4l2o-VC&_nc_ohc=c2ErkgdbBl4AX-Ctk3Z&_nc_oc=AQnP-w-UqIhRg0b0odcHCu01fj03VU97PMPcbD47NLr9LcAN5yTJeWUuwqb2a2NONuA&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfC-erFhr5xjBAn_dYduYpC0qlnmfk_YObe5LH2gtURF8g&oe=63EB62AC",
+      img: "https://i.ibb.co/QjLvKcj/rwtmpic.jpg",
       link: "https://www.youtube.com/watch?v=f2O00lZQ6q0"
     },
     {
