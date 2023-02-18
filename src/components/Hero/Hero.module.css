@@ -438,10 +438,11 @@ padding-left: 4rem;
 
 
 .btncontainer{
+  bottom: 6%;
   position: absolute;
   z-index: 2;
-  bottom: 6%;
 }
+
 .buy {
   padding: 0.65em 1.6em;
   border: 3px solid #ffffff;
@@ -932,11 +933,6 @@ flex-direction: column;
     visibility: hidden;
   
   }
-.btncontainer{
-  position: absolute;
-  z-index: 2;
-  bottom: 1%;
-}
 
 .swiperSlide{
   background-position: 90% center;
@@ -1433,7 +1429,7 @@ visibility: hidden;
  }
 
 /* TABLET MERCH */
- @media only screen and (min-width: 560px) and (max-width: 822px){
+ @media only screen and (min-width: 560px) and (max-width: 739px){
 
   .shopWrapper {
     display: grid; 
@@ -1510,10 +1506,108 @@ visibility: hidden;
     height: auto;
     transition: all 0.1s ease-in;
   }
-
+  .btncontainer {
+    position: absolute;
+    z-index: 2;
+    bottom: 6%;
+  }
+  .btncontainermint {
+    position: absolute;
+    z-index: 2;
+    bottom: 6% !important;
+  }
 
  }
+ @media only screen and (min-width: 740px) and (max-width: 900px){
 
+  .shopWrapper {
+    display: grid; 
+    grid-template-columns: 0.7fr 1fr 1.5fr 1.5fr 1fr 0.7fr; 
+    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr; 
+    /* gap: 2rem 0px;  */
+    align-items: center;
+
+    grid-template-areas: 
+    ".. .. .. .. .. .."
+    ".  .  mp mp .  . "
+    ".  .  mp mp .  . "
+    ".  i1 i1 i2 i2 . "
+    ".  i1 i1 i2 i2 . "
+    ".. .. .. .. .. .."
+    ;
+
+  }
+  .left2 {
+    margin: 0;
+    grid-area: i1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .mid2 {
+    grid-area: mp;
+  }
+
+  .right2 {
+    margin: 0;
+    grid-area: i2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .seven{
+    position: relative;
+    top: -7px
+  }
+  .eight{
+    position: relative;
+    top: -2px
+  }
+  .three{
+    position: relative;
+    top: -24px
+  }
+  .four{
+    position: relative;
+    top: -8px
+  }
+  
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .merchpic {
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease-in;
+  }
+  .btncontainer {
+    position: absolute;
+    z-index: 2;
+    bottom: 6%;
+  }
+  .btncontainermint {
+    position: absolute;
+    z-index: 2;
+    bottom: 6% !important;
+  }
+
+ }
+ 
 
 
 
@@ -1798,6 +1892,12 @@ visibility: hidden;
     z-index: 2;
     bottom:5%;
   }
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:5% !important;
+  }
+
 
   .four{
     position: relative;
@@ -1890,6 +1990,11 @@ visibility: hidden;
     position: absolute;
     z-index: 2;
     bottom:5%;
+  }
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:5%  !important;
   }
 
   .four{
@@ -1999,6 +2104,11 @@ visibility: hidden;
     z-index: 2;
     bottom:5%;
   }
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:5% !important;
+  }
 
   .four{
     position: relative;
@@ -2107,7 +2217,7 @@ visibility: hidden;
     position: absolute;
     z-index: 2;
     bottom:6%;
-    left: 30%;
+
   }
 
   .mint{
@@ -2122,11 +2232,9 @@ visibility: hidden;
     font-size: 1.3rem;
   }
   .btncontainermint{
+    bottom: 6%;
     position: absolute;
     z-index: 2;
-    bottom:3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
  }
  /* @media only screen and (min-width: 900px) and (max-width: 1600px) {
@@ -2176,7 +2284,7 @@ visibility: hidden;
   }
  }
 
- @media only screen and (min-width: 776px) and (max-width: 1021px){
+ @media only screen and (min-width: 776px) and (max-width: 1171px){
   .spotifyContainer {
     position: absolute;
     top: 15%;
@@ -2197,7 +2305,7 @@ visibility: hidden;
   }
 
 .textContainer{
-  top: 87%;
+  top: 89.5%;
 }
   .btncontainerlisten a{
     font-size: 17px;
@@ -2322,10 +2430,9 @@ visibility: hidden;
 
 
   .btncontainermint{
+    bottom: 6%;
     position: absolute;
     z-index: 2;
-    bottom:3%;
-    left: 50%;
   }
 
 
