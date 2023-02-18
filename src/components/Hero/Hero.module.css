@@ -2057,7 +2057,7 @@ visibility: hidden;
 
 
 
- @media only screen and  (max-width: 900px) {
+ @media only screen and  (max-width: 1200px) {
   .illawrapper{
     flex-direction: column;
     gap: 0;
@@ -2099,16 +2099,16 @@ visibility: hidden;
   .btncontainermint{
     position: absolute;
     z-index: 2;
-    bottom:6%;
+    bottom:3%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
  }
- @media only screen and (min-width: 900px) and (max-width: 1600px) {
+ /* @media only screen and (min-width: 900px) and (max-width: 1600px) {
 .illawrapper{
   gap: 5rem;
 }
- }
+ } */
  @media only screen and (max-width: 1010px) {
 .illawrapper{
   gap: -2rem;
@@ -2257,3 +2257,98 @@ visibility: hidden;
   width:15rem;
 }
 }
+
+@media only screen and  (min-width: 1201px) and (max-width: 1500px) {
+
+  .illaparent {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .illawrapper {
+    display: flex;
+    gap: 0rem;
+  }
+
+  .left3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    flex: 1 1 47rem;
+  }
+
+  .left3 {
+    width: 24rem;
+  }
+
+  .pwrapper {
+    width: 50%;
+  }
+
+  .right3{
+    flex: 1 1 43rem;
+  }
+
+  .right3{
+    width: 50rem;
+  }
+
+
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:3%;
+    left: 50%;
+  }
+
+
+ }
+@media only screen and  (min-width: 1501px) and (max-width: 1800px) {
+
+  .illaparent {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .illawrapper {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .left3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    flex: 1 1 47rem;
+  }
+
+  .left3 {
+    width: 30rem;
+  }
+
+  .pwrapper {
+    width: 50%;
+  }
+
+  .right3{
+    flex: 1 1 43rem;
+  }
+
+  .right3{
+    width: 50rem;
+  }
+
+
+  .btncontainermint{
+    position: absolute;
+    z-index: 2;
+    bottom:3%;
+    left: 50%;
+  }
+
+
+ }
