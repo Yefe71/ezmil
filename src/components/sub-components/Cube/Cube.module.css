@@ -93,6 +93,8 @@
     transition: all 0.4 ease-in-out;
 
   }
+
+
   .streamIcons img:hover{
     filter: brightness(80%);
   }

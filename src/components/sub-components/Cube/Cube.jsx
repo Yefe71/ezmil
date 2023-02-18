@@ -44,7 +44,7 @@ export default function Cube() {
           shadowScale: 0.94,
         }}
         autoplay = {{delay: 8000,disableOnInteraction: false}}
-        pagination={true}
+        pagination={false}
         modules={[EffectCube, Pagination, Autoplay]}
         className={cubeCSS.swiperCubeMain}
       >
