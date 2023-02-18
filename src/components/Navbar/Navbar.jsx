@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../../container/img/logo.svg";
-import logocombo from "../../container/img/logocombnobg.svg";
+import logocombo from "../../container/img/ezlogosvgwhite.svg";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faFacebook,
@@ -19,6 +19,8 @@ library.add(faFacebook, faInstagram, faTwitter, faYoutube, faSearch, faBars);
 function Navbar(props) {
   const [navbarActive, setNavbarActive] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = 50;
@@ -81,7 +83,7 @@ function Navbar(props) {
         </div>
       </div>
       <div className="container">
-        <img className="brand" src={logocombo} alt="" />
+      <Link to="/"><img className="brand" src={logocombo} alt="" /></Link>
         <div className="container-inner">
           <ul>
             <li>

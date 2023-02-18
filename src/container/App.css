@@ -1,3 +1,7 @@
-* {
-    -webkit-tap-highlight-color: transparent !important;
+
+@media screen and (max-width: 900px) {
+    
+    * {
+        -webkit-tap-highlight-color: transparent !important;
+    }
 }

@@ -167,7 +167,9 @@ header {
 
 .brand{
   align-self: center;
-  width: 7rem;
+  width: 5.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .menu ul, .menu form{
