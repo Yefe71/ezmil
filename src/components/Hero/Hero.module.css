@@ -1134,7 +1134,7 @@ height: 100vh;
 @media only screen and (max-width: 400px) {
   .bottom{
     font-size: 1.5rem;
-width: 9rem;
+width: 8rem;
   }
   .mask{
     visibility: hidden;
@@ -1152,12 +1152,41 @@ width: 9rem;
 
   }
   .dualtitle{
-    width: 24rem;
+    width: 21rem;
   }
   .dualpicphonewrapper{
-    margin: 0;
+    margin: 0.1;
   }
 
+
+  .spotlogo{
+    position: relative;
+    width: 4.7rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    top: -2px;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
+  .ytlogo{
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
+  .applelogo{
+    position: relative;
+    width: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: -3px;
+    cursor: pointer;
+    transition:all .2s ease;
+    cursor: pointer;
+  }
 
   /* Styles */
 } 
@@ -2351,4 +2380,15 @@ visibility: hidden;
   }
 
 
+ }
+
+ @media only screen and (min-width: 300px) and (max-width: 480px) and (max-height: 927px){
+.left3{
+  width: 15rem;
+  margin-top: 55vh;
+}
+
+.right3{
+  width: 15rem;
+}
  }
