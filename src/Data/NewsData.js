@@ -1,5 +1,12 @@
 const tracks = [
     {
+      title: "THE FULL CONVO with DJ E-Rock",
+      date: "February 16, 2023",
+      caption: "Internationally critically acclaimed rapper EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
+      img: "https://i.ytimg.com/vi/anLc9IHJou4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrIWieOxVJ85VWmF3Cw0TDLwD3Lg",
+      link: "https://www.youtube.com/watch?v=f4YWrr2gmAs"
+    },
+    {
       title: "Up Down OMV Out Now!",
       date: "February 10,2023",
       caption: "On this come down, Ez just rides this 16bit futuristic beat. With a mix of old school... ",
