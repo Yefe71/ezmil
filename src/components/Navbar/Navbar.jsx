@@ -41,7 +41,9 @@ function Navbar(props) {
 
   const closeMenu = () => {
     setMenuOpen(false);
+    setNavbarActive(false);
   };
+
   
   return (
     <nav id="navbar" className={navbarActive ? "navbar-active" : ""}>
