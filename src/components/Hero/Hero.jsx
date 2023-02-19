@@ -36,11 +36,11 @@ import towel from "../../container/img/Photos/Merch/towel.webp";
 import tshirt from "../../container/img/Photos/Merch/tshirt.webp";
 import nftdud from "../../container/img/Photos/nft/nft.png";
 import illalogo from "../../container/img/Photos/nft/illa.png";
-import bodies from "../../container/img/videos/bodies.mp4";
-import ridin from "../../container/img/videos/ridin.mp4";
-import reup from "../../container/img/videos/reup.mp4";
-import dalawa from "../../container/img/videos/dalawa.mp4";
-import updown from "../../container/img/videos/updownmv.mp4";
+import bodies from "../../container/img/videos/bodies.webm";
+import ridin from "../../container/img/videos/ridin.webm";
+import reup from "../../container/img/videos/reup.webm";
+import dalawa from "../../container/img/videos/dalawa.webm";
+import updown from "../../container/img/videos/updownmv.webm";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
