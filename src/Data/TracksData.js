@@ -491,7 +491,7 @@ const tracks = [
     date: "October 25, 2020",
     type: "Feature",
     genre: ["Rap"],
-    lyrics: "https://www.azlyrics.com/lyrics/ezmil/beatboxfreestyle.html",
+    lyrics: "https://lyricsjah.com/2021/06/diego-on-the-run-x-ez-mil-x-jaeroze-maskara-lyrics/",
     stream: "https://open.spotify.com/track/7nhkr1apJrgR9tuq6gKjPa",
   },
 
