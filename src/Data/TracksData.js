@@ -4,7 +4,7 @@ const tracks = [
     img: "pub-imgs/duality.jpg",
     date: "July 27, 2022",
     type: "DU4LI7Y Album",
-    genre: ["Rock", "Deathcore"],
+    genre: ["Rock", ", Deathcore"],
     lyrics: "https://genius.com/Ez-mil-rapture-lyrics",
     stream: "https://open.spotify.com/track/5DOqATqVXRTfwKBD5slQQK?si=f22ed3dcd8064d7e",
 
@@ -187,7 +187,7 @@ const tracks = [
     img: "pub-imgs/act1.jpg",
     date: "July 27, 2020",
     type: "Act 1 Album",
-    genre: ["RnB"],
+    genre: ["Rock"],
     lyrics: "https://genius.com/Ez-mil-laboy-lyrics",
     stream: "https://open.spotify.com/track/668knteycmOEqEuxlPUX1A?si=2f85c32276384892",
   },
