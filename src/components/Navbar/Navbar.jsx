@@ -38,6 +38,11 @@ function Navbar(props) {
   }, []);
 
   const {changePage} = props;
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+  
   return (
     <nav id="navbar" className={navbarActive ? "navbar-active" : ""}>
       <div className={`menu ${menuOpen ? "menu-open" : ""}`}>
@@ -87,10 +92,10 @@ function Navbar(props) {
         <div className="container-inner">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li>
-            <Link to="/discography">Discography</Link>
+            <Link to="/discography" onClick={closeMenu}>Discography</Link>
             </li>
             {/* <li>
               <Link to="/ezmil">Ez Mil</Link>
