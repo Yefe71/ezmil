@@ -328,7 +328,7 @@ const tracks = [
     img: "pub-imgs/cultura.jpg",
     date: "October 25, 2020",
     type: "Single",
-    genre: ["RnB"],
+    genre: ["Rap"],
     lyrics: "https://genius.com/Ez-mil-and-hbom-cultura-lyrics",
     stream: "https://open.spotify.com/track/0mA4cPQWpbhlthxBiEq3pg?si=316f2cd602d945ec",
   },
