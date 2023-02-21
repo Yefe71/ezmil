@@ -2,12 +2,15 @@
 .newsParent *{
     margin: 0;
     padding: 0;
+    
 }
+
+
 
 .newsParent{
   display: flex;
   flex-direction: column;
-  
+
   
 }
 
@@ -15,7 +18,7 @@
 
 .headerTitle {
     color: white;
-    margin: 3rem 0rem 3rem 0rem ;
+    margin: 5rem 0rem 5rem 0rem ;
     align-self: center;
     letter-spacing: 10px;
 
@@ -54,6 +57,8 @@ cursor: pointer;
 transition: all 0.3s ease-in;
 
 
+
+
 }
 
 .swiperNews:hover{
@@ -65,15 +70,20 @@ transition: all 0.3s ease-in;
  
 
 }
+.swiperSlide{
+  width: 15rem;
+ 
+
+}
 
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:baseline;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-  min-height: 66vh !important;
+  min-height: 190vh !important;
 
 }
 
@@ -118,6 +128,25 @@ transition: all 0.3s ease-in;
 }
 
 
-@media only screen and (min-width: 776px) and (max-width: 1021px){
+@media only screen and (min-width: 320px) and (max-width: 1027px){
+  .headerTitle h1{
+    font-size: 1.5rem;
+  }
 
- } 
+  .swiperbuttonprev2 {
+    left: 5px;
+    filter: opacity(70%);
+    transition: all 0.2s ease-in-out ;
+    width: 35px;
+    height: 35px;
+  }
+
+
+  .swiperbuttonnext2 {
+    width: 35px;
+    height: 35px;
+    right:5px;
+    filter: opacity(70%);
+    transition: all 0.2s ease-in-out ;
+  }
+}

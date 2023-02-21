@@ -19,6 +19,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import NewsData from "../../Data/NewsData"
+import MVideos from "../MVideos/MVideos";
 const News = () => {
 
   // add state to track the visibility of the Swiper component
@@ -87,6 +88,8 @@ const News = () => {
       className={styles.newsParent}
       style={{ backgroundImage: `url(${bg})`,  }}
     >
+
+
       <div    ref={swiperRef}
       style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
 
@@ -135,6 +138,19 @@ const News = () => {
 
       </div>
       </div>
+
+
+<div className = {styles.mvWrapper}>
+
+<MVideos/>
+
+</div>
+
+
+
+
+
+
     </div>
   );
 };
