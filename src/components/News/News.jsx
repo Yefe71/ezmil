@@ -140,11 +140,11 @@ const News = () => {
       </div>
 
 
-<div className = {styles.mvWrapper}>
+{/* <div className = {styles.mvWrapper}>
 
 <MVideos/>
 
-</div>
+</div> */}
 
 
 
