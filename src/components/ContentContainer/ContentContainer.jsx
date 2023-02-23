@@ -8,11 +8,14 @@ const ContentContainer = () => {
   return (
     <div className = {ccon.contentWrapper} style={{ backgroundImage: `url(${bg})`,  }}>
         
-        
-        
-        <News/>
+        <div className={ccon.titleWrapper}>
+        <h1 className = {ccon.mvtitle}>MUSIC VIDEOS</h1>
+          
+        </div>
         
         <MVideos/>
+        <News/>
+        
         
         
         

@@ -15,7 +15,7 @@ const MVideos = () => {
 
   return (
     <>
-      <h1>MUSIC VIDEOS</h1>
+ 
 
       <Swiper
         style={{
@@ -39,26 +39,32 @@ const MVideos = () => {
         })}
       </Swiper>
 
-      <div className={mvcss.mvwrapper2}>
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          spaceBetween={10}
-          slidesPerView={6}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className={mvcss.mySwiper}
-          style={{ height: "12rem" }}
-        >
-          {MVData.map((mvItem, index) => {
-            return (
-              <SwiperSlide key={index} className={mvcss.swiperSlide2}>
-                <MVembed1 link={mvItem.link} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+<div className={mvcss.mvwrapper2x}>
+
+<div className={mvcss.mvwrapper2}>
+    <Swiper
+      onSwiper={setThumbsSwiper}
+      spaceBetween={50}
+      slidesPerView={6}
+      freeMode={true}
+      watchSlidesProgress={true}
+      modules={[FreeMode, Navigation, Thumbs]}
+      className={mvcss.mySwiper}
+      
+    >
+      {MVData.map((mvItem, index) => {
+        return (
+          <SwiperSlide key={index} className={mvcss.swiperSlide2}>
+            <MVembed1 link={mvItem.link} />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  </div>
+
+
+</div>
+
     </>
   );
 };

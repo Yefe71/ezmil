@@ -7,6 +7,12 @@
     color: #fff;
     font-size: 14px;
     font-family: "Poppins";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    z-index: 9;
   }
   
   @media (max-width: 768px) {
@@ -18,4 +24,13 @@
   .social-medias2 a{
     color: white;
     margin-left: 0.8rem;
+  }
+
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    z-index: 9;
   }
