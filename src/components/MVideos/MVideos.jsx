@@ -51,7 +51,7 @@ const MVideos = () => {
       </div>
 
       <Swiper
-        
+        ref={swiperRef}
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
@@ -77,6 +77,7 @@ const MVideos = () => {
 
 <div className={mvcss.mvwrapper2}>
     <Swiper
+      ref={swiperRef}
       onSwiper={setThumbsSwiper}
       spaceBetween={20}
       slidesPerView={6}
