@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
+
 
 .thumbContainer{
     width: 100%;
@@ -33,21 +29,24 @@
     background: rgba(0, 8, 8, 0.449);
     box-shadow: rgba(0, 0, 0, 0.516) 0px 0px 24px;
 }
-h3{
+.title{
     color: white;
     font-family: "Poppins";
     font-weight: 100;
     font-size: small;
+    margin: 0;
+    padding: 0;
 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
 
-    h3{
+    .title{
         color: white;
         font-family: "Poppins";
         font-weight: 100;
         font-size: 0.5rem;
-
+        margin: 0;
+        padding: 0;
     }
   }

@@ -24,8 +24,6 @@ const News = () => {
 
   // add state to track the visibility of the Swiper component
   const [isVisible, setIsVisible] = useState(false);
-  // useRef to reference the Swiper component
-  const swiperRef2 = useRef(null);
 
   // effect to handle the fade in animation
   useEffect(() => {
@@ -36,19 +34,24 @@ const News = () => {
         // if the top of the Swiper component is within the viewport, set the visibility to true
         if (top <= window.innerHeight) {
           setIsVisible(true);
+          
         } else {
           setIsVisible(false);
         }
       }
     };
 
+    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const swiperRef = useRef(null);
+
+
 
   const [slidesPerView, setSlidesPerView] = useState(4);
-  const swiperRef = useRef(null);
   const handleNext = () => {
     swiperRef.current.swiper.slideNext()
    };

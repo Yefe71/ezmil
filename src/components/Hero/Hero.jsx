@@ -74,8 +74,7 @@ export default function SwiperComp() {
   };
 
   const checkRef = (swiper) => {
-    console.log(swiper, "hello");
-    console.log(swiper.activeIndex);
+  
     switch (swiper.activeIndex) {
       case 0:
         videoRef1.current.pause();

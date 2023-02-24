@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -7,17 +8,50 @@ import "swiper/css/thumbs";
 import mvcss from "./MVideos.module.css";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { MVembed2 } from "../sub-components/MVembed2/MVembed2";
-
 import MVData from "../../Data/MusicVideosData";
 import { MVembed1 } from "../sub-components/MVembed1/MVembed1";
 const MVideos = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // add state to track the visibility of the Swiper component
+  const [isVisible, setIsVisible] = useState(false);
 
+  // effect to handle the fade in animation
+  useEffect(() => {
+    
+    const handleScroll = () => {
+    
+      if (swiperRef.current) {
+        // get the position of the Swiper component
+        const { top } = swiperRef.current.getBoundingClientRect();
+        // if the top of the Swiper component is within the viewport, set the visibility to true
+        if (top <= window.innerHeight) {
+          setIsVisible(true);
+      
+          
+        } else {
+          setIsVisible(false);
+      
+        }
+      }
+    };
+
+    
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const swiperRef = useRef(null);
+  
   return (
-    <>
- 
+    <div className = {mvcss.mvparentwrapper} ref={swiperRef} style={{ opacity: isVisible ? 1 : 0 }}>
+      <div className={mvcss.titleWrapper}>
+      <h1 className = {mvcss.mvtitle}>MUSIC VIDEOS</h1>
+          
+      </div>
 
       <Swiper
+        ref={swiperRef}
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
@@ -55,7 +89,7 @@ const MVideos = () => {
       {MVData.map((mvItem, index) => {
         return (
           <SwiperSlide key={index} className={mvcss.swiperSlide1} >
-            <MVembed1 link={mvItem.link} title = {mvItem.title}/>
+            <MVembed1 thumb={mvItem.thumb} title = {mvItem.title}/>
           </SwiperSlide>
         );
       })}
@@ -65,7 +99,7 @@ const MVideos = () => {
 
 </div>
 
-    </>
+    </div>
   );
 };
 

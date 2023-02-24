@@ -10,7 +10,7 @@ const Layout = () => (
     <title>Ez Mil</title>
     <Navbar />
     <AnimatedRoutes/>
-    <Footer/>
+ 
 
   </div>
 );

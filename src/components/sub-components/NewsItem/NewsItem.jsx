@@ -4,7 +4,7 @@ import img from '../../../container/img/act1.jpg'
 
 
 export const NewsItem = (props) => {
-  console.log(props.img)
+ 
   return (
   
     <div className= {styles.swiperNews}>

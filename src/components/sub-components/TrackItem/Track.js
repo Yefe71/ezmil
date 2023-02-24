@@ -9,7 +9,6 @@ function Track({track}){
 
     const handleMouseEnter = () => {
       setBrightness(50);
-      console.log('hello hi')
     };
 
     const handleMouseLeave = () => {

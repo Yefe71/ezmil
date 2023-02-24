@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css'
 
 const SpotifyPlayer = ( albumId ) => {
-  console.log(albumId)
+  
   return (
     <iframe
       className='albumEmbed'
