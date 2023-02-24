@@ -51,7 +51,7 @@ const MVideos = () => {
       </div>
 
       <Swiper
-        ref={swiperRef}
+        
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
