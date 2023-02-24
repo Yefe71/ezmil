@@ -32,7 +32,7 @@ const MVideos = () => {
       >
         {MVData.map((mvItem, index) => {
           return (
-            <SwiperSlide key={index} className={mvcss.swiperSlide2}>
+            <SwiperSlide key={index} className={mvcss.swiperSlide2} >
               <MVembed2 link={mvItem.link} />
             </SwiperSlide>
           );
@@ -44,7 +44,7 @@ const MVideos = () => {
 <div className={mvcss.mvwrapper2}>
     <Swiper
       onSwiper={setThumbsSwiper}
-      spaceBetween={50}
+      spaceBetween={20}
       slidesPerView={6}
       freeMode={true}
       watchSlidesProgress={true}
@@ -54,8 +54,8 @@ const MVideos = () => {
     >
       {MVData.map((mvItem, index) => {
         return (
-          <SwiperSlide key={index} className={mvcss.swiperSlide2}>
-            <MVembed1 link={mvItem.link} />
+          <SwiperSlide key={index} className={mvcss.swiperSlide1} >
+            <MVembed1 link={mvItem.link} title = {mvItem.title}/>
           </SwiperSlide>
         );
       })}

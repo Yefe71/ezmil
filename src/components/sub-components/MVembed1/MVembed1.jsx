@@ -12,6 +12,13 @@ export const MVembed1 = (props) => {
         backgroundImage: `url(${thumbnailUrl})`,
         ...(props.link === "abKwhST8Qv0" && { backgroundPosition: "top" }),
       }}
-    ></div>
+    >
+<div className={styles.titleWrapper}>
+
+
+      <h3>{props.title}</h3>
+</div>
+
+    </div>
   );
 };
