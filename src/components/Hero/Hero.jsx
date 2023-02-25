@@ -162,7 +162,7 @@ export default function SwiperComp() {
             <div className={HeroCSS.mainHeader2}>
               <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
 
-              <div className={HeroCSS.outpic}>
+              {/* <div className={HeroCSS.outpic}>
                 <h2 className={HeroCSS.bottom}>OUT NOW</h2>
                 <div className={HeroCSS.dualpicphonewrapper}>
                   <img
@@ -174,7 +174,7 @@ export default function SwiperComp() {
                     alt=""
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className={HeroCSS.imgWrapper}>
