@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import bg from "../../container/img/bgdark2.jpg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -44,14 +44,14 @@ const MVideos = () => {
   const swiperRef = useRef(null);
   
   return (
-    <div className = {mvcss.mvparentwrapper} ref={swiperRef} style={{ opacity: isVisible ? 1 : 0 }}>
+    <div className = {mvcss.mvparentwrapper}  ref={swiperRef}style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})`, }}>
       <div className={mvcss.titleWrapper}>
       <h1 className = {mvcss.mvtitle}>MUSIC VIDEOS</h1>
           
       </div>
 
       <Swiper
-        ref={swiperRef}
+        ref={swiperRef} 
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
@@ -77,7 +77,7 @@ const MVideos = () => {
 
 <div className={mvcss.mvwrapper2}>
     <Swiper
-      ref={swiperRef}
+      
       onSwiper={setThumbsSwiper}
       spaceBetween={20}
       slidesPerView={6}
