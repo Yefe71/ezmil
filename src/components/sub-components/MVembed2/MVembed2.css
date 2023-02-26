@@ -1,0 +1,90 @@
+/* .ytdark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: all 0.1s ease;
+    filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+    transition: all 250ms ease-in-out;
+  }
+  
+  .ytdark:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transform-origin: center;
+  }
+  
+button {
+  z-index: 999;
+}
+  .mobile{
+    display: none;
+  }
+
+
+  @media only screen and (min-width: 300px) and (max-width: 1080px) {
+    .mobile{
+      display: block;
+    }
+
+    .desktop{
+      display: none;
+    }
+  } 
+   */
+
+
+   .mvparentmain{
+    
+    width: 45vw;
+    height: 25vw;
+   }
+
+   .customPlayButton {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-image: url("../../../container/img/ytlogo.svg");
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: auto; /* Add this line to center horizontally */
+    top: 0; /* Add this line to center vertically */
+    bottom: 0; /* Add this line to center vertically */
+    left: 0; /* Add this line to center horizontally */
+    right: 0; /* Add this line to center horizontally */
+    transition: all 0.1s ease;
+
+  }
+
+
+  .customPlayButton:hover{
+    scale: 1.1;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 1080px) {
+    .mvparentmain{
+    
+      width: 70vw;
+      height: 40vw;
+     }
+    .customPlayButton {
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      background-image: url("../../../container/img/ytlogo.svg");
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin: auto; /* Add this line to center horizontally */
+      top: 0; /* Add this line to center vertically */
+      bottom: 0; /* Add this line to center vertically */
+      left: 0; /* Add this line to center horizontally */
+      right: 0; /* Add this line to center horizontally */
+      transition: all 0.1s ease;
+
+    }
+  }

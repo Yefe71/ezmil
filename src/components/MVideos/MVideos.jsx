@@ -14,7 +14,6 @@ const MVideos = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   // add state to track the visibility of the Swiper component
   const [isVisible, setIsVisible] = useState(false);
-
   // effect to handle the fade in animation
   useEffect(() => {
     

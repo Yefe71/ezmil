@@ -1,176 +1,33 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "./MVembed2.module.css";
+import "./MVembed2.css";
 import ytdark from "../../../container/img/ytlogo.svg";
+import { render } from "react-dom";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 export const MVembed2 = (props) => {
-  const log = () => {
-    console.log("call from parent");
+  const CustomPlayButton = () => (
+    <svg version="1.1" id="YouTube_Icon" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 721" enableBackground="new 0 0 1024 721" xmlSpace="preserve">
+    <path id="Triangle" fill="#FFFFFF" d="M407,493l276-143L407,206V493z"/>
+    <path id="The_Sharpness" opacity="0.12" fillRule="evenodd" clipRule="evenodd" d="M407,206l242,161.6l34-17.6L407,206z"/>
+    <g id="Lozenge">
+      <g>
+        <path fill="#282928" d="M1013,156.3c0,0-10-70.4-40.6-101.4C933.6,14.2,890,14,870.1,11.6C727.1,1.3,512.7,1.3,512.7,1.3h-0.4    c0,0-214.4,0-357.4,10.3C135,14,91.4,14.2,52.6,54.9C22,85.9,12,156.3,12,156.3S1.8,238.9,1.8,321.6v77.5    C1.8,481.8,12,564.4,12,564.4s10,70.4,40.6,101.4c38.9,40.7,89.9,39.4,112.6,43.7c81.7,7.8,347.3,10.3,347.3,10.3    s214.6-0.3,357.6-10.7c20-2.4,63.5-2.6,102.3-43.3c30.6-31,40.6-101.4,40.6-101.4s10.2-82.7,10.2-165.3v-77.5    C1023.2,238.9,1013,156.3,1013,156.3z M407,493l0-287l276,144L407,493z"/>
+      </g>
+    </g>
+  </svg>
 
-    // Pause all iframes
-    if (playerRef.current) {
-      playerRef.current.contentWindow.postMessage(
-        '{"event":"command","func":"stopVideo","args":""}',
-        "*"
-      );
-    } else {
-      console.log("nope");
-    }
-  };
-  useEffect(() => {
-    if (props.trigger) {
-      log();
-    }
-  }, [props.trigger]);
+  );
 
-  const playerRef = useRef(null);
-
-  const handlePauseClick = () => {
-    console.log(playerRef)
-    playerRef.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-  };
-
-  const handlePlayerLoad = () => {
-    playerRef.current = document.getElementById('youtube_player');
-  };
   return (
-    <div
-      style={{
-        position: "relative",
-        paddingBottom: "56.15%",
-        height: "100%",
-        width: "100%",
-        overflow: "hidden",
-      }}
-    >
-      {/* <button onClick={handlePauseClick}>PAUSE VID</button> */}
+    <div className = "mvparentmain">
 
-      <iframe
-        id="youtube_player"
-        className="yt_player_iframe"
-        ref={playerRef}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          border: 0,
-        }}
-        onLoad={handlePlayerLoad}
-        loading="lazy"
-        srcDoc={`<style>
-                      * {
-                        padding: 0;
-                        margin: 0;
-                        overflow: hidden;
-                      }
-          
-                      body, html {
-                        height: 100%;
-                      }
-          
-                     .thumb {
-                        position: absolute;
-                        width: 100%;
-                        top: 0;
-                        bottom: 0;
-                        margin: auto;
-                      }
-          
-                      svg {
-                        filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
-                        transition: all 250ms ease-in-out;
-                      }
-          
-                      .logo {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 4.5rem;
-                        height: 4.5rem;
-                        filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
-                        transition: all 150ms ease-in-out;
-                      }
-                      .logo:hover{
-                        transform: translate(-50%, -50%) scale(1.1);
-                        transform-origin: center;
-                      }
-                    </style>
-                    <a href="http://www.youtube.com/embed/${props.link}?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1">
-                    <img class = "thumb" src='https://img.youtube.com/vi/${props.link}/hqdefault.jpg'  style={{width: '100%', height: '100%'}} />
-                    <img class = "logo" src=${ytdark} />
-          
-                    </a>`}
-        src="http://www.youtube.com/embed/${props.link}?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1"
-        allowfullscreen="true"
-        allowscriptaccess="always"
-        title={props.title}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
+   <LiteYouTubeEmbed 
+          id={props.link}
+          title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+          playerClass="customPlayButton"
+        
       />
-      {/* <div className={styles.mobile}>
-        <iframe
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            border: 0,
-          }}
-          loading="lazy"
-          srcDoc={`<style>
-              * {
-                padding: 0;
-                margin: 0;
-                overflow: hidden;
-              }
-          
-              body, html {
-                height: 100%;
-              }
-          
-             .thumb {
-                position: absolute;
-                width: 100%;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-              }
-          
-              svg {
-                filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
-                transition: all 250ms ease-in-out;
-              }
-          
-              .logo {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 2.5rem;
-                height: 2.5rem;
-                filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
-                transition: all 150ms ease-in-out;
-              }
-              .logo:hover{
-                transform: translate(-50%, -50%) scale(1.1);
-                transform-origin: center;
-              }
-            </style>
-            <a href='https://www.youtube.com/embed/${props.link}?autoplay=1?enablejsapi=1'>
-            <img class = "thumb" src='https://img.youtube.com/vi/${props.link}/hqdefault.jpg' alt='${props.title}' style={{width: '100%', height: '100%'}} />
-            <img class = "logo" src=${ytdark} alt='${props.title}' />
-          
-            </a>`}
-          src={`https://www.youtube.com/embed/${props.link}`}
-          title={props.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div> */}
+
     </div>
   );
 };

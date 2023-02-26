@@ -4,8 +4,10 @@
 
 
 .mySwiper2 {
-  width: 45vw;
   margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mvwrapper2{
@@ -58,6 +60,12 @@ align-items: center;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 
+}
+
+.swiperSlide2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
