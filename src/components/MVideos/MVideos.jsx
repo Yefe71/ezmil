@@ -43,6 +43,12 @@ const MVideos = () => {
 
   const swiperRef = useRef(null);
   
+
+  const [trigger, setTrigger] = useState(0);
+ 
+
+
+
   return (
     <div className = {mvcss.mvparentwrapper}  ref={swiperRef}style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})`, }}>
       <div className={mvcss.titleWrapper}>
@@ -61,13 +67,14 @@ const MVideos = () => {
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
+        onSlideChange={() => setTrigger((trigger) => trigger + 1)}
         modules={[FreeMode, Navigation, Thumbs]}
         className={mvcss.mySwiper2}
       >
         {MVData.map((mvItem, index) => {
           return (
             <SwiperSlide key={index} className={mvcss.swiperSlide2} >
-              <MVembed2 link={mvItem.link} />
+              <MVembed2 link={mvItem.link} trigger={trigger}/>
             </SwiperSlide>
           );
         })}

@@ -15,7 +15,9 @@
     transform-origin: center;
   }
   
-
+button {
+  z-index: 999;
+}
   .mobile{
     display: none;
   }
