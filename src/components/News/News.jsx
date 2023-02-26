@@ -28,9 +28,9 @@ const News = () => {
   // effect to handle the fade in animation
   useEffect(() => {
     const handleScroll = () => {
-      if (swiperRef.current) {
+      if (swiperRefScroll.current) {
         // get the position of the Swiper component
-        const { top } = swiperRef.current.getBoundingClientRect();
+        const { top } = swiperRefScroll.current.getBoundingClientRect();
         // if the top of the Swiper component is within the viewport, set the visibility to true
         if (top <= window.innerHeight) {
           setIsVisible(true);
@@ -48,6 +48,7 @@ const News = () => {
   }, []);
 
   const swiperRef = useRef(null);
+  const swiperRefScroll = useRef(null);
 
 
 
@@ -87,13 +88,13 @@ const News = () => {
   }, []);
   return (
     <div
-
+    ref={swiperRefScroll}
       className={styles.newsParent}
       style={{ backgroundImage: `url(${bg})`,  }}
     >
 
 
-      <div    ref={swiperRef}
+      <div    
       style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
 
       <div className={styles.headerTitle}>
