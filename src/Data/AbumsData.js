@@ -27,7 +27,7 @@ const AlbumsData = [
     date: "July 27, 2020",
     id: "7dL6eZG0rMjmXUOwzUfarY",
     thumb: "thumbs/act1.jpg",
-    desc: `Explore Ez Mil's debut album "Act 1", which consists of 16 tracks. with the first eight songs being clean, melodic pop tracks. However, the album's second half takes a dramatic turn, with a focus on hardcore rap and more serious themes. Throughout the album, the artist explores various experiences and emotions, with some tracks being playful and lighthearted, while others delve into deeper, darker territory. By the end of the album, the artist is ready to take on whatever comes their way, having expressed their feelings and experiences through their music.`,
+    desc: `Explore Ez Mil's debut album "Act 1", which consists of 16 tracks, with the first eight songs being clean, melodic pop tracks. However, the album's second half takes a dramatic turn, with a focus on hardcore rap and more serious themes. Throughout the album, the artist explores various experiences and emotions, with some tracks being playful and lighthearted, while others delve into deeper, darker territory. By the end of the album, the artist is ready to take on whatever comes their way, having expressed their feelings and experiences through their music.`,
     length: "01:00:07",
     spotLink: "https://open.spotify.com/album/7dL6eZG0rMjmXUOwzUfarY",
     appleLink: "https://music.apple.com/us/album/act-1/1582733812",
