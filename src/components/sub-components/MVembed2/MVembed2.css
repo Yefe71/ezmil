@@ -88,3 +88,27 @@ button {
 
     }
   }
+  @media only screen and (min-width: 800px) and (max-width: 1080px) {
+    .mvparentmain{
+    
+      width: 80vw;
+      height: 30vw;
+     }
+    .customPlayButton {
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      background-image: url("../../../container/img/ytlogo.svg");
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin: auto; /* Add this line to center horizontally */
+      top: 0; /* Add this line to center vertically */
+      bottom: 0; /* Add this line to center vertically */
+      left: 0; /* Add this line to center horizontally */
+      right: 0; /* Add this line to center horizontally */
+      transition: all 0.1s ease;
+
+    }
+  }

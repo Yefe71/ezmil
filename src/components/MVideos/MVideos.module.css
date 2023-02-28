@@ -38,7 +38,6 @@ align-items: center;
  
   background: rgba(78, 71, 71, 0.219);
 
-
 }
 
 .mvtitle{
@@ -98,7 +97,7 @@ align-items: center;
    }
 
    .mySwiper2 {
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 5vh;
   }
 }
