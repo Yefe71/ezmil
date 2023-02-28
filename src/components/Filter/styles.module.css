@@ -73,7 +73,7 @@ margin-left: 0.3rem;
       text-align: center;
     }
   }
-  @media only screen and (min-width: 751px) and (max-width: 1400px){
+  @media only screen and (min-width: 696px) and (max-width: 1400px){
     .filter-container {
       margin-top: 1.9rem;
       margin-left: 0.7rem;

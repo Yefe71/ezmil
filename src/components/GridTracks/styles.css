@@ -194,14 +194,10 @@ color: white;
           }
 
 
-         @media only screen and (max-width: 600px){
+         @media only screen and (min-width: 680px){
  
 
-            .search{
-                height: 2.5rem !important;
-                width: 17rem !important;
-            }
-
+       
 
             .search2{
                 margin-right: 0.8rem;
@@ -214,3 +210,14 @@ color: white;
             }
           }
 
+          @media only screen and (min-width: 1401px){
+          .search2 {
+            margin-right: 0.8rem;
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            top: 10px;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+          }
+        }
