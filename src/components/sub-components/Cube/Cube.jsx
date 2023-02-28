@@ -44,7 +44,7 @@ export default function Cube() {
           shadowScale: 0.94,
         }}
         autoplay = {{delay: 8000,disableOnInteraction: false}}
-        pagination={false}
+        pagination={true}
         modules={[EffectCube, Pagination, Autoplay]}
         className={cubeCSS.swiperCubeMain}
       >
@@ -114,13 +114,13 @@ export default function Cube() {
             
     
         </SwiperSlide>
-        <div className={cubeCSS.swiperbuttonprev3}>
+        {/* <div className={cubeCSS.swiperbuttonprev3}>
           <img src={arrow}  onClick={handlePrev} alt="" />
         </div>
 
         <div className={cubeCSS.swiperbuttonnext3}>
           <img src={arrow2} onClick={handleNext} alt="" />
-        </div>
+        </div> */}
       </Swiper>
     </div>
   );

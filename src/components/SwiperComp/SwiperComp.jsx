@@ -11,6 +11,7 @@ import AlbumInfo from "../sub-components/AlbumInfo/AlbumInfo";
 import { Link } from "react-router-dom";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
+import AlbumsData from "../../Data/AbumsData";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -20,75 +21,76 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-
 // import required modules
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import Cube from "../sub-components/Cube/Cube";
 
 export default function SwiperComp(props) {
-  const du4li7y = "4kAZzYkAxND103ygB4tZ3a";
-  const idres = "4R6HwGLuuLuXeSxitNtDnJ";
-  const idact = "7dL6eZG0rMjmXUOwzUfarY";
-  const titleDual = "DU4LI7Y";
-  const titleRes = "RESONANCES";
-  const titleAct = "ACT 1";
-  const { changePage } = props;
   const swiperRef = useRef(null);
+
   const handleNext = () => {
-    swiperRef.current.swiper.slideNext()
-   };
- 
-   const handlePrev = () => {
-     swiperRef.current.swiper.slidePrev()
-   };
+    swiperRef.current.swiper.slideNext();
+  };
+
+  const handlePrev = () => {
+    swiperRef.current.swiper.slidePrev();
+  };
   return (
     <div id="swiper-comp">
-  
-
-  
-        <div className="largeContent">
-          <Swiper
+      <div className="largeContent">
+        <Swiper
           ref={swiperRef}
-            loop={true}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            autoplay={{ delay: 8000, disableOnInteraction: false }}
-            modules={[Pagination, Autoplay]}
-            className="mySwiper"
-          >
-            <SwiperSlide
-              className="slideSwiperComp"
-              style={{ background: `rgba(0, 0, 0, 0)` }}
-            >
-              <AlbumInfo title={titleDual} img={duality} albumId={du4li7y} />
-            </SwiperSlide>
-            <SwiperSlide
-              className="slideSwiperComp"
-              style={{ background: `rgba(0, 0, 0, 0)` }}
-            >
-              <AlbumInfo title={titleAct} img={act1} albumId={idact} />
-            </SwiperSlide>
-            <SwiperSlide
-              className="slideSwiperComp"
-              style={{ background: `rgba(0, 0, 0, 0)` }}
-            >
-              <AlbumInfo title={titleRes} img={resonances} albumId={idres} />
-            </SwiperSlide>
+          loop={true}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          autoplay={{ delay: 12000, disableOnInteraction: false }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {AlbumsData.map((albumItem, index) => {
+            return (
+              <SwiperSlide
+                key={index}
+                className="slideSwiperComp"
+                style={{ background: `rgba(0, 0, 0, 0)` }}
+              >
+                <AlbumInfo
+                  title={albumItem.title}
+                  thumb={albumItem.thumb}
+                  albumId={albumItem.id}
+                  desc={albumItem.desc}
+                  date={albumItem.date}
+                  length={albumItem.length}
+                  spotLink={albumItem.spotLink}
+                  appleLink={albumItem.appleLink}
+                />
+              </SwiperSlide>
+            );
+          })}
 
-            <div className="swiperbuttonprev4">
-              <img src={arrow} className="swiperbuttonprev4"  onClick={handlePrev} alt="" />
-            </div>
+          <div className="swiperbuttonprev4">
+            <img
+              src={arrow}
+              className="swiperbuttonprev4"
+              onClick={handlePrev}
+              alt=""
+            />
+          </div>
 
-            <div className="swiperbuttonnext4">
-              <img src={arrow2} className="swiperbuttonnext4"   onClick={handleNext} alt="" />
-            </div>
-            
-          </Swiper>
-        </div>
+          <div className="swiperbuttonnext4">
+            <img
+              src={arrow2}
+              className="swiperbuttonnext4"
+              onClick={handleNext}
+              alt=""
+            />
+          </div>
+        </Swiper>
+      </div>
       <div className="smallContent">
-      <Cube />
+        <Cube />
       </div>
     </div>
   );
