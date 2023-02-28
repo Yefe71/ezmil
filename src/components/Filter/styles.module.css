@@ -54,7 +54,7 @@ margin-left: 0.3rem;
   }
 
   @media only screen and (min-width: 1280px) and (max-width: 1400px){
-    button{
+    .filter-button{
       height: 2.4rem;
     }
   }
@@ -65,7 +65,7 @@ margin-left: 0.3rem;
       margin-left: 3.5rem;
       
     }
-    button{
+    .filter-button{
       height: 2.4rem;
     font-size: 0.7rem;
       text-align: center;
@@ -76,7 +76,7 @@ margin-left: 0.3rem;
       margin-top: 1.9rem;
       margin-left: 0.7rem;
     }
-    button{
+    .filter-button{
       height: 2.4rem;
     font-size: 0.7rem;
       text-align: center;
