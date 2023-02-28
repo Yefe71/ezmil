@@ -154,6 +154,11 @@
     height: 30px;
   }
 
+  .descWrapper{
+    height: 4rem;
+    overflow:scroll;
+  }
+
   /* .swiperCube:hover .contentWrapper * {
     opacity: 1;
   } */
