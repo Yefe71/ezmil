@@ -192,3 +192,25 @@ color: white;
                 transition: all  0.1s ease-in;
             }
           }
+
+
+         @media only screen and (max-width: 600px){
+ 
+
+            .search{
+                height: 2.5rem !important;
+                width: 17rem !important;
+            }
+
+
+            .search2{
+                margin-right: 0.8rem;
+                width: 1.4rem;
+                height: 1.8rem;
+                position: relative;
+                top: 5.5px;
+                cursor: pointer;
+                transition: all  0.1s ease-in;
+            }
+          }
+
