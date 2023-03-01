@@ -23,7 +23,7 @@ function Navbar(props) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = 150;
+      const offset = 50;
       if (window.scrollY > offset) {
         setNavbarActive(true);
       } else {

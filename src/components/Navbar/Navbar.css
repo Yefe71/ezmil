@@ -227,7 +227,7 @@ body{
   }
    @media screen and (max-width: 374px) {
     nav{
-      padding: 0.5em 0.5em 0.5em 0.5em !important;
+      padding: 1em 0.5em 1em 0.5em !important;
     }
   }
 
