@@ -10,7 +10,11 @@ import ContentContainer from '../../components/ContentContainer/ContentContainer
 export const Home = () => {
   
   return (
-  <motion.div initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity:0}}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
     <Hero/>   
     <ContentContainer/>
     

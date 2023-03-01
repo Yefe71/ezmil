@@ -1,0 +1,7 @@
+.hero{
+    height: 100svh;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    justify-content: center;
+}
