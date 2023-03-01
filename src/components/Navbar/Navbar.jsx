@@ -99,9 +99,9 @@ function Navbar(props) {
             <li>
             <Link to="/discography" onClick={closeMenu}>Discography</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/ezmil">Ez Mil</Link>
-            </li> */}
+            </li>
           </ul>
 
         </div>

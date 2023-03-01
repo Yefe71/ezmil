@@ -5,7 +5,7 @@ import SideAlters from '../../components/SideAlters/SideAlters'
 export const Ezmil = () => {
     return (
       <div className='ezmil-wrapper'>
-        <SideAlters/>
+        
 
       </div>
     )

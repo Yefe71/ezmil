@@ -64,13 +64,13 @@ export default function Cube() {
                 </div>
                 <div className={cubeCSS.streamIcons}>
                   <a href={albumItem.appleLink}>
-                    <img src={apple} className={cubeCSS.applelogo} alt="apple" />
+                    <img src={apple} className={cubeCSS.applelogo} alt="" />
                   </a>
                   <a href={albumItem.youLink}>
-                    <img src={youtube} className={cubeCSS.youtubelogo} alt="youtube" />
+                    <img src={youtube} className={cubeCSS.youtubelogo} alt="" />
                   </a>
                   <a href={albumItem.spotLink}>
-                    <img src={spotify} className={cubeCSS.spotifylogo} alt="spotify" />
+                    <img src={spotify} className={cubeCSS.spotifylogo} alt="" />
                   </a>
                 </div>
               </div>

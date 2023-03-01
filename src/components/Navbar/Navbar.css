@@ -50,7 +50,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     z-index: 9;
     transition: 0.7s;
     color: #fff;
@@ -225,11 +225,16 @@ body{
   
     }
   }
+   @media screen and (max-width: 374px) {
+    nav{
+      padding: 0.5em 0.5em 0.5em 0.5em !important;
+    }
+  }
 
   @media screen and (max-width: 450px) {
     .container, .container-inner {
       margin: 0 auto;
-      width: 96% !important;
+      width: 95% !important;
     }
 
     nav .container ul li {
@@ -239,8 +244,9 @@ body{
     .brand{
       position: relative;
       align-self: center;
-      left: -0.6rem;
-      width: 5rem !important;
+      top: 5px;
+      left: 0.4rem;
+      width: 4.5rem !important;
     }
 
 
