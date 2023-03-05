@@ -12,6 +12,7 @@ import fam2 from '../../container/img/aboutimgs/img.jpg';
 import rebel from '../../container/img/aboutimgs/rebel2.jpg';
 import far from '../../container/img/aboutimgs/far.jpg';
 import buskdance from  '../../container/img/aboutimgs/buskdance.mp4';
+import jabdance from  '../../container/img/aboutimgs/jabvid.mp4';
 import farawayvid from  '../../container/img/aboutimgs/farawayvid.mp4';
 
 export const Ezmil = () => {
@@ -37,12 +38,12 @@ export const Ezmil = () => {
                 <h3 className = {ezmilcss.headerCaption}>
                 “An artist entity that refuses to be put in a genre box, always willing to push the boundaries.”
                 </h3>
-
+            <div className={ezmilcss["scroll-cue"]}>
+              <div className={ezmilcss["scroll-arrow"]}></div>
+            </div>
           </div>
 
-          <div className={ezmilcss["scroll-cue"]}>
-            <div className={ezmilcss["scroll-arrow"]}></div>
-          </div>
+      
 
 
         </div>
@@ -107,6 +108,34 @@ export const Ezmil = () => {
              
              />
             </div>
+          </div>
+          <div className={ezmilcss.section6}>
+            <div className={ezmilcss.left6}>
+            <video
+               
+                autoPlay
+                loop
+                muted
+                playsInline
+                src={jabdance}
+              
+              />
+            </div>
+            <div className={ezmilcss.right6}>
+              <h1>And led to the love for dancing; which led him to another obsession for the Jabbawockeez (which he met soon after).</h1>
+            </div>
+          </div>
+          <div className={ezmilcss.section7}>
+        
+              <div className={ezmilcss.img7wrapper}>
+                      <div className={ezmilcss.midImg7}>
+                        <img src={child} alt="" />
+                      </div>
+                      <div className={ezmilcss.midTxt7}>
+                        <h1>But as any child who grows out of certain obsession phases, Ez was far unlike those children.</h1>
+                      </div>
+                
+              </div>
           </div>
         </div>
       </div>
