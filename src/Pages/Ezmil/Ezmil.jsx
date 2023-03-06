@@ -28,15 +28,16 @@ export const Ezmil = () => {
     
   >
       <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${biopic})` }}>
+        <div className={ezmilcss.hero}>
 
           <div className={ezmilcss.textContainer}>
 
-                <h1 className = {ezmilcss.headerTitle}>
-                  This is Ez Mil
+                <h1 className = {ezmilcss.headerSectionTitle}>
+                  BIOGRAPHY
                 </h1>
+  
                 <h3 className = {ezmilcss.headerCaption}>
-                “An artist entity that refuses to be put in a genre box, always willing to push the boundaries.”
+                “An artist entity that refuses to be put in a genre box, always willing to push the boundaries. That's Ez Mil.”
                 </h3>
             <div className={ezmilcss["scroll-cue"]}>
               <div className={ezmilcss["scroll-arrow"]}></div>
@@ -126,19 +127,36 @@ export const Ezmil = () => {
             </div>
           </div>
           <div className={ezmilcss.section7}>
+
+              <div className={ezmilcss.midTxt7}>
+              <h1>But as any child who grows out of certain obsession phases, Ez was far unlike those children.</h1>
+            </div>
         
-              <div className={ezmilcss.img7wrapper}>
+              {/* <div className={ezmilcss.img7wrapper}>
+
                       <div className={ezmilcss.midImg7}>
                         <img src={child} alt="" />
                       </div>
-                      <div className={ezmilcss.midTxt7}>
-                        <h1>But as any child who grows out of certain obsession phases, Ez was far unlike those children.</h1>
+
+              </div> */}
+
+
+
+          </div>
+          <div className={ezmilcss.section8}>
+        
+              <div className={ezmilcss.img8wrapper}>
+
+                      <div className={ezmilcss.midTxt8}>
+                        <h1>For anything he falls in love with and obsesses over, he never uhh.. flies?.. out of love??.. .. 'cause y'know "fall" inlo.. ANYWAY. </h1>
                       </div>
-                
+
               </div>
+
           </div>
         </div>
       </div>
+
       {/* <div className={ezmilcss.ezmilWrapper}> 
         <div className={ezmilcss.hero} style={{ backgroundImage: `url(${twotwo})` }}></div>
       </div>
