@@ -3,13 +3,31 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
   @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
-.ezmilWrapper *{
+  body {
+    background-image: url("../../container/img/dualbgnew2.jpg");
+    transition: all 2s ease-in-out;
+  }
+
+  body.dark {
+    background-color: rgb(153, 151, 151);
+    background-blend-mode: multiply;
+  }
+
+  body.light {
+    background-color: rgba(153, 151, 151, 0);
+   
+  }
+
+
+
+  .ezmilWrapper *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Montserrat !important;
 
 }
+
 .sectionsWrapper {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -303,104 +321,58 @@ flex-wrap: wrap;
 
 
 
+
+
 /* SECTION 7 */
 
-.section7{
-  height: 90vh;
-  display: grid;
-  place-items:center;
-  position: relative;
-}
-
-.midImg7{
-  width: 50vw;
-  margin-top: 5vh;
-}
-
-.midImg7 img{
-
-
-   width: 100%;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   object-fit: cover;
-
-}
-
-
-
-.midTxt7 h1{
+.section7 *{
   color: white;
-  font-size: 1.8rem;
-  font-weight:  200;
-  
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
-
-.img7wrapper{
+.section7{
+  height: 80vh;
+}
+.section7{
+  
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 
-.midTxt7{
-  font-family: Poppins;
- 
-
-  bottom: 10%;
-  text-align: center;
-  width: 35vw;
-  
+.right7 img{
+  width: 30vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
+.left7 h1{
+  width: 25vw;
+  font-weight: 100;
+}
 /* SECTION 8*/
 
 .section8{
-  height: 90vh;
- 
-  position: relative;
+  height: 80vh;
+  display: grid;
+  place-items: center;
 }
 
 .midImg8{
   width: 80vw;
 }
 
-.midImg8 img{
-  height: 80vh;
-
-   width: 100%;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   object-fit: cover;
-
-}
-
 
 
 .midTxt8 h1{
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight:  200;
-  
+  margin-top: -10vh;
+  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px) 
 }
 
-.img8wrapper{
-  margin-top: 20vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
 
-.midTxt8{
-  font-family: Poppins;
- 
-  position: absolute;
-  bottom: 10%;
-  text-align: center;
-  width: 35vw;
-  
-}
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
 
   

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import ezmilcss from './ezmil.module.css';
 import SideAlters from '../../components/SideAlters/SideAlters';
 import { motion } from 'framer-motion';
@@ -7,7 +7,7 @@ import biopic from '../../container/img/thumbs/biopic.jpg';
 import twotwo from '../../container/img/aboutimgs/2200.png';
 import busk from '../../container/img/aboutimgs/busk.jpg';
 import jab from '../../container/img/aboutimgs/jab.png';
-import child from '../../container/img/aboutimgs/child.jpg';
+import child from '../../container/img/aboutimgs/ezchild.png';
 import fam2 from '../../container/img/aboutimgs/img.jpg';
 import rebel from '../../container/img/aboutimgs/rebel2.jpg';
 import far from '../../container/img/aboutimgs/far.jpg';
@@ -16,7 +16,34 @@ import jabdance from  '../../container/img/aboutimgs/jabvid.mp4';
 import farawayvid from  '../../container/img/aboutimgs/farawayvid.mp4';
 
 export const Ezmil = () => {
+  const darkRef = useRef(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            document.body.classList.add(ezmilcss.dark);
+            document.body.classList.remove(ezmilcss.light);
+          } else {
+            document.body.classList.add(ezmilcss.light);
+            
+          }
+        });
+      },
+      { threshold: 0 }
+    );
+
+    if (darkRef.current) {
+      observer.observe(darkRef.current);
+    }
+
+    return () => {
+      if (darkRef.current) {
+        observer.unobserve(darkRef.current);
+      }
+    };
+  }, []);
 
 
   return (
@@ -24,9 +51,11 @@ export const Ezmil = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-  
+    
     
   >
+
+    <div className = {ezmilcss["background-image"]}></div>
       <div className={ezmilcss.ezmilWrapper}> 
         <div className={ezmilcss.hero}>
 
@@ -127,63 +156,22 @@ export const Ezmil = () => {
             </div>
           </div>
           <div className={ezmilcss.section7}>
-
-              <div className={ezmilcss.midTxt7}>
+            <div className={ezmilcss.left7}>
               <h1>But as any child who grows out of certain obsession phases, Ez was far unlike those children.</h1>
             </div>
-        
-              {/* <div className={ezmilcss.img7wrapper}>
-
-                      <div className={ezmilcss.midImg7}>
-                        <img src={child} alt="" />
-                      </div>
-
-              </div> */}
-
-
-
+            <div className={ezmilcss.right7}>
+              <img src={child} alt="" />
+            </div>
           </div>
-          <div className={ezmilcss.section8}>
-        
-              <div className={ezmilcss.img8wrapper}>
-
-                      <div className={ezmilcss.midTxt8}>
-                        <h1>For anything he falls in love with and obsesses over, he never uhh.. flies?.. out of love??.. .. 'cause y'know "fall" inlo.. ANYWAY. </h1>
-                      </div>
-
-              </div>
-
+          <div   ref={darkRef} className={ezmilcss.section8}>
+            <div className={ezmilcss.midTxt8}>
+              <h1>he never won't be obsessed with it for the rest of his life.</h1>
+            </div>
           </div>
+
         </div>
       </div>
 
-      {/* <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${twotwo})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${fam2})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${rebel})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${busk})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${far})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${jab})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${child})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${biopic})` }}></div>
-      </div>
-      <div className={ezmilcss.ezmilWrapper}> 
-        <div className={ezmilcss.hero} style={{ backgroundImage: `url(${biopic})` }}></div>
-      </div> */}
 
   </motion.div>
   );
