@@ -1,83 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+body {
+  background-image: url("../../container/img/dualbgnew2.jpg");
+  transition: all 2s ease-in-out;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-  @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
-  body {
-    background-image: url("../../container/img/dualbgnew2.jpg");
-    transition: all 2s ease-in-out;
-  }
+body.dark {
+  background-color: rgb(153, 151, 151);
+  background-blend-mode: multiply;
+}
 
-  body.dark {
-    background-color: rgb(153, 151, 151);
-    background-blend-mode: multiply;
-  }
+body.light {
+  background-color: rgba(153, 151, 151, 0);
+}
 
-  body.light {
-    background-color: rgba(153, 151, 151, 0);
-   
-  }
-
-
-
-  .ezmilWrapper *{
+.ezmilWrapper * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Montserrat !important;
-
 }
 
 .sectionsWrapper {
   margin-left: 5vw;
   margin-right: 5vw;
 }
-.hero{
-    height: 100svh;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    justify-content: center;
+.hero {
+  height: 100svh;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  justify-content: center;
 }
 
-.textContainer *{
+.textContainer * {
   color: WHITE;
-  
 }
 
-.textContainer{
+.textContainer {
   height: 100svh;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-
 }
 
-.headerCaption{
+.headerCaption {
   text-align: center;
-  width:48vw;
-  font-family: 'Bentham', serif !important;
+  width: 48vw;
+  font-family: "Bentham", serif !important;
   font-weight: 400;
   margin-top: 25vh;
   font-size: 2.5rem;
 }
 
-
-.headerTitle{
+.headerTitle {
   font-family: Poppins !important;
   font-size: 3.5rem;
   font-weight: 300;
 }
 
-.headerSectionTitle{
+.headerSectionTitle {
   font-size: 2.7rem;
   font-family: Helvetica, "Roboto", sans-serif !important;
   letter-spacing: 3px;
   margin: 18vh 0% 0% 0%;
 }
-
-
 
 .scroll-cue {
   position: absolute;
@@ -93,7 +83,7 @@
   border-top: 15px solid #fff;
   position: relative;
   display: block;
- filter: drop-shadow(16px 16px 10px black);
+  filter: drop-shadow(16px 16px 10px black);
 }
 
 @keyframes pulse {
@@ -110,18 +100,17 @@
   }
 }
 
-
 /* SECTION 1 */
 
-.section1 *{
+.section1 * {
   color: white;
   margin-left: 5vh;
   margin-right: 5vh;
 }
-.section1{
+.section1 {
   height: 80vh;
 }
-.section1{
+.section1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,82 +119,70 @@
   flex-direction: row;
 }
 
-.right1 img{
+.right1 img {
   width: 40vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.left1 h1{
+.left1 h1 {
   width: 30vw;
   font-weight: 100;
 }
 
-
-
-
-
 /* SECTION 2 */
 
-.section2{
+.section2 {
   height: 60vh;
 }
-.section2 *{
+.section2 * {
   color: white;
   margin-left: 5vh;
   margin-right: 5vh;
 }
 
-.section2{
+.section2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.left2 img{
+.left2 img {
   width: 40vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.right2 h1{
+.right2 h1 {
   width: 30vw;
   font-weight: 100;
   text-align: right;
-
 }
-
-
-
 
 /* SECTION 3 */
 
-.section3{
+.section3 {
   height: 90vh;
   display: grid;
   place-items: center;
   position: relative;
 }
 
-.midImg3{
+.midImg3 {
   width: 80vw;
 }
 
-.midImg3 img{
-   width: 100%;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+.midImg3 img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
-
-.midTxt3 h1{
+.midTxt3 h1 {
   color: white;
   font-size: 1.8rem;
-  font-weight:  100;
-  
+  font-weight: 100;
 }
 
-.img3wrapper{
+.img3wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -213,172 +190,275 @@
   position: relative;
 }
 
-.midTxt3{
+.midTxt3 {
   font-family: Poppins;
- 
+
   position: absolute;
   text-align: center;
   width: 35vw;
-  
 }
-
-
-
 
 /* SECTION 4 */
 
-.section4 *{
+.section4 * {
   color: white;
   margin-left: 5vh;
   margin-right: 5vh;
 }
-.section4{
+.section4 {
   height: 70vh;
 }
-.section4{
-  display: flex;
-flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.left4 video{
-  width: 40vw;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.right4 h1{
-  width: 30vw;
-  text-align: right;
-  font-weight: 100;
-
-}
-
-/* SECTION 5 */
-
-.section5 *{
-  color: white;
-  margin-left: 5vh;
-  margin-right: 5vh;
-}
-.section5{
-  height: 80vh;
-}
-.section5{
-  
+.section4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.right5 video{
+.left4 video {
+  width: 40vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right4 h1 {
+  width: 30vw;
+  text-align: right;
+  font-weight: 100;
+}
+
+/* SECTION 5 */
+
+.section5 * {
+  color: white;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+.section5 {
+  height: 80vh;
+}
+.section5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.right5 video {
   width: 45vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.left5 h1{
+.left5 h1 {
   width: 25vw;
   font-weight: 100;
 }
 
 /* SECTION 6 */
 
-.section6 *{
+.section6 * {
   color: white;
   margin-left: 5vh;
   margin-right: 5vh;
 }
-.section6{
+.section6 {
   height: 70vh;
 }
-.section6{
+.section6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 
-.left6 video{
+.left6 video {
   width: 46vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.right6 h1{
+.right6 h1 {
   text-align: right;
   width: 25vw;
   font-weight: 100;
-
 }
 
-.right6{
+.right6 {
   margin-left: 0;
 }
-.left6{
+.left6 {
   margin-right: 0;
 }
 
-
-
-
-
 /* SECTION 7 */
 
-.section7 *{
+.section7 * {
   color: white;
   margin-left: 5vh;
   margin-right: 5vh;
 }
-.section7{
+.section7 {
   height: 80vh;
 }
-.section7{
-  
+.section7 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.right7 img{
+.right7 img {
   width: 30vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.left7 h1{
+.left7 h1 {
   width: 25vw;
   font-weight: 100;
 }
+
 /* SECTION 8*/
 
-.section8{
-  height: 80vh;
+.section8 {
+  height: 100vh;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
-.midImg8{
+.midImg8 {
   width: 80vw;
 }
 
-
-
-.midTxt8 h1{
+.midTxt8 h1 {
   color: white;
   font-size: 2rem;
-  font-weight:  200;
-  margin-top: -10vh;
-  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px) 
+  font-weight: 200;
+  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
 }
 
+.talentWrapper {
+  position: absolute;
+  height: 100svh;
+  width: 100svw;
+}
+.talentWrapper h3 {
+  position: absolute;
+  color: white;
+  font-weight: 200;
+  filter: brightness(0.5);
+}
+
+/* Positioning each talent */
+.rapper {
+  top: 20%;
+  left: 5%;
+  bottom: 0%;
+  right: 0%;
+}
+.dancer {
+  top: 43%;
+  left: 7%;
+  bottom: 0%;
+  right: 0%;
+}
+.drummer {
+  top: 78%;
+  left: 5%;
+  bottom: 0%;
+  right: 0%;
+}
+.skater {
+  top: 25%;
+  left: 20%;
+  bottom: 0%;
+  right: 0%;
+}
+.tekkenPro {
+  top: 60%;
+  left: 15%;
+  bottom: 0%;
+  right: 0%;
+}
+.metalhead {
+  top: 92%;
+  left: 17.5%;
+  bottom: 0%;
+  right: 0%;
+}
+.composer {
+  top: 33%;
+  left: 30%;
+  bottom: 0%;
+  right: 0%;
+}
+.mixingEngineer {
+  top: 16%;
+  left: 35%;
+  bottom: 0%;
+  right: 0%;
+}
+.musicProducer {
+  top: 70%;
+  left: 32%;
+  bottom: 0%;
+  right: 0%;
+}
+.singer {
+  top: 29%;
+  left: 48%;
+  bottom: 0%;
+  right: 0%;
+}
+.mvProducerAndDirector {
+  top: 84%;
+  left: 40%;
+  bottom: 0%;
+  right: 0%;
+}
+.poet {
+  top: 40%;
+  left: 60%;
+  bottom: 0%;
+  right: 0%;
+}
+.guitarist {
+  top: 26%;
+  left: 70%;
+  bottom: 0%;
+  right: 0%;
+}
+.vfxArtist {
+  top: 72%;
+  left: 67%;
+  bottom: 0%;
+  right: 0%;
+}
+.illustrator {
+  top: 90%;
+  left: 80%;
+  bottom: 0%;
+  right: 0%;
+}
+.beatboxer {
+  top:45%;
+  left: 78%;
+  bottom: 0%;
+  right: 0%;
+}
+.pianist {
+  top: 13%;
+  left: 90%;
+  bottom: 0%;
+  right: 0%;
+}
+.voiceImpressionist {
+  top: 70%;
+  left: 88%;
+  bottom: 0%;
+  right: 0%;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
-
-  
-    .hero {
-      background-position: 85% center;
-
-    }
-  
+  .hero {
+    background-position: 85% center;
+  }
 }

@@ -301,7 +301,7 @@ const tracks = [
     img: "pub-imgs/1standlastlive.jpg",
     date: "October 25, 2020",
     type: "Single",
-    genre: ["Rap"],
+    genre: ["RnB"],
     lyrics: "https://genius.com/Ez-mil-1st-and-last-lyrics",
     stream: "https://open.spotify.com/track/5G7PNjrCzR6vsmub5IkI7g?si=ddcb69556ae943ca",
   },
