@@ -200,7 +200,7 @@ export const Ezmil = () => {
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.drummer}`}>Drummer</h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.skater}`}>Skater</h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.tekkenPro}`}>Tekken Pro</h3>
-              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.metalhead}`}>Metalhead</h3>
+              <h3 className={`${ezmilcss.talent} ${ezmilcss.metalhead}`}>Metalhead</h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.composer}`}>Composer</h3>
               <h3 ref={darkRef} data-aos = "fade" data-aos-delay="5000"className={`${ezmilcss.talent} ${ezmilcss.mixingEngineer}`}>
                 Mixing Engineer
