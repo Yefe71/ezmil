@@ -9,13 +9,15 @@ import busk from "../../container/img/aboutimgs/busk.jpg";
 import jab from "../../container/img/aboutimgs/jab.png";
 import child from "../../container/img/aboutimgs/ezchild.png";
 import fam2 from "../../container/img/aboutimgs/img.jpg";
-import rebel from "../../container/img/aboutimgs/rebel2.jpg";
+import rebel from "../../container/img/aboutimgs/rebel.mp4";
 import far from "../../container/img/aboutimgs/far.jpg";
+import endimg from "../../container/img/aboutimgs/endsection.jpg";
 import buskdance from "../../container/img/aboutimgs/buskdance.mp4";
 import jabdance from "../../container/img/aboutimgs/jabvid.mp4";
 import farawayvid from "../../container/img/aboutimgs/farawayvid.mp4";
 import Aos from "aos"
 import "aos/dist/aos.css"
+import Footer from "../../components/Footer/Footer";
 
 
 export const Ezmil = () => {
@@ -88,7 +90,7 @@ export const Ezmil = () => {
           <div className={ezmilcss.section1}>
             <div data-aos = "fade-up" data-aos-delay="100" className={ezmilcss.left1}>
               <h1>
-                Hailing from the 2200; at the 27th of July, 1998, was born a
+                "Hailing from the 2200; at the 27th of July, 1998, was born a
                 Filipino, half Caucasian blondie boi in Olongapo City,
                 Philippines.{" "}
               </h1>
@@ -110,6 +112,18 @@ export const Ezmil = () => {
             </div>
           </div>
           <div className={ezmilcss.section3}>
+            <div data-aos = "fade-up" data-aos-delay="100" className={ezmilcss.left3}>
+              <h1>
+              As the norm of rebellion from over-exposure, instead of Rock,
+                Hip-Hop or Rap was the first musical genre he fell in love
+                with.
+              </h1>
+            </div>
+            <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.right3}>
+              <video autoPlay loop muted playsInline src={rebel} />
+            </div>
+          </div>
+          {/* <div className={ezmilcss.section3}>
             <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.img3wrapper}>
               <div className={ezmilcss.midImg3}>
                 <img src={rebel} alt="" />
@@ -122,7 +136,7 @@ export const Ezmil = () => {
                 </h1>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className={ezmilcss.section4}>
             <div data-aos = "fade-up"  className={ezmilcss.left4}>
               <video autoPlay loop muted playsInline src={buskdance} />
@@ -161,50 +175,59 @@ export const Ezmil = () => {
             <div className={ezmilcss.left7}>
               <h1>
                 But as any child who grows out of certain obsession phases, Ez
-                was far unlike those children.
+                was far unlike those children. He never won't be obsessed with it for the rest of his life.
               </h1>
             </div>
             <div className={ezmilcss.right7}>
               <img src={child} alt="" />
             </div>
           </div>
-          <div ref={darkRef} className={ezmilcss.section8}>
-            <div data-aos = "fade-up" className={ezmilcss.midTxt8}>
-              <h1>
-                he never won't be obsessed with it for the rest of his life.
-              </h1>
+
+          <div className={ezmilcss.section9}>
+            <div className={ezmilcss.img9wrapper}>
+              {/* <div data-aos = "fade" className={ezmilcss.midImg9}>
+                <img src={endimg} alt="" />
+              </div> */}
+              <div data-aos = "fade" className={ezmilcss.midTxt9}>
+                <h1>
+                Up to now, he just kept and will keep stacking up on things that he loves to do, and no one could and will be able to get him to just stick to one thing.”
+                </h1>
+              </div>
             </div>
             <div className={ezmilcss.talentWrapper}>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.rapper}`}>Rapper</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.dancer}`}>Dancer</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.drummer}`}>Drummer</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.skater}`}>Skater</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.tekkenPro}`}>Tekken Pro</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.metalhead}`}>Metalhead</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.composer}`}>Composer</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.mixingEngineer}`}>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.rapper}`}>Rapper</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.dancer}`}>Dancer</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.drummer}`}>Drummer</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.skater}`}>Skater</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.tekkenPro}`}>Tekken Pro</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.metalhead}`}>Metalhead</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.composer}`}>Composer</h3>
+              <h3 ref={darkRef} data-aos = "fade" data-aos-delay="5000"className={`${ezmilcss.talent} ${ezmilcss.mixingEngineer}`}>
                 Mixing Engineer
               </h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.singer}`}>Singer</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.musicProducer}`}>
+              <h3   data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.singer}`}>Singer</h3>
+              <h3 className={`${ezmilcss.talent} ${ezmilcss.illustrator}`}>Illustrator</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.musicProducer}`}>
                 Music Producer
               </h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.mvProducerAndDirector}`}>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.mvProducerAndDirector}`}>
                 MV Producer and Director
               </h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.vfxArtist}`}>VFX Artist</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.illustrator}`}>Illustrator</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.beatboxer}`}>Beatboxer</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.poet}`}>Poet</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.guitarist}`}>Guitarist</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.pianist}`}>Pianist</h3>
-              <h3 className={`${ezmilcss.talent} ${ezmilcss.voiceImpressionist}`}>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.vfxArtist}`}>VFX Artist</h3>
+    
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.beatboxer}`}>Beatboxer</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.poet}`}>Poet</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.guitarist}`}>Guitarist</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000"className={`${ezmilcss.talent} ${ezmilcss.pianist}`}>Pianist</h3>
+              <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.voiceImpressionist}`}>
                 Voice Impressionist
               </h3>
             </div>
           </div>
         </div>
       </div>
+      
+ 
     </motion.div>
   );
 };

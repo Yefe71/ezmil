@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&&display=swap");
 body {
   background-image: url("../../container/img/dualbgnew2.jpg");
   transition: all 2s ease-in-out;
@@ -160,42 +160,32 @@ body.light {
 
 /* SECTION 3 */
 
-.section3 {
-  height: 90vh;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-
-.midImg3 {
-  width: 80vw;
-}
-
-.midImg3 img {
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.midTxt3 h1 {
+.section3 * {
   color: white;
-  font-size: 1.8rem;
-  font-weight: 100;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
-
-.img3wrapper {
+.section3 {
+  height: 80vh;
+}
+.section3 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-wrap: wrap;
+
+  flex-direction: row;
 }
 
-.midTxt3 {
-  font-family: Poppins;
+.right3 video {
+  width: 40vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
 
-  position: absolute;
-  text-align: center;
-  width: 35vw;
+.left3 h1 {
+  width: 30vw;
+  font-weight: 100;
 }
 
 /* SECTION 4 */
@@ -318,7 +308,7 @@ body.light {
 /* SECTION 8*/
 
 .section8 {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   place-items: center;
   position: relative;
@@ -455,6 +445,50 @@ body.light {
   left: 88%;
   bottom: 0%;
   right: 0%;
+}
+
+/* SECTION 8 */
+
+.section9 {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.midImg9 {
+  width: 80vw;
+}
+
+.midImg9 img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.midTxt9 h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight:100;
+line-height: 40px;
+font-family: "Bentham", serif !important;
+  text-align: center;
+}
+
+.img9wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.midTxt9 {
+  font-family: Poppins;
+margin-top: 10vh;
+  position: absolute;
+  text-align: center;
+  width: 45vw;
+  letter-spacing: 3px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1027px) {

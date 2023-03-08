@@ -100,7 +100,7 @@ function Navbar(props) {
             <Link to="/discography" onClick={closeMenu}>Discography</Link>
             </li>
             <li>
-              <Link to="/ezmil">Ez Mil</Link>
+              <Link to="/ezmil">Bio</Link>
             </li>
           </ul>
 
