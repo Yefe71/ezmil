@@ -74,7 +74,6 @@ export default function SwiperComp() {
   };
 
   const checkRef = (swiper) => {
-  
     switch (swiper.activeIndex) {
       case 0:
         videoRef1.current.pause();
@@ -135,7 +134,6 @@ export default function SwiperComp() {
         videoRef4.current.pause();
         videoRef5.current.play();
         break;
-
 
       default:
       // code block
@@ -287,7 +285,11 @@ export default function SwiperComp() {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <img className={`${HeroCSS.pic} ${HeroCSS.towel}`} src={towel} alt="" />
+                      <img
+                        className={`${HeroCSS.pic} ${HeroCSS.towel}`}
+                        src={towel}
+                        alt=""
+                      />
                     </a>
                     <h1 className={HeroCSS.threetitle}>Ez Mil - Towel</h1>
                   </div>
@@ -377,8 +379,7 @@ export default function SwiperComp() {
           className={HeroCSS.swiperSlide}
           style={{ background: "rgb(227, 204, 173)" }}
         >
-
-<div className={HeroCSS.btncontainermint}>
+          <div className={HeroCSS.btncontainermint}>
             <a
               href="https://app.niftykit.com/drops/illazillazelementz"
               rel="noreferrer"
@@ -389,34 +390,31 @@ export default function SwiperComp() {
             </a>
           </div>
           <div className={HeroCSS.illaparent}>
- 
+            <div className={HeroCSS.illawrapper}>
+              <div className={HeroCSS.left3}>
+                <a href="https://www.illazillaz.com/">
+                  <img src={illalogo} alt="" className={HeroCSS.illalogo} />
+                </a>
+                <div className={HeroCSS.pwrapper}>
+                  <p>
+                    Slashzilla holders will receive a copy of an original story
+                    board booklet from the music video of his upcoming single
+                    "Rapture". Stay tuned for more announcements.
+                  </p>
+                </div>
+              </div>
 
-<div className={HeroCSS.illawrapper}>
-
-
-<div className={HeroCSS.left3}>
-      <a href="https://www.illazillaz.com/">
-        <img src={illalogo} alt="" className={HeroCSS.illalogo} />
-      </a>
-      <div className={HeroCSS.pwrapper}>
-        <p>
-          Slashzilla holders will receive a copy of an original story
-          board booklet from the music video of his upcoming single
-          "Rapture". Stay tuned for more announcements.
-        </p>
-      </div>
-    </div>
-
-    <div className={HeroCSS.right3}>
-      <a href="https://app.niftykit.com/drops/illazillazelementz">
-        <img src={nftdud} alt="" className={HeroCSS.nftdud} />
-      </a>
-    </div>
-  </div>
-
-
-</div>
-
+              <div className={HeroCSS.right3}>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://app.niftykit.com/drops/illazillazelementz"
+                >
+                  <img src={nftdud} alt="" className={HeroCSS.nftdud} />
+                </a>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
 
         <SwiperSlide className={HeroCSS.swiperSlide}>

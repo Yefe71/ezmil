@@ -8,6 +8,7 @@
 }
 
 body {
+ 
   background: #eee;
   font-family: Helvetica, "Roboto", sans-serif;
   color: #000;
@@ -108,7 +109,7 @@ a:link {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  height: 74svh;
+  height: 76svh;
  
   background-repeat: no-repeat;
   background-position: right center;
@@ -349,7 +350,7 @@ a:link {
 /* button */
 .shopWrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 2fr;
+  grid-template-columns: 1.5fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 1.5fr;
   grid-template-rows: 1fr;
   gap: 1rem;
   align-items: center;
@@ -395,7 +396,7 @@ a:link {
 }
 
 .merchpic {
-  width: 100%;
+  width: 90%;
   height: auto;
   transition: all 0.1s ease-in;
 }

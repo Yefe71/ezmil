@@ -51,7 +51,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.2em !important;
+    height: 10vh !important;
+display: flex;
     z-index: 9;
     transition: 0.7s;
     color: #fff;
