@@ -23,9 +23,6 @@ export const Home = () => {
       exit={{ opacity: 0 }}
     >
 
-    {/* 
-    <MVideos />
-    <News/> */}
     {childData === "component1" && <Hero/>}
     {childData === "component2" && <MVideos/> }
     {childData === "component3" && <News/>}
