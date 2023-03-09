@@ -27,6 +27,7 @@ body{
   
   .container, .container-inner{
     margin: 0 auto;
+
     width: 100%;
   
   }
@@ -46,11 +47,11 @@ body{
   }
   
   nav{
-    position: fixed;
+    position: sticky !important;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1em;
+    padding: 1.2em !important;
     z-index: 9;
     transition: 0.7s;
     color: #fff;

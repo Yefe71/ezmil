@@ -17,7 +17,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import SpotifySnippet from "../sub-components/SpotifySnippet/SpotifySnippet";
 
 // Import Media
-import ezmil from "../../container/img/ezmil3.jpg";
+import ezmil from "../../container/img/ezmil6.jpg";
 import duality from "../../container/img/duality.jpg";
 import dualtitle from "../../container/img/title2.svg";
 import youtube from "../../container/img/logos/youtube.svg";
