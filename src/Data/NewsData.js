@@ -2,7 +2,7 @@ const tracks = [
     {
       title: "HipHop saRap sa America",
       date: "February 28, 2023",
-      caption: "Join Gloc 9 as he Celebrates his 25th Anniversary with special guest Shanti Dope and Heaven Knew and Special Participation from EZ Mil.",
+      caption: "Join Gloc 9 as he Celebrates his 25th Anniversary with special participation Ez Mil and...",
       img: "https://eventcreate-v1.s3.us-west-1.amazonaws.com/uploads%2F8db3eddf-0600-4c3c-be30-93a9d2320657%2F323085903_896813508256301_6210518359028171948_n.jpg",
       link: "https://www.eventcreate.com/e/gloc-9-and-shantidope?fbclid=IwAR2VKk46PVqttTebpFNVMKAc5i7Pe5BdpYiWnp8UrD0iLmPnK1ynHIlLnI8"
     },

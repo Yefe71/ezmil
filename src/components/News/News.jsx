@@ -95,7 +95,7 @@ const News = () => {
 
 
       <div    
-      style={{ opacity: 1, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
+      style={{ opacity: 1}} className={styles.wrapper}>
 
 
       <div className={styles.newsGrid}>

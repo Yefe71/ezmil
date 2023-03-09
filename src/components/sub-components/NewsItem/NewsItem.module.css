@@ -1,11 +1,11 @@
 .newsImg{
 
-    width: 18rem;
-    height: 18rem;
+    width: 19rem;
+    height: 12rem;
     object-fit: cover;
     
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0.8rem;
+
 }
 
 
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    width: 15rem;
+    width: 21rem;
     transition: all 0.5 ease-in-out;
 
 }
