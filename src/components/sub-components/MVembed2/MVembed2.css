@@ -36,9 +36,9 @@ button {
 
 
    .mvparentmain{
-    
-    width: 45vw;
-    height: 25vw;
+    margin-top: 6vh;
+    width: 35vw;
+    height: 20vw;
    }
 
    .customPlayButton {

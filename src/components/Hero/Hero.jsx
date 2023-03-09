@@ -532,7 +532,7 @@ export default function SwiperComp() {
             </div>
             <div className={HeroCSS.textContainer}>
               <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>27 BODIES</h1>
+              <h1 className={HeroCSS.title}>27 Bodies</h1>
               <div className={HeroCSS.btns}>
                 <div className={HeroCSS.btncontainerlisten}>
                   <a

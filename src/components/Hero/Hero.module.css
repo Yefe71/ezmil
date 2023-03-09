@@ -108,7 +108,7 @@ a:link {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  height: 75svh;
+  height: 74svh;
  
   background-repeat: no-repeat;
   background-position: right center;
@@ -662,7 +662,7 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 2rem;
   flex: 1 1 47rem;
 }
 .right3 {
@@ -749,7 +749,7 @@ a:link {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 71.5svh;
+  top: 73.5svh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -760,7 +760,7 @@ a:link {
 
 .spotifyContainer {
   position: absolute;
-  top: 75.5vh;
+  top: 77svh;
   left: 1%;
 
   width: 25rem;

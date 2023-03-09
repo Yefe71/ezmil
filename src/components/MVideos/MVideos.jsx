@@ -51,7 +51,6 @@ const MVideos = () => {
   return (
     <div className = {mvcss.mvparentwrapper}  ref={swiperRef}style={{ opacity: 1, backgroundImage: `url(${bg})`, }}>
       <div className={mvcss.titleWrapper}>
-      <h1 className = {mvcss.mvtitle}>MUSIC VIDEOS</h1>
           
       </div>
 

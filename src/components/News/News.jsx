@@ -1,6 +1,6 @@
 import styles from "./News.module.css";
 import {React, useState, useEffect, useRef} from "react";
-import bg from "../../container/img/bgdark2.jpg";
+import bg from "../../container/img/dualbgnew2dark.jpg";
 import img from "../../container/img/act1.jpg";
 import { NewsItem } from "../sub-components/NewsItem/NewsItem";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -95,11 +95,8 @@ const News = () => {
 
 
       <div    
-      style={{ opacity: isVisible ? 1 : 0, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
+      style={{ opacity: 1, backgroundImage: `url(${bg})` }} className={styles.wrapper}>
 
-      <div className={styles.headerTitle}>
-        <h1>LATEST NEWS</h1>
-      </div>
 
       <div className={styles.newsGrid}>
         {/* < NewsItem/> */}

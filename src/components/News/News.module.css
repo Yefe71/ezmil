@@ -6,6 +6,8 @@
 .newsParent {
   display: flex;
   flex-direction: column;
+  height: 74svh;
+  justify-content: center;
 }
 
 .headerTitle {
@@ -58,7 +60,6 @@
   justify-content: baseline;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-  margin-bottom: 2.5rem;
  
 }
 
