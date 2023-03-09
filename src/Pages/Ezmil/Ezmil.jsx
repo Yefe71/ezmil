@@ -146,7 +146,6 @@ export const Ezmil = () => {
               autoPlay
               loop
               playsInline
-           
               src={rebel}
               ref={videoRef}
               className={ezmilcss.video}
