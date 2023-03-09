@@ -21,7 +21,30 @@ import Footer from "../../components/Footer/Footer";
 
 
 export const Ezmil = () => {
-  
+  const darkRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const videoRef = useRef(null);
+
+  function handleMouseOver() {
+    setIsHovered(true);
+  }
+
+  function handleMouseOut() {
+    setIsHovered(false);
+  }
+
+  useEffect(() => {
+
+    if (videoRef.current) {
+      if (isHovered) {
+        videoRef.current.volume = 1;
+      } else {
+        videoRef.current.volume = 0;
+      }
+    }
+  }, [isHovered]);
+
+
   const reInit = () =>{
     Aos.init({duration:2000});
     console.log('run')
@@ -34,7 +57,6 @@ export const Ezmil = () => {
       clearTimeout(timeoutId);
     };
   },[])
-  const darkRef = useRef(null);
 
 
   useEffect(() => {
@@ -120,32 +142,29 @@ export const Ezmil = () => {
               </h1>
             </div>
             <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.right3}>
-              <video autoPlay loop muted playsInline src={rebel} />
+            <video
+              autoPlay
+              loop
+              playsInline
+           
+              src={rebel}
+              ref={videoRef}
+              className={ezmilcss.video}
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+            />
+        
             </div>
           </div>
-          {/* <div className={ezmilcss.section3}>
-            <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.img3wrapper}>
-              <div className={ezmilcss.midImg3}>
-                <img src={rebel} alt="" />
-              </div>
-              <div data-aos = "fade-up" data-aos-delay="200" className={ezmilcss.midTxt3}>
-                <h1>
-                  As the norm of rebellion from over-exposure, instead of Rock,
-                  Hip-Hop / Rap was the first musical genre he fell in love
-                  with.
-                </h1>
-              </div>
-            </div>
-          </div> */}
           <div className={ezmilcss.section4}>
             <div data-aos = "fade-up"  className={ezmilcss.left4}>
-              <video autoPlay loop muted playsInline src={buskdance} />
+            <video autoPlay loop muted playsInline src={buskdance} />
             </div>
             <div data-aos = "fade-up" className={ezmilcss.right4}>
               <h1>
                 Music and dancing became the first obsession for Ez's childhood
                 self-expression, with there being a point where it was only
-                songs and videos as his choice of entertainment.{" "}
+                songs and videos as his choice of entertainment.
               </h1>
             </div>
           </div>
@@ -185,9 +204,6 @@ export const Ezmil = () => {
 
           <div className={ezmilcss.section9}>
             <div className={ezmilcss.img9wrapper}>
-              {/* <div data-aos = "fade" className={ezmilcss.midImg9}>
-                <img src={endimg} alt="" />
-              </div> */}
               <div data-aos = "fade" className={ezmilcss.midTxt9}>
                 <h1>
                 Up to now, he just kept and will keep stacking up on things that he loves to do, and no one could and will be able to get him to just stick to one thing.”

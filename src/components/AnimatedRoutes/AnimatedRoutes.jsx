@@ -6,6 +6,7 @@ import { Discography } from "../../Pages/Discography/Discography";
 import {AnimatePresence} from 'framer-motion';
 import { Ezmil } from "../../Pages/Ezmil/Ezmil";
 import FullPageSection from "../FullPageSection/FullPageSection";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 function AnimatedRoutes() {
 
@@ -14,12 +15,14 @@ function AnimatedRoutes() {
   return (
 
     <AnimatePresence>
+    <ScrollToTop/>
     <Routes location={location} key = {location.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="discography" element={<Discography />} />
       <Route path="ezmil" element={<Ezmil/>} />
     </Routes>
     </AnimatePresence>
+    
   );
 }
 
