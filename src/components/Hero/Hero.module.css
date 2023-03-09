@@ -108,7 +108,7 @@ a:link {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  height: 70svh;
+  height: 75svh;
  
   background-repeat: no-repeat;
   background-position: right center;
@@ -349,7 +349,7 @@ a:link {
 /* button */
 .shopWrapper {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 0.8fr;
+  grid-template-columns: 2fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 2fr;
   grid-template-rows: 1fr;
   gap: 1rem;
   align-items: center;
@@ -591,14 +591,14 @@ a:link {
 }
 
 .left3 {
-  width: 50rem;
+  width: 25rem;
 }
 .right3 {
   width: 90rem;
 }
 .illawrapper {
   display: flex;
-  gap: 12rem;
+  gap: 18rem;
 }
 
 .illaparent {
@@ -627,7 +627,8 @@ a:link {
 }
 
 .pwrapper p {
-  font-size: 1vw;
+  font-size: 0.8vw;
+
 }
 
 .nftdud:hover {
@@ -674,7 +675,7 @@ a:link {
 
 .left3 p {
   font-family: "Lato";
-  font-weight: 200;
+  font-weight: 300;
   color: #847c74;
   margin: 0;
 }
@@ -748,7 +749,7 @@ a:link {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 86svh;
+  top: 71.5svh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -759,7 +760,7 @@ a:link {
 
 .spotifyContainer {
   position: absolute;
-  top: 89.5vh;
+  top: 75.5vh;
   left: 1%;
 
   width: 25rem;
