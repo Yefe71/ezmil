@@ -12,7 +12,7 @@
 }
 
 .navLink{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-family: Helvetica, 'Roboto', sans-serif;  
     font-weight: 700;
     font-size: 32px;
@@ -21,13 +21,18 @@
     flex: 1; /* each link will take up an equal amount of space */
     text-align: center; /* centers the text horizontally */
     transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
 }
 
 .navLink:hover{
-    filter: opacity(0.7);
+    color: #e54416;
 }
 
 
 .navLink.active{
-    color: red;
+    color: #e54416;
+    filter: opacity(1);
+ 
+    
 }
