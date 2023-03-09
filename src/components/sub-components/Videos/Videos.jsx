@@ -17,7 +17,7 @@ function HoverVideo({ src, className }) {
 
   useEffect(() => {
     if (videoRef.current) {
-      const targetVolume = isHovered ? 0.1 : 0;
+      const targetVolume = isHovered ? 0.2 : 0;
       const currentVolume = volumeRef.current;
       const volumeStep = (targetVolume - currentVolume) / (fadeDuration * 60);
 
