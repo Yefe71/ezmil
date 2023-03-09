@@ -18,31 +18,11 @@ import farawayvid from "../../container/img/aboutimgs/farawayvid.mp4";
 import Aos from "aos"
 import "aos/dist/aos.css"
 import Footer from "../../components/Footer/Footer";
+import HoverVideo from "../../components/sub-components/Videos/Videos";
 
 
 export const Ezmil = () => {
   const darkRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
-  const videoRef = useRef(null);
-
-  function handleMouseOver() {
-    setIsHovered(true);
-  }
-
-  function handleMouseOut() {
-    setIsHovered(false);
-  }
-
-  useEffect(() => {
-
-    if (videoRef.current) {
-      if (isHovered) {
-        videoRef.current.volume = 1;
-      } else {
-        videoRef.current.volume = 0;
-      }
-    }
-  }, [isHovered]);
 
 
   const reInit = () =>{
@@ -142,22 +122,14 @@ export const Ezmil = () => {
               </h1>
             </div>
             <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.right3}>
-            <video
-              autoPlay
-              loop
-              playsInline
-              src={rebel}
-              ref={videoRef}
-              className={ezmilcss.video}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-            />
+            <HoverVideo src={rebel} className="about-video"/>
+            
         
             </div>
           </div>
           <div className={ezmilcss.section4}>
             <div data-aos = "fade-up"  className={ezmilcss.left4}>
-            <video autoPlay loop muted playsInline src={buskdance} />
+            <HoverVideo src={buskdance} className="about-video"/>
             </div>
             <div data-aos = "fade-up" className={ezmilcss.right4}>
               <h1>
@@ -175,12 +147,12 @@ export const Ezmil = () => {
               </h1>
             </div>
             <div data-aos = "fade-up" className={ezmilcss.right5}>
-              <video autoPlay loop muted playsInline src={farawayvid} />
+            <HoverVideo src={farawayvid} className="about-video"/>
             </div>
           </div>
           <div className={ezmilcss.section6}>
             <div data-aos = "fade-up" className={ezmilcss.left6}>
-              <video autoPlay loop muted playsInline src={jabdance} />
+            <HoverVideo src={jabdance} className="about-video"/>
             </div>
             <div data-aos = "fade-up"className={ezmilcss.right6}>
               <h1>
