@@ -45,10 +45,6 @@ background: rgba(78, 71, 71, 0.219);
 
 }
 
-.swiperSlide1{
-  width: 19rem !important;
-
-}
 
 .mainWrapper{
   display: flex;
@@ -70,29 +66,6 @@ background: rgba(78, 71, 71, 0.219);
 
   }
 
-  .swiperSlide1{
-    width: 9.3rem !important;
-
-  }
-
-}
-@media only screen and (min-width: 355px) and (max-width: 1027px) {
-
-
-  .mySwiper {
-    box-sizing: border-box;
-    padding: 15px 0;
-    height: 9rem;
-    /* width: 125rem; */
-    width: 100vw;
-    
-
-  }
-
-  .swiperSlide1{
-    width: 10.5rem !important;
-
-  }
 
 }
 @media only screen and (min-width: 420px) and (max-width: 1027px) {

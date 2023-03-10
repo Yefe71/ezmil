@@ -87,7 +87,7 @@ const TestPage = () => {
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={20}
-        slidesPerView={7}
+        slidesPerView={2}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
