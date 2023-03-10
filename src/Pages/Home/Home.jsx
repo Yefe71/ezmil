@@ -17,7 +17,7 @@ export const Home = () => {
     setChildData(data);
   };
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -28,9 +28,9 @@ export const Home = () => {
     {childData === "component3" && <News/>}
     <HomeNav onChildData={handleChildData}/>
     <Footer/>
-    <ContentContainer/>
+ 
     
   
-  </motion.div>
+  </div>
   )
 }
