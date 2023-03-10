@@ -9,7 +9,7 @@ const tracks = [
     {
       title: "THE FULL CONVO with DJ E-Rock",
       date: "February 16, 2023",
-      caption: "Internationally critically acclaimed rapper EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
+      caption: "EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
       img: "https://i.ytimg.com/vi/anLc9IHJou4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrIWieOxVJ85VWmF3Cw0TDLwD3Lg",
       link: "https://www.youtube.com/watch?v=7z3t3Mar7ag"
     },
@@ -93,7 +93,7 @@ const tracks = [
     },
  
     {
-      title: "Dalawampu't Dalawang Oo OMV Out Now",
+      title: "2200 OMV Out Now",
       date: "June 14, 2022",
       caption: "Representing twenty-two double-o! Paying homage to his hometown, Olongapo...",
       img: "https://i.ytimg.com/vi/Ey2EK0Acn24/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9W6JtJIQo5X5CeewwlRb0MWLBcg",

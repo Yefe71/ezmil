@@ -1,7 +1,7 @@
 .newsImg{
 
-    width: 17rem;
-    height: 9rem;
+    width: 19rem;
+    height: 11rem;
     object-fit: cover;
     
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -17,7 +17,7 @@
     width: 17rem;
     transition: all 0.5 ease-in-out;
     text-align: left;
-    margin-top: 5vh;
+    margin-top: 6vh;
     transition: all 0.2s ease-in-out;
 
 }
