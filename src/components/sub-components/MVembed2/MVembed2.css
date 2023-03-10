@@ -35,11 +35,7 @@ button {
    */
 
 
-   .mvparentmain{
-    margin-top: 7vh;
-    width: 35vw;
-    height: 20vw;
-   }
+ 
 
    .customPlayButton {
     position: absolute;
@@ -64,51 +60,57 @@ button {
     scale: 1.1;
   }
 
-  @media only screen and (min-width: 300px) and (max-width: 1080px) {
-    .mvparentmain{
-    
-      width: 80vw;
-      height: 40vw;
-     }
-    .customPlayButton {
-      position: absolute;
-      width: 15%;
-      height: 15%;
-      background-image: url("../../../container/img/ytlogo.svg");
-      background-repeat: no-repeat;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      margin: auto; /* Add this line to center horizontally */
-      top: 0; /* Add this line to center vertically */
-      bottom: 0; /* Add this line to center vertically */
-      left: 0; /* Add this line to center horizontally */
-      right: 0; /* Add this line to center horizontally */
-      transition: all 0.1s ease;
-
-    }
+  .yt-lite{
+    width: 49rem;
   }
-  @media only screen and (min-width: 800px) and (max-width: 1080px) {
-    .mvparentmain{
-    
-      width: 80vw;
-      height: 30vw;
-     }
-    .customPlayButton {
-      position: absolute;
-      width: 15%;
-      height: 15%;
-      background-image: url("../../../container/img/ytlogo.svg");
-      background-repeat: no-repeat;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      margin: auto; /* Add this line to center horizontally */
-      top: 0; /* Add this line to center vertically */
-      bottom: 0; /* Add this line to center vertically */
-      left: 0; /* Add this line to center horizontally */
-      right: 0; /* Add this line to center horizontally */
-      transition: all 0.1s ease;
 
+  @media only screen and (min-width: 320px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 18rem;
     }
+
   }
+  @media only screen and (min-width: 420px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 20rem;
+    }
+
+  }
+  @media only screen and (min-width: 520px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 24rem;
+    }
+
+  }
+  @media only screen and (min-width: 620px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 28rem;
+    }
+
+  }
+  @media only screen and (min-width: 720px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 32rem;
+    }
+
+  }
+  @media only screen and (min-width: 820px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 36rem;
+    }
+
+  }
+  @media only screen and (min-width: 920px) and (max-width: 1027px) {
+
+    .yt-lite{
+      width: 40rem;
+    }
+
+  }
+

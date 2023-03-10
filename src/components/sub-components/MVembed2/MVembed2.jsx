@@ -14,7 +14,7 @@ export const MVembed2 = (props) => {
           id={props.link}
           title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
           playerClass="customPlayButton"
-        
+          className = "ytSize"
       />
 
     </div>

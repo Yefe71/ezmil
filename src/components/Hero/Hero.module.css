@@ -109,7 +109,7 @@ a:link {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  height: 76svh;
+  height: 76svh !important;
  
   background-repeat: no-repeat;
   background-position: right center;

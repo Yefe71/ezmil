@@ -1,13 +1,10 @@
 import React, {useState} from 'react'
-import SwiperComp from "../../components/SwiperComp/SwiperComp";
-import SideAlters from "../../components/SideAlters/SideAlters";
 import './styles.css'
-import {motion} from 'framer-motion'
 import Hero from "../../components/Hero/Hero";
 import News from '../../components/News/News';
 import MVideos from '../../components/MVideos/MVideos';
 import Footer from '../../components/Footer/Footer';
-import ContentContainer from '../../components/ContentContainer/ContentContainer';
+
 import HomeNav from '../../components/HomeNav/HomeNav';
 
 export const Home = () => {
