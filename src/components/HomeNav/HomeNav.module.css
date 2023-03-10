@@ -1,15 +1,15 @@
 
 
 .homeNavParent{
-    height: 15svh;
+    height: 14svh;
 }
 
 .navWrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 14vh;
-  
+    height: 14svh;
+    align-content: center;
 
 }
 
@@ -37,4 +37,46 @@
     filter: opacity(1);
  
     
+}
+
+
+@media (max-width: 1344px) {
+
+    .navLink{
+        color: rgba(255, 255, 255, 0.424);
+        font-family: Helvetica, 'Roboto', sans-serif;  
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 10px;
+        text-decoration: none;
+        flex: 1; /* each link will take up an equal amount of space */
+        text-align: center; /* centers the text horizontally */
+        transition: all 0.2s ease-in-out;
+
+        cursor: pointer;
+    }
+
+    .musicVideos{
+    
+        
+
+    }
+}
+@media (max-width: 640px) {
+    
+    .navLink{
+        color: rgba(255, 255, 255, 0.424);
+        font-family: Helvetica, 'Roboto', sans-serif;  
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 2px !important;
+        text-decoration: none;
+        flex: 1; /* each link will take up an equal amount of space */
+        text-align: center; /* centers the text horizontally */
+        transition: all 0.2s ease-in-out;
+
+        cursor: pointer;
+    }
+
+
 }
