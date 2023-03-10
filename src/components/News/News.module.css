@@ -1,123 +1,32 @@
-.newsParent * {
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: a#000;
   margin: 0;
   padding: 0;
 }
 
-.newsParent {
-  display: flex;
-  flex-direction: column;
-  height: 76svh;
-  justify-content: center;
-}
-
-.headerTitle {
-  color: white;
-  margin: 5rem 0rem 5rem 0rem;
-  align-self: center;
-  letter-spacing: 10px;
-}
-.headerTitle h1 {
-  color: rgba(255, 255, 255, 0.854);
-  font-size: 2rem;
-}
-
-.newsGrid {
-  width: 100%;
-  align-self: center;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiperNews {
-  font-size: 18px;
-  background: #00000000;
-  text-align: left;
-  /* Center slide text vertically */
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
-}
-
-.swiperNews:hover {
-  filter: brightness(80%);
-}
-
-.swiperSlide img {
-  width: 19rem;
-}
-.swiperSlide {
-  width: 21rem;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+.mySwiper {
  
+  height: 76vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
 }
 
-.swiperbuttonprev2,
-.swiperbuttonnext2 {
-  position: absolute;
-  top: 35%;
-  width: 60px;
-  height: 60px;
+.swiperSlide {
+  text-align: center;
 
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-}
-.swiperbuttonprev2 img:hover {
-  filter: brightness(70%);
-}
-.swiperbuttonnext2 img:hover {
-  filter: brightness(70%);
-}
+  background: #00000000;
+  height: calc((100% - 30px) / 2) !important;
 
-.swiperbuttonprev2 {
-  left: 5px;
-  filter: opacity(70%);
-  transition: all 0.2s ease-in-out;
-  width: 45px;
-  height: 45px;
-}
 
-.swiperbuttonnext2 {
-  width: 45px;
-  height: 45px;
-  right: 5px;
-  filter: opacity(70%);
-  transition: all 0.2s ease-in-out;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 1027px) {
-  .headerTitle h1 {
-    font-size: 1.5rem;
-  }
-
-  .swiperbuttonprev2 {
-    left: 5px;
-    filter: opacity(70%);
-    transition: all 0.2s ease-in-out;
-    width: 35px;
-    height: 35px;
-  }
-
-  .swiperbuttonnext2 {
-    width: 35px;
-    height: 35px;
-    right: 5px;
-    filter: opacity(70%);
-    transition: all 0.2s ease-in-out;
-  }
 }

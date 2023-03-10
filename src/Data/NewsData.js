@@ -49,7 +49,7 @@ const tracks = [
       link: "https://myx.global/ezmil-laclippers-halftime/"
     },
     {
-      title: "Merch Capsule AVAILABLE NOW! ",
+      title: "Merch Capsule Out Now! ",
       date: "November 18, 2022",
       caption: "Check out the official store link here: https://ezmil.lnk.to/DU4LI7Y",
       img: "https://yt3.ggpht.com/b9WZ4VgaWA7uSD7L3Gmg22-tCz81ouOi_rx9hXAETUKZjh6MpxYaBTbx6_8T3soDWl1oc9l3C0dBkg=s1024-c-fcrop64=1,00000000ffffffff-nd-v1",
@@ -63,7 +63,7 @@ const tracks = [
       link: "https://www.youtube.com/watch?v=xYU-b80882c"
     },
     {
-      title: "Ridin' With The Moonlight OMV Out Now!",
+      title: "RWTM OMV Out Now!",
       date: "July 27, 2022",
       caption: "A taste of the unique side of R&B. Enveloped in the elysian piano...",
       img: "https://i.ibb.co/QjLvKcj/rwtmpic.jpg",
