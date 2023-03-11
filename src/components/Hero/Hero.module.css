@@ -1,2649 +1,2496 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lexend+Giga:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lexend+Giga:wght@500&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
 #app {
-  height: 100%;
+height:100%
 }
 
 body {
- 
-  background: #eee;
-  font-family: Helvetica, "Roboto", sans-serif;
-  color: #000;
-  margin: 0;
-  padding: 0;
+background:#eee;
+font-family:Helvetica,"Roboto",sans-serif;
+color:#000;
+margin:0;
+padding:0
 }
 
 #swiper-comp {
-  position: relative;
-  display: flex;
+position:relative;
+display:flex
 }
 
 .swiper-title {
-  position: absolute;
-  top: 13.5rem;
-  left: -6.5rem;
-  font-size: 2.4rem;
-  z-index: 2;
-  color: white;
-  transform: rotate(-90deg);
+position:absolute;
+top:13.5rem;
+left:-6.5rem;
+font-size:2.4rem;
+z-index:2;
+color:#fff;
+transform:rotate(-90deg)
 }
 
 a:link {
-  text-decoration: none;
+text-decoration:none
 }
+
 .swiper-pagination {
-  display: none;
+display:none
 }
 
 .btn-container {
-  position: absolute;
-  z-index: 2;
-  right: 50%;
-  bottom: 7%;
+position:absolute;
+z-index:2;
+right:50%;
+bottom:7%
 }
+
 .bn13 {
-  padding: 0.65em 1.6em;
-  border: 3px solid #ffffff;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 0.8rem;
-  color: #ffffff;
-  text-align: center;
-  transition: all 0.2s;
-  animation: bn13bouncy 10s infinite linear;
-  cursor: pointer;
+padding:.65em 1.6em;
+border:3px solid #fff;
+margin:0 .3em .3em 0;
+border-radius:.12em;
+box-sizing:border-box;
+text-decoration:none;
+font-family:"Poppins",sans-serif;
+font-weight:300;
+font-size:.8rem;
+color:#fff;
+text-align:center;
+transition:all .2s;
+animation:bn13bouncy 10s infinite linear;
+cursor:pointer
 }
 
 .bn13:hover {
-  background-color: white;
-  color: #000000;
+background-color:#fff;
+color:#000
 }
 
 @keyframes bn13bouncy {
-  0% {
-    top: 0em;
-  }
-  40% {
-    top: 0em;
-  }
-  43% {
-    top: -0.9em;
-  }
-  46% {
-    top: 0em;
-  }
-  48% {
-    top: -0.4em;
-  }
-  50% {
-    top: 0em;
-  }
-  100% {
-    top: 0em;
-  }
+0% {
+top:0
+}
+
+40% {
+top:0
+}
+
+43% {
+top:-.9em
+}
+
+46% {
+top:0
+}
+
+48% {
+top:-.4em
+}
+
+50% {
+top:0
+}
+
+100% {
+top:0
+}
 }
 
 .your-swiper-container {
-  position: relative;
+position:relative
 }
 
 .swiperSlide {
-  position: relative;
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  height: 76svh;
- 
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
-  justify-content: center;
+position:relative;
+text-align:center;
+font-size:18px;
+display:-webkit-box;
+display:-ms-flexbox;
+display:-webkit-flex;
+display:flex;
+-webkit-box-pack:center;
+-ms-flex-pack:center;
+-webkit-box-align:center;
+-ms-flex-align:center;
+-webkit-align-items:center;
+align-items:center;
+height:76svh !important;
+background-repeat:no-repeat;
+background-position:right center;
+background-size:cover;
+justify-content:center
 }
 
 .albumcontainer {
-  flex: 1 1 1rem;
-  margin-top: 3rem;
-  padding-left: 4rem;
+flex:1 1 1rem;
+margin-top:3rem;
+padding-left:4rem
 }
 
 .imgWrapper {
-  width: 28rem;
+width:28rem
 }
 
 .dualpic2 {
-  width:85%;
-  height: auto;
-  margin-bottom: 1rem;
-  align-self: center;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+width:85%;
+height:auto;
+margin-bottom:1rem;
+align-self:center;
+transition:all .2s ease;
+cursor:pointer;
+box-shadow:rgba(0,0,0,0.5) 0 5px 15px
 }
 
 .mainHeader {
-  flex: 1 1 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: -25rem;
-  margin-left: 50px;
+flex:1 1 1rem;
+justify-content:center;
+align-items:center;
+margin-top:-25rem;
+margin-left:50px
 }
 
 .blankSection {
-  flex: 1.2 1 1rem;
+flex:1.2 1 1rem
 }
 
 .mask {
-  position: absolute;
-  width: 23rem;
-  top: 42.8%;
-  left: 70.4%;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+position:absolute;
+width:23rem;
+top:42.8%;
+left:70.4%;
+opacity:0;
+transition:opacity .2s ease-in-out
 }
 
 .mask:hover {
-  opacity: 1;
+opacity:1
 }
 
 .swiperSlide .bg {
-  position: relative;
-  display: block;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+position:relative;
+display:block;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover
 }
 
 .bt {
-  position: absolute;
+position:absolute
 }
 
 .top {
-  font-family: "Lexend Giga", sans-serif;
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  top: 10.2rem;
-  left: 17.5rem;
+font-family:"Lexend Giga",sans-serif;
+color:#fff;
+font-size:40px;
+position:absolute;
+top:10.2rem;
+left:17.5rem
 }
 
 .left {
-  font-family: "Lexend Giga", sans-serif;
-  color: white;
-  font-size: 36px;
-  position: absolute;
-  transform: rotate(-90deg);
-  top: 25rem;
-  left: 5.5rem;
+font-family:"Lexend Giga",sans-serif;
+color:#fff;
+font-size:36px;
+position:absolute;
+transform:rotate(-90deg);
+top:25rem;
+left:5.5rem
 }
 
 .bottom {
-  font-family: "Lato", sans-serif;
-  color: rgb(224, 224, 224);
-  font-size: 30px;
-  width: 11rem;
-  /* position: absolute; */
-  /* top:13.5rem;
-  left: 54.6rem; */
+font-family:"Lato",sans-serif;
+color:#e0e0e0;
+font-size:30px;
+width:11rem
 }
 
 .dualtitle {
-  width: 28rem;
-  /* position: absolute; */
-  transform: rotate(-5deg);
-  /* left: 37.5vw;
-  top: 3.5rem; */
-  filter: brightness(85%);
+width:28rem;
+transform:rotate(-5deg);
+filter:brightness(85%)
 }
 
 .mainHeader {
-  display: flex;
-  flex-direction: column;
+display:flex;
+flex-direction:column
 }
 
 .mainHeader2 {
-  position: absolute;
-  visibility: hidden;
+position:absolute;
+visibility:hidden
 }
 
 .bottom {
-  margin: 0;
-  justify-self: center;
+margin:0;
+justify-self:center
 }
+
 .albumcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  /* position: absolute;
-  left: 8rem;
-  top: 13rem */
+display:flex;
+flex-direction:column;
+align-items:center;
+align-self:center
 }
 
 .logos {
-  display: flex;
+display:flex
 }
 
 .spotlogo {
-  position: relative;
-  width: 4.7rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  top: -2px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  cursor: pointer;
+position:relative;
+width:4.7rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
 }
+
 .ytlogo {
-  width: 5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  cursor: pointer;
+width:5rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
 }
+
 .applelogo {
-  position: relative;
-  width: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  top: 1px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  cursor: pointer;
+position:relative;
+width:4rem;
+margin-left:1rem;
+margin-right:1rem;
+top:1px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
 }
 
 .spotlogo:hover {
-  filter: brightness(60%);
+filter:brightness(60%)
 }
+
 .ytlogo:hover {
-  filter: brightness(60%);
+filter:brightness(60%)
 }
+
 .applelogo:hover {
-  filter: brightness(60%);
+filter:brightness(60%)
 }
 
 .dualtitle {
-  margin-bottom: 0.8rem;
+margin-bottom:.8rem
 }
+
 .dualpicphonewrapper {
-  position: absolute;
-  visibility: hidden;
+position:absolute;
+visibility:hidden
 }
 
 .dualpic2:hover {
-  filter: brightness(90%);
-  scale: 1.01;
+filter:brightness(90%);
+scale:1.01
 }
 
-/* .merchpic{
-  width: 35rem;
-  margin: 0 5rem 0 5rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: all 0.1s ease-in;
-} */
-
 .merchpic:hover {
-  filter: brightness(90%);
-  scale: 1.04;
+filter:brightness(90%);
+scale:1.04
 }
 
 .merchparent {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center
 }
 
-/* .item{
-  width: 15.3rem;
-} */
-/* .pic{
-  width: 100%;
-  height: auto;
-  transition: all 0.3s ease-in-out;
-  
-} */
-
-/* .shopWrapper{
-  display: flex;
-} */
-/* 
-.left2{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-top:3.5rem;
-}
-.right2{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3.5rem;
-} */
-
-/* button */
 .shopWrapper {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 1.5fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  align-items: center;
-  margin-top: rem;
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr 1fr 1.5fr;
+grid-template-rows:1fr;
+gap:1rem;
+align-items:center;
+margin-top:rem
 }
 
 .left2 {
-  margin-top: 4rem;
-  grid-column: 2 / span 2;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+margin-top:4rem;
+grid-column:2 / span 2;
+grid-row:1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
 }
 
 .mid2 {
-  grid-column: 5 / span 2;
-  grid-row: 1;
+grid-column:5 / span 2;
+grid-row:1
 }
 
 .right2 {
-  margin-top: 4rem;
-  grid-column: 8 / span 2;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+margin-top:4rem;
+grid-column:8 / span 2;
+grid-row:1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
 }
 
 .pic {
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-  height: auto;
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
 }
 
 .merchpic {
-  width: 90%;
-  height: auto;
-  transition: all 0.1s ease-in;
+width:90%;
+height:auto;
+transition:all .1s ease-in
 }
 
 .btncontainer {
-  bottom: 6%;
-  position: absolute;
-  z-index: 2;
+bottom:6%;
+position:absolute;
+z-index:2
 }
 
 .btncontainermint {
-  bottom: 6%;
-  position: absolute;
-  z-index: 2;
+bottom:6%;
+position:absolute;
+z-index:2
 }
 
 .buy {
-  padding: 0.65em 1.6em;
-  border: 3px solid #ffffff;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 1.45rem;
-  color: #ffffff;
-  text-align: center;
-  transition: all 0.2s;
-  animation: bn13bouncy 10s infinite linear;
-  cursor: pointer;
+padding:.65em 1.6em;
+border:3px solid #fff;
+margin:0 .3em .3em 0;
+border-radius:.12em;
+box-sizing:border-box;
+text-decoration:none;
+font-family:"Poppins",sans-serif;
+font-weight:300;
+font-size:1.45rem;
+color:#fff;
+text-align:center;
+transition:all .2s;
+animation:bn13bouncy 10s infinite linear;
+cursor:pointer
 }
 
 .buy:hover {
-  background-color: white;
-  color: #000000;
+background-color:#fff;
+color:#000
 }
 
 .pic:hover {
-  transform: scale(1.1);
+transform:scale(1.1)
 }
 
 .imgTitleWrapper {
-  display: flex;
-  flex-direction: column;
+display:flex;
+flex-direction:column
 }
 
 .one {
-  position: relative;
+position:relative
 }
 
 .onetitle {
-  font-family: Poppins;
-  color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .one:hover .onetitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .two {
-  position: relative;
+position:relative
 }
 
 .twotitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .two:hover .twotitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .three {
-  position: relative;
+position:relative
 }
 
 .threetitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .three:hover .threetitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .four {
-  position: relative;
-  top: 1rem;
-  filter: brightness(130%);
+position:relative;
+top:1rem;
+filter:brightness(130%)
 }
 
 .fourtitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .four:hover .fourtitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .five {
-  position: relative;
-  top: 0.3rem;
+position:relative;
+top:.3rem
 }
 
 .fivetitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .five:hover .fivetitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .six {
-  position: relative;
+position:relative
 }
+
 .illaparent {
-  gap: 8rem;
+gap:8rem
 }
+
 .sixtitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .six:hover .sixtitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .seven {
-  position: relative;
-  filter: brightness(140%);
+position:relative;
+filter:brightness(140%)
 }
 
 .seventitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .seven:hover .seventitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
-}
-
-.towel {
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .eight {
-  position: relative;
-  filter: brightness(180%);
-  top: 0.9rem;
+position:relative;
+filter:brightness(180%);
+top:.9rem
 }
 
 .eighttitle {
-  font-family: Poppins;
-  color: white;
-  font-size: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+font-family:Poppins;
+color:#fff;
+font-size:1rem;
+max-height:0;
+overflow:hidden;
+transition:all .3s ease-in-out
 }
 
 .eight:hover .eighttitle {
-  max-height: 100px; /* or any other appropriate value */
-  transition: all 0.3s ease-in-out;
+max-height:100px;
+transition:all .3s ease-in-out
 }
 
 .left3 {
-  width: 25rem;
+width:25rem
 }
+
 .right3 {
-  width: 90rem;
+width:90rem
 }
+
 .illawrapper {
-  display: flex;
-  gap: 18rem;
+display:flex;
+gap:18rem
 }
 
 .illaparent {
-  display: flex;
-  justify-content: center;
+display:flex;
+justify-content:center
 }
 
 .illalogo {
-  width: 100%;
-  height: auto;
-  transition: all 0.4s ease;
+width:100%;
+height:auto;
+transition:all .4s ease
 }
+
 .illalogo:hover {
-  scale: 1.02;
+scale:1.02
 }
 
 .right3 {
-  width: 50rem;
+width:50rem
 }
 
 .nftdud {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  transition: all 0.4s ease;
+width:100%;
+height:auto;
+cursor:pointer;
+transition:all .4s ease
 }
 
 .pwrapper p {
-  font-size: 0.9rem;
-
+font-size:.9rem
 }
 
 .nftdud:hover {
-  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-  scale: 1.02;
+animation:shake 1s cubic-bezier(0.36,0.07,0.19,0.97) both;
+transform:translate3d(0,0,0);
+backface-visibility:hidden;
+perspective:1000px;
+scale:1.02
 }
 
 @keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(3deg);
-  }
-  80% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+0% {
+transform:rotate(0deg)
+}
+
+20% {
+transform:rotate(0deg)
+}
+
+60% {
+transform:rotate(3deg)
+}
+
+80% {
+transform:rotate(-3deg)
+}
+
+100% {
+transform:rotate(0deg)
+}
 }
 
 .left3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  flex: 1 1 47rem;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-top:4rem;
+flex:1 1 47rem
 }
+
 .right3 {
-  flex: 1 1 43rem;
+flex:1 1 43rem
 }
 
 .merchparent h1 {
-  font-size: 0.8vw;
+font-size:.8vw
 }
 
 .left3 p {
-  font-family: "Lato";
-  font-weight: 400;
-  color: #847c74;
-  margin: 0;
+font-family:"Lato";
+font-weight:400;
+color:#847c74;
+margin:0
 }
 
 .pwrapper {
-  width: 50%;
+width:50%
 }
-
-/* button3 */
 
 .btncontainermint {
-  position: absolute;
-  z-index: 2;
-  bottom: 6%;
+position:absolute;
+z-index:2;
+bottom:6%
 }
+
 .mint {
-  padding: 0.65em 1.6em;
-  border: 3px solid #7f7676;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 1.45rem;
-  color: #7f7676;
-  text-align: center;
-  transition: all 0.2s;
-  animation: Hero_bn13bouncy__SheqU 10s infinite linear;
-  cursor: pointer;
+padding:.65em 1.6em;
+border:3px solid #7f7676;
+margin:0 .3em .3em 0;
+border-radius:.12em;
+box-sizing:border-box;
+text-decoration:none;
+font-family:"Poppins",sans-serif;
+font-weight:300;
+font-size:1.45rem;
+color:#7f7676;
+text-align:center;
+transition:all .2s;
+animation:Hero_bn13bouncy__SheqU 10s infinite linear;
+cursor:pointer
 }
 
 .mint:hover {
-  background-color: #514c47;
-  color: #ebdece;
+background-color:#514c47;
+color:#ebdece
 }
 
 .video {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+width:100%;
+height:100vh;
+object-fit:cover
 }
 
 .videoControls {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
+position:absolute;
+bottom:10px;
+right:10px;
+display:flex;
+align-items:center
 }
 
 .muteButton {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
+background-color:rgba(255,255,255,0.5);
+border-radius:20px;
+padding:10px 20px;
+font-size:14px;
+cursor:pointer
 }
 
 .muteButton:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+background-color:rgba(255,255,255,0.8)
 }
 
 .videoContainer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+position:relative;
+width:100%;
+height:100vh
 }
 
 .textContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 74.5svh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  justify-content: center;
-  align-items: center;
+display:flex;
+flex-direction:column;
+position:absolute;
+top:74.5svh;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:#fff;
+justify-content:center;
+align-items:center
 }
 
 .spotifyContainer {
-  position: absolute;
-  top: 78svh;
-  left: 1%;
-
-  width: 25rem;
+position:absolute;
+top:78svh;
+left:1%;
+width:25rem
 }
 
 .spotifySnippet {
-  position: absolute;
+position:absolute
 }
 
 .title {
-  margin: 0;
-  font-size: 43px;
-  font-family: "Lato";
+margin:0;
+font-size:43px;
+font-family:"Lato"
 }
 
 .subtitle {
-  font-size: 24px;
+font-size:24px
 }
 
 .btns {
-  margin-top: 2rem;
-  display: flex;
+margin-top:2rem;
+display:flex
 }
 
 .btncontainerlisten a {
-  font-size: 1.3rem;
+font-size:1.3rem
 }
+
 .btncontainerwatch a {
-  font-size: 1.3rem;
-  margin-left: 5px;
+font-size:1.3rem;
+margin-left:5px
 }
 
 .dualtitlevid {
-  width: 12rem;
+width:12rem
 }
 
-.swiperbuttonprev,
-.swiperbuttonnext {
-  position: absolute;
-  top: 50%;
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
+.swiperbuttonprev,.swiperbuttonnext {
+position:absolute;
+top:50%;
+width:60px;
+height:60px;
+margin-top:-30px;
+z-index:10;
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:.5rem
 }
 
 .swiperbuttonprev img:hover {
-  filter: brightness(70%);
-}
-.swiperbuttonnext img:hover {
-  filter: brightness(70%);
+filter:brightness(70%)
 }
 
-/* .swiperbuttonprev:before,
-.swiperbuttonnext:before {
-  content: "";
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  display: inline-block;
+.swiperbuttonnext img:hover {
+filter:brightness(70%)
 }
-.swiperbuttonprev:before {
-  border-right: 10px solid #fff;
-}
-.swiperbuttonnext:before {
-  border-left: 10px solid #fff;
-} */
 
 .swiperbuttonprev {
-  left: 10px;
-  filter: opacity(90%);
-  transition: all 0.2s ease-in-out;
+left:10px;
+filter:opacity(90%);
+transition:all .2s ease-in-out
 }
 
 .swiperbuttonnext {
-  right: 10px;
-  filter: opacity(90%);
-  transition: all 0.2s ease-in-out;
+right:10px;
+filter:opacity(90%);
+transition:all .2s ease-in-out
 }
 
 .navButtons {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+opacity:0;
+transition:opacity .5s ease-in-out
 }
 
 .showNavigationButtons {
-  opacity: 1;
+opacity:1
 }
 
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
-  .swiperbuttonnext,
-  .swiperbuttonprev {
-    filter: opacity(50%);
-  }
-  .mask {
-    visibility: hidden;
-  }
-
-  .swiperSlide {
-    background-position: 85% center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 76svh !important;
-  }
-
-  .dualpic2 {
-    width: 0rem;
-    height: 0rem;
-    transform: rotate(-0deg);
-  }
-
-  .outPic {
-    display: flex;
-  }
-
-  .dualpicphonewrapper {
-    margin-left: 1rem;
-    width: 5rem;
-    flex: 1;
-    position: static;
-    visibility: visible;
-  }
-
-  .bottom {
-    align-self: center;
-    width: 9rem;
-  }
-  .dualpicphone {
-    width: 100%;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-
-    height: auto;
-  }
-
-  .dualtitle {
-    width: 20rem;
-    /* position: absolute; */
-    transform: rotate(-5deg);
-    /* left: 37.5vw;
-  top: 3.5rem; */
-    filter: brightness(85%);
-
-    margin-bottom: 0rem;
-  }
-
-  .bottom {
-    font-size: 27px;
-  }
-
-  .mainHeader {
-    justify-content: end;
-    align-items: center;
-    margin-top: -5rem;
-    margin-left: 0px;
-    flex: 10;
-    order: 1;
-  }
-
-  .albumcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    padding: 0;
-    flex: 1;
-    order: 2;
-    margin-top: -0.8rem;
-  }
-
-  .swiperbuttonprev,
-  .swiperbuttonnext {
-    width: 35px;
-    height: 35px;
-  }
-  .bgclass {
-    background-image: url("../../container/img/ezmilphone.jpg") !important;
-  }
-
-  .swiperSlide {
-    height: 100svh;
-  }
-
-  .outpic {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .spotlogo {
-    position: relative;
-    width: 5.7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .ytlogo {
-    width: 6rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .applelogo {
-    position: relative;
-    width: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -1px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-
-  .blankSection {
-    position: absolute;
-  }
-  .dualtitle {
-    width: 21rem;
-  }
+.swiperbuttonnext,.swiperbuttonprev {
+filter:opacity(50%)
 }
 
-/* TABLETS */
-@media only screen and (min-width: 490px) and (max-width: 1027px) {
-  .dualtitle {
-    width: 23rem;
-  }
-  .mask {
-    visibility: hidden;
-  }
-  .spotlogo {
-    width: 5.7rem;
-  }
-  .ytlogo {
-    width: 6rem;
-  }
-  .applelogo {
-    width: 5.3rem;
-  }
-  .mainHeader {
-    margin-top: -5rem;
-  }
+.mask {
+visibility:hidden
+}
 
-  .dualpicphone {
-    width: 5.3rem;
-  }
+.swiperSlide {
+background-position:85% center;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+height:76svh!important
+}
+
+.dualpic2 {
+width:0;
+height:0;
+transform:rotate(-0deg)
+}
+
+.outPic {
+display:flex
+}
+
+.dualpicphonewrapper {
+margin-left:1rem;
+width:5rem;
+flex:1;
+position:static;
+visibility:visible
+}
+
+.bottom {
+align-self:center;
+width:9rem
+}
+
+.dualpicphone {
+width:100%;
+height:auto;
+box-shadow:rgba(0,0,0,0.5) 0 5px 15px;
+height:auto
+}
+
+.dualtitle {
+width:20rem;
+transform:rotate(-5deg);
+filter:brightness(85%);
+margin-bottom:0
+}
+
+.bottom {
+font-size:27px
+}
+
+.mainHeader {
+justify-content:end;
+align-items:center;
+margin-top:-5rem;
+margin-left:0;
+flex:10;
+order:1
+}
+
+.albumcontainer {
+display:flex;
+flex-direction:column;
+align-items:center;
+align-self:center;
+padding:0;
+flex:1;
+order:2;
+margin-top:-.8rem
+}
+
+.swiperbuttonprev,.swiperbuttonnext {
+width:35px;
+height:35px
+}
+
+.bgclass {
+background-image:url(../../container/img/ezmilphone.jpg)!important
+}
+
+.swiperSlide {
+height:100svh
+}
+
+.outpic {
+display:flex;
+flex-direction:row
+}
+
+.spotlogo {
+position:relative;
+width:5.7rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.ytlogo {
+width:6rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.applelogo {
+position:relative;
+width:5rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-1px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.blankSection {
+position:absolute
+}
+
+.dualtitle {
+width:21rem
+}
+}
+
+@media only screen and (min-width: 490px) and (max-width: 1027px) {
+.dualtitle {
+width:23rem
+}
+
+.mask {
+visibility:hidden
+}
+
+.spotlogo {
+width:5.7rem
+}
+
+.ytlogo {
+width:6rem
+}
+
+.applelogo {
+width:5.3rem
+}
+
+.mainHeader {
+margin-top:-5rem
+}
+
+.dualpicphone {
+width:5.3rem
+}
 }
 
 @media only screen and (min-height: 1280px) {
-  .swiperSlide {
-    height: 100vh;
-  }
+.swiperSlide {
+height:100vh
+}
 
-  .mask {
-    visibility: hidden;
-  }
+.mask {
+visibility:hidden
+}
 }
 
 @media only screen and (max-width: 400px) {
-  .bottom {
-    font-size: 1.3rem;
-    width: 4rem;
-  }
-  .mask {
-    visibility: hidden;
-  }
+.bottom {
+font-size:1.3rem;
+width:4rem
+}
 
-  .mainHeader {
-    justify-content: end;
-    align-items: center;
-    margin-top: 0rem;
+.mask {
+visibility:hidden
+}
 
-    flex: 8;
-    order: 1;
-  }
-  .dualtitle {
-    width: 15rem;
-  }
-  .dualpicphonewrapper {
-    margin: 0.1;
-  }
+.mainHeader {
+justify-content:end;
+align-items:center;
+margin-top:0;
+flex:8;
+order:1
+}
 
-  .spotlogo {
-    position: relative;
-    width: 4.7rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
-    top: -2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .ytlogo {
-    width: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .applelogo {
-    position: relative;
-    width: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -3px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
+.dualtitle {
+width:15rem
+}
 
-  /* Styles */
+.dualpicphonewrapper {
+margin:.1px
+}
+
+.spotlogo {
+position:relative;
+width:4.7rem;
+margin-left:.3rem;
+margin-right:.3rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.ytlogo {
+width:5rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.applelogo {
+position:relative;
+width:4rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-3px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
 }
 
 @media only screen and (min-width: 1028px) and (max-width: 1280px) {
-  .mainHeader {
-    margin-top: -30rem;
-  }
+.mainHeader {
+margin-top:-30rem
+}
 }
 
-/* for 720 */
-
 @media only screen and (min-width: 1280px) and (max-width: 1666px) {
-  .imgWrapper {
-    width: 20rem;
-  }
-  .mask {
-    visibility: hidden;
-  }
-  .mainHeader {
-    flex: 1.3;
-    margin-top: -31rem;
-  }
-  .spotlogo {
-    position: relative;
-    width: 4.7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .ytlogo {
-    width: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .applelogo {
-    position: relative;
-    width: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -3px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
+.imgWrapper {
+width:20rem
+}
 
-  .dualtitle {
-    width: 23rem;
-  }
+.mask {
+visibility:hidden
+}
 
-  .bottom {
-    font-size: 1.4rem;
-  }
+.mainHeader {
+flex:1.3;
+margin-top:-31rem
+}
 
-  .swiperbuttonprev,
-  .swiperbuttonnext {
-    position: absolute;
-    top: 53%;
-    width: 40px;
-    height: 40px;
-    margin-top: -30px;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-  }
+.spotlogo {
+position:relative;
+width:4.7rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.ytlogo {
+width:5rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.applelogo {
+position:relative;
+width:4rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-3px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.dualtitle {
+width:23rem
+}
+
+.bottom {
+font-size:1.4rem
+}
+
+.swiperbuttonprev,.swiperbuttonnext {
+position:absolute;
+top:53%;
+width:40px;
+height:40px;
+margin-top:-30px;
+z-index:10;
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:.5rem
+}
 }
 
 @media only screen and (min-width: 2560px) {
-  .dualtitle {
-    width: 38rem;
-  }
+.dualtitle {
+width:38rem
+}
 
-  .mainHeader {
-    margin-top: -48rem;
-  }
+.mainHeader {
+margin-top:-48rem
+}
 
-  .mask {
-    position: absolute;
-    width: 39rem;
-    top: 36%;
-    left: 68.5%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-  }
+.mask {
+position:absolute;
+width:39rem;
+top:36%;
+left:68.5%;
+opacity:0;
+transition:opacity .2s ease-in-out
+}
 
-  .imgWrapper {
-    width: 38rem;
-  }
-  .logos {
-    margin-top: 0.5rem;
-  }
-  .spotlogo {
-    position: relative;
-    width: 8.7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .ytlogo {
-    width: 9rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .applelogo {
-    position: relative;
-    width: 8rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: 1px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
+.imgWrapper {
+width:38rem
+}
+
+.logos {
+margin-top:.5rem
+}
+
+.spotlogo {
+position:relative;
+width:8.7rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.ytlogo {
+width:9rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.applelogo {
+position:relative;
+width:8rem;
+margin-left:1rem;
+margin-right:1rem;
+top:1px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1666px) {
-  .mainHeader {
-    margin-top: -30rem;
-  }
-  .mask {
-    position: absolute;
-    width: 23rem;
-    top: 37%;
-    left: 67.8%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-  }
+.mainHeader {
+margin-top:-30rem
 }
 
-/* tablets */
+.mask {
+position:absolute;
+width:23rem;
+top:37%;
+left:67.8%;
+opacity:0;
+transition:opacity .2s ease-in-out
+}
+}
+
 @media only screen and (min-width: 1028px) and (max-width: 1279px) {
-  .mask {
-    visibility: hidden;
-  }
-  .imgWrapper {
-    width: 20rem;
-  }
-
-  .albumcontainer {
-    padding-left: 0rem;
-    margin-left: -2rem;
-  }
-  .mainHeader {
-    flex: 15.3;
-  }
-  .spotlogo {
-    position: relative;
-    width: 4.7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: -2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .ytlogo {
-    width: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .applelogo {
-    position: relative;
-    width: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    top: 1px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-
-  .dualtitle {
-    width: 20rem;
-  }
-  .bottom {
-    font-size: 1.4rem;
-  }
-
-  .albumcontainer {
-    margin-top: 2rem;
-  }
-  .mainHeader {
-    position: absolute;
-    visibility: hidden;
-  }
-
-  .mainHeader2 {
-    position: static;
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  .swiperbuttonprev,
-  .swiperbuttonnext {
-    position: absolute;
-    top: 53%;
-    width: 40px;
-    height: 40px;
-    margin-top: -30px;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-  }
+.mask {
+visibility:hidden
 }
 
-/* TABLET MERCH */
+.imgWrapper {
+width:20rem
+}
+
+.albumcontainer {
+padding-left:0;
+margin-left:-2rem
+}
+
+.mainHeader {
+flex:15.3
+}
+
+.spotlogo {
+position:relative;
+width:4.7rem;
+margin-left:1rem;
+margin-right:1rem;
+top:-2px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.ytlogo {
+width:5rem;
+margin-left:1rem;
+margin-right:1rem;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.applelogo {
+position:relative;
+width:4rem;
+margin-left:1rem;
+margin-right:1rem;
+top:1px;
+cursor:pointer;
+transition:all .2s ease;
+cursor:pointer
+}
+
+.dualtitle {
+width:20rem
+}
+
+.bottom {
+font-size:1.4rem
+}
+
+.albumcontainer {
+margin-top:2rem
+}
+
+.mainHeader {
+position:absolute;
+visibility:hidden
+}
+
+.mainHeader2 {
+position:static;
+visibility:visible;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-bottom:1rem
+}
+
+.swiperbuttonprev,.swiperbuttonnext {
+position:absolute;
+top:53%;
+width:40px;
+height:40px;
+margin-top:-30px;
+z-index:10;
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:.5rem
+}
+}
+
 @media only screen and (min-width: 560px) and (max-width: 739px) {
-  .shopWrapper {
-    display: grid;
-    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
-    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
-    /* gap: 2rem 0px;  */
-    align-items: center;
+.shopWrapper {
+display:grid;
+grid-template-columns:0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
+grid-template-rows:0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
+align-items:center;
+grid-template-areas:".. .. .. .. .. .." ". . mp mp . . " ". . mp mp . . " ". i1 i1 i2 i2 . " ". i1 i1 i2 i2 . " ".. .. .. .. .. .."
+}
 
-    grid-template-areas:
-      ".. .. .. .. .. .."
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  i1 i1 i2 i2 . "
-      ".  i1 i1 i2 i2 . "
-      ".. .. .. .. .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .mid2 {
-    grid-area: mp;
-  }
+.mid2 {
+grid-area:mp
+}
 
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .seven {
-    position: relative;
-    top: -7px;
-  }
-  .eight {
-    position: relative;
-    top: -2px;
-  }
-  .three {
-    position: relative;
-    top: -24px;
-  }
-  .four {
-    position: relative;
-    top: -8px;
-  }
+.seven {
+position:relative;
+top:-7px
+}
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.eight {
+position:relative;
+top:-2px
+}
 
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
+.three {
+position:relative;
+top:-24px
+}
 
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 6%;
-  }
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 6% !important;
-  }
+.four {
+position:relative;
+top:-8px
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:6%
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:6%!important
+}
 }
 
 @media only screen and (min-width: 740px) and (max-width: 900px) {
-  .shopWrapper {
-    display: grid;
-    grid-template-columns: 0.7fr 1fr 1.5fr 1.5fr 1fr 0.7fr;
-    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
-    /* gap: 2rem 0px;  */
-    align-items: center;
+.shopWrapper {
+display:grid;
+grid-template-columns:0.7fr 1fr 1.5fr 1.5fr 1fr 0.7fr;
+grid-template-rows:0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
+align-items:center;
+grid-template-areas:".. .. .. .. .. .." ". . mp mp . . " ". . mp mp . . " ". i1 i1 i2 i2 . " ". i1 i1 i2 i2 . " ".. .. .. .. .. .."
+}
 
-    grid-template-areas:
-      ".. .. .. .. .. .."
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  i1 i1 i2 i2 . "
-      ".  i1 i1 i2 i2 . "
-      ".. .. .. .. .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .mid2 {
-    grid-area: mp;
-  }
+.mid2 {
+grid-area:mp
+}
 
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .seven {
-    position: relative;
-    top: -7px;
-  }
-  .eight {
-    position: relative;
-    top: -2px;
-  }
-  .three {
-    position: relative;
-    top: -24px;
-  }
-  .four {
-    position: relative;
-    top: -8px;
-  }
+.seven {
+position:relative;
+top:-7px
+}
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.eight {
+position:relative;
+top:-2px
+}
 
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
+.three {
+position:relative;
+top:-24px
+}
 
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 6%;
-  }
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 6% !important;
-  }
+.four {
+position:relative;
+top:-8px
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:6%
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:6%!important
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 384px) {
-  .buy {
-    font-size: 1.2rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 1.5fr 1.5fr 1fr 0.2fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-
-  .eight {
-    position: relative;
-    top: 2px;
-  }
-
-  .three {
-    position: relative;
-    top: -13px;
-  }
-
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-
-  .four {
-    position: relative;
-    top: -5px;
-  }
+.buy {
+font-size:1.2rem
 }
+
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:0.2fr 1fr 1.5fr 1.5fr 1fr 0.2fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
+
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.four {
+position:relative;
+top:-5px
+}
+}
+
 @media only screen and (min-width: 335px) and (max-width: 499px) {
-  .buy {
-    font-size: 1.2rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-
-  .eight {
-    position: relative;
-    top: 2px;
-  }
-
-  .three {
-    position: relative;
-    top: -13px;
-  }
-
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-
-  .four {
-    position: relative;
-    top: -5px;
-  }
+.buy {
+font-size:1.2rem
 }
+
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
+
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.four {
+position:relative;
+top:-5px
+}
+}
+
 @media only screen and (min-width: 405px) and (max-width: 450px) {
-  .buy {
-    font-size: 1rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr 1.5fr 1.5fr 1fr 0.8fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-
-  .eight {
-    position: relative;
-    top: 2px;
-  }
-
-  .three {
-    position: relative;
-    top: -13px;
-  }
-
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 5% !important;
-  }
-
-  .four {
-    position: relative;
-    top: -5px;
-  }
+.buy {
+font-size:1rem
 }
+
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:0.8fr 1fr 1.5fr 1.5fr 1fr 0.8fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
+
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:5%!important
+}
+
+.four {
+position:relative;
+top:-5px
+}
+}
+
 @media only screen and (min-width: 441px) and (max-width: 470px) {
-  .buy {
-    font-size: 1.2rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
+.buy {
+font-size:1.2rem
+}
 
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:1fr 1fr 1.5fr 1.5fr 1fr 1fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
 
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
 
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
+.mid2 {
+grid-area:mp
+}
 
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .eight {
-    position: relative;
-    top: 2px;
-  }
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
 
-  .three {
-    position: relative;
-    top: -13px;
-  }
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
 
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 5% !important;
-  }
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
 
-  .four {
-    position: relative;
-    top: -5px;
-  }
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:5%!important
+}
+
+.four {
+position:relative;
+top:-5px
+}
 }
 
 @media only screen and (min-width: 470px) and (max-width: 559px) {
-  .buy {
-    font-size: 1.2rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1.6fr 1fr 1.5fr 1.5fr 1fr 1.6fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
+.buy {
+font-size:1.2rem
+}
 
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:1.6fr 1fr 1.5fr 1.5fr 1fr 1.6fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
 
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
 
-  .pic {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
+.mid2 {
+grid-area:mp
+}
 
-  .merchpic {
-    width: 100%;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
 
-  .eight {
-    position: relative;
-    top: 2px;
-  }
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
 
-  .three {
-    position: relative;
-    top: -13px;
-  }
+.pic {
+width:100%;
+transition:all .3s ease-in-out;
+height:auto
+}
 
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 5% !important;
-  }
+.merchpic {
+width:100%;
+height:auto;
+transition:all .1s ease-in
+}
 
-  .four {
-    position: relative;
-    top: -5px;
-  }
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:5%!important
+}
+
+.four {
+position:relative;
+top:-5px
+}
 }
 
 @media (min-width: 300px) and (max-width: 321px) and (max-height: 630px) {
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr 1.5fr 1.5fr 1fr 1.1fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:1.1fr 1fr 1.5fr 1.5fr 1fr 1.1fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
 }
 
 @media (min-width: 321px) and (max-width: 355px) and (max-height: 630px) {
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
 }
 
 @media (min-width: 356px) and (max-width: 450px) and (max-height: 630px) {
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:1.3fr 1fr 1.5fr 1.5fr 1fr 1.3fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
 }
 
 @media only screen and (max-width: 800px) {
-  .illawrapper {
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .left3 p {
-    font-size: 1vh;
-  }
-  .left3 {
-    margin-top: 25rem;
-    width: 18rem;
-    flex: 1;
-    margin-bottom: 1rem;
-  }
-  .right3 {
-    margin-top: 0rem;
-    width: 18rem;
-  }
-
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 6%;
-  }
-
-  .mint {
-    font-size: 5vw;
-  }
+.illawrapper {
+flex-direction:column;
+gap:0;
+justify-content:center;
+align-items:center
 }
 
-@media only screen and (min-width: 426px) {
-
-
-}
-
-/* @media only screen and (max-width: 1010px) {
-  .illawrapper {
-    gap: -2rem;
-  }
-} */
-
-@media only screen and (min-width: 320px) and (max-width: 1021px) {
-  .spotifyContainer {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    width: 230px;
-    height: 80px;
-    filter: opacity(40%);
-    transform: translate(-50%, -50%);
-  }
-  .btns {
-    margin: 25px;
-  }
-.btns{
-  margin-top: 18px;
-}
-  .title {
-    font-size: 20px;
-  }
-
-  .textContainer {
-    top: 79.5svh;
-  }
-  .btncontainerlisten a {
-    font-size: 15px;
-  }
-  .btncontainerwatch a {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 776px) and (max-width: 1171px) {
-  .spotifyContainer {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    width: 224px;
-    height: 80px;
-    filter: opacity(70%);
-    transform: translate(-50%, -50%);
-  }
-  .btns {
-    margin: 25px;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-  .textContainer {
-    top: 77.5svh;
-  }
-  .btncontainerlisten a {
-    font-size: 17px;
-  }
-  .btncontainerwatch a {
-    font-size: 17px;
-  }
-}
-
-@media only screen and (max-width: 1300px) and (max-height: 0px) {
-  .dualtitle {
-    width: 15rem;
-  }
-  .mask {
-    visibility: hidden;
-  }
-
-  .dualpic2 {
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 50px 15px;
-    margin-bottom: 0.5rem;
-  }
-  .spotlogo {
-    width: 3.7rem;
-    position: relative;
-    top: 4%;
-    margin-left: 2%;
-    margin-right: 5%;
-  }
-  .buy {
-    font-size: 1rem;
-  }
-
-  .mint {
-    font-size: 1rem;
-  }
-  .bottom {
-    font-size: 1rem;
-  }
-  .ytlogo {
-    width: 4rem;
-  }
-  .applelogo {
-    width: 3rem;
-    top: -7%;
-  }
-  .mainHeader {
-    margin-top: 4rem;
-  }
-
-  .imgWrapper {
-    width: 15rem;
-  }
-  .spotifyContainer {
-    position: absolute;
-    top: 83vh;
-    left: 1%;
-
-    width: 15rem;
-  }
-  .textContainer {
-    top: 80vh;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-  .btncontainerlisten a,
-  .btncontainerwatch a {
-    font-size: 1rem;
-  }
-
-  .left3 {
-    width: 15rem;
-  }
-}
-
-@media only screen and (min-width: 1313px) and (max-width: 1800px) {
-  .illaparent {
-    display: flex;
-    justify-content: center;
-  }
-
-  .illawrapper {
-    display: flex;
-    gap: 6rem;
-  }
-
-  .left3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    flex: 1 1 47rem;
-  }
-
-  .left3 {
-    width: 20rem;
-  }
-
-  .pwrapper {
-    width: 50%;
- 
-   
-   
-  }
-
-  .pwrapper p{
-    font-size: 0.8rem;
-  }
-  .right3 {
-    flex: 1 1 43rem;
-  }
-
-  .right3 {
-    width: 50rem;
-  }
-
-  .btncontainermint {
-    bottom: 6%;
-    position: absolute;
-    z-index: 2;
-  }
-}
-
-@media only screen and (min-width: 1001px) and (max-width: 1312px) {
-  .illaparent {
-    display: flex;
-    justify-content: center;
-  }
-
-  .illawrapper {
-    display: flex;
-    gap: 5rem;
-  }
-
-  .left3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    flex: 1 1 47rem;
-  }
-
-  .left3 {
-    width: 10rem;
-  }
-
-  .pwrapper {
-    width: 50%;
- 
-   
-   
-  }
-
-  .pwrapper p{
-    font-size: 0.8rem;
-  }
-  .right3 {
-    flex: 1 1 43rem;
-  }
-
-  .right3 {
-    width: 50rem;
-  }
-
-  .btncontainermint {
-    bottom: 6%;
-    position: absolute;
-    z-index: 2;
-  }
-}
-
-/* @media only screen and (min-width: 1501px) and (max-width: 1800px) {
-  .illaparent {
-    display: flex;
-    justify-content: center;
-  }
-
-  .illawrapper {
-    display: flex;
-    gap: 4rem;
-  }
-
-  .left3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    flex: 1 1 47rem;
-  }
-
-  .left3 {
-    width: 30rem;
-  }
-
-  .pwrapper {
-    width: 50%;
-  }
-
-  .right3 {
-    flex: 1 1 43rem;
-  }
-
-  .right3 {
-    width: 50rem;
-  }
-
-  .btncontainermint {
-    bottom: 6%;
-    position: absolute;
-    z-index: 2;
-  }
-} */
-/* 
-@media only screen and (min-width: 300px) and (max-width: 480px) and (max-height: 882px) {
-  .left3 {
-    width: 15rem;
-    margin-top: 55vh;
-  }
-
-  .right3 {
-    width: 15rem;
-  }
-}
-@media only screen and (min-width: 412px) and (max-width: 480px) and (max-height: 882px) {
-  .left3 {
-    width: 15rem;
-    margin-top: 45vh;
-  }
-
-  .right3 {
-    width: 15rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 480px) and (max-height: 700px) {
-  .left3 {
-    width: 11rem;
-    margin-top: 75vh;
-  }
-
-  .right3 {
-    width: 11rem;
-  }
-} */
-
-@media only screen and (min-width: 1280px) and (max-height: 800px) {
-  .textContainer {
-    top: 80vh;
-  }
-
-  .spotifyContainer {
-    top: 87vh;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width:900px) {
-  .btncontainer{
-    display: none !important;
-      }
-      .btncontainermint {
-    display: none !important;
-      }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 590px) {
-  .buy {
-    font-size: 1.2rem;
-  }
-  .shopWrapper {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
-    grid-template-rows: 0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
-    gap: 1.5rem 0px;
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. i2 i2 .. .."
-      ".  .  i2 i2 .  . "
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  .  i1 i1 .  . "
-      ".. .. i1 i1 .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-  .merchparent h1 {
-    position: absolute;
-    visibility: hidden;
-  }
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 5rem  !important;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 12rem !important;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-
-  .eight {
-    position: relative;
-    top: 2px;
-  }
-
-  .three {
-    position: relative;
-    top: -13px;
-  }
-
-  .btncontainer {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-  }
-
-  .four {
-    position: relative;
-    top: -5px;
-  }
-}
-@media only screen and (min-width: 591px) and (max-width: 800px) {
-  .shopWrapper {
-    display: grid;
-    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
-    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
-    /* gap: 2rem 0px;  */
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. .. .. .. .."
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  i1 i1 i2 i2 . "
-      ".  i1 i1 i2 i2 . "
-      ".. .. .. .. .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .seven {
-    position: relative;
-    top: -7px;
-  }
-  .eight {
-    position: relative;
-    top: -2px;
-  }
-  .three {
-    position: relative;
-    top: -24px;
-  }
-  .four {
-    position: relative;
-    top: -8px;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 7rem !important;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 17rem !important;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-  .btncontainer {
- display: none;
-  }
-  .btncontainermint {
-    display: none;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1001px) {
-  .shopWrapper {
-    display: grid;
-    grid-template-columns: 0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
-    grid-template-rows: 0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
-    /* gap: 2rem 0px;  */
-    align-items: center;
-
-    grid-template-areas:
-      ".. .. .. .. .. .."
-      ".  .  mp mp .  . "
-      ".  .  mp mp .  . "
-      ".  i1 i1 i2 i2 . "
-      ".  i1 i1 i2 i2 . "
-      ".. .. .. .. .. ..";
-  }
-  .left2 {
-    margin: 0;
-    grid-area: i1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .mid2 {
-    grid-area: mp;
-  }
-
-  .right2 {
-    margin: 0;
-    grid-area: i2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .seven {
-    position: relative;
-    top: -7px;
-  }
-  .eight {
-    position: relative;
-    top: -2px;
-  }
-  .three {
-    position: relative;
-    top: -24px;
-  }
-  .four {
-    position: relative;
-    top: -8px;
-  }
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pic {
-    width: 9rem !important;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-  }
-
-  .merchpic {
-    width: 22rem !important;
-    height: auto;
-    transition: all 0.1s ease-in;
-  }
-  .btncontainer {
- display: none;
-  }
-  .btncontainermint {
-    display: none;
-  }
-
-
-  .illawrapper {
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .left3 p {
-    font-size: 1vh;
-  }
-  .left3 {
-    margin-top: 22rem;
-    width: 27rem;
-    flex: 1;
-    margin-bottom: 1rem;
-  }
-  .right3 {
-    margin-top: 0rem;
-    width: 22rem;
-  }
-
-  .btncontainermint {
-    position: absolute;
-    z-index: 2;
-    bottom: 6%;
-  }
-
-  .mint {
-    font-size: 5vw;
-  }
-}
-
-
-@media (min-width: 356px) and (max-width: 450px) and (max-height: 864px) {
-.pic{
-  width: 3.7rem !important;
-}
-.merchpic{
-  width: 8rem !important;
+.left3 p {
+font-size:1vh
 }
 
 .left3 {
-margin-top: 27rem;
-  width: 15rem;
-
+margin-top:25rem;
+width:18rem;
+flex:1;
+margin-bottom:1rem
 }
+
 .right3 {
-  
-  width: 15rem;
+margin-top:0;
+width:18rem
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:6%
+}
+
+.mint {
+font-size:5vw
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1021px) {
+.spotifyContainer {
+position:absolute;
+top:22%;
+left:50%;
+width:230px;
+height:80px;
+filter:opacity(40%);
+transform:translate(-50%,-50%)
+}
+
+.btns {
+margin:25px;
+margin-top:18px
+}
+
+.title {
+font-size:20px
+}
+
+.textContainer {
+top:79.5svh
+}
+
+.btncontainerlisten a {
+font-size:15px
+}
+
+.btncontainerwatch a {
+font-size:15px
+}
+}
+
+@media only screen and (min-width: 776px) and (max-width: 1171px) {
+.spotifyContainer {
+position:absolute;
+top:22%;
+left:50%;
+width:224px;
+height:80px;
+filter:opacity(70%);
+transform:translate(-50%,-50%)
+}
+
+.btns {
+margin:25px
+}
+
+.title {
+font-size:30px
+}
+
+.textContainer {
+top:77.5svh
+}
+
+.btncontainerlisten a {
+font-size:17px
+}
+
+.btncontainerwatch a {
+font-size:17px
+}
+}
+
+@media only screen and (max-width: 1300px) and (max-height: 0px) {
+.dualtitle {
+width:15rem
+}
+
+.mask {
+visibility:hidden
+}
+
+.dualpic2 {
+box-shadow:rgba(0,0,0,0.5) 0 50px 15px;
+margin-bottom:.5rem
+}
+
+.spotlogo {
+width:3.7rem;
+position:relative;
+top:4%;
+margin-left:2%;
+margin-right:5%
+}
+
+.buy {
+font-size:1rem
+}
+
+.mint {
+font-size:1rem
+}
+
+.bottom {
+font-size:1rem
+}
+
+.ytlogo {
+width:4rem
+}
+
+.applelogo {
+width:3rem;
+top:-7%
+}
+
+.mainHeader {
+margin-top:4rem
+}
+
+.imgWrapper {
+width:15rem
+}
+
+.spotifyContainer {
+position:absolute;
+top:83vh;
+left:1%;
+width:15rem
+}
+
+.textContainer {
+top:80vh
+}
+
+.title {
+font-size:30px
+}
+
+.btncontainerlisten a,.btncontainerwatch a {
+font-size:1rem
+}
+
+.left3 {
+width:15rem
+}
+}
+
+@media only screen and (min-width: 1313px) and (max-width: 1800px) {
+.illaparent {
+display:flex;
+justify-content:center
+}
+
+.illawrapper {
+display:flex;
+gap:6rem
+}
+
+.left3 {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-top:4rem;
+flex:1 1 47rem;
+width:20rem
+}
+
+.pwrapper {
+width:50%
+}
+
+.pwrapper p {
+font-size:.8rem
+}
+
+.right3 {
+flex:1 1 43rem;
+width:50rem
+}
+
+.btncontainermint {
+bottom:6%;
+position:absolute;
+z-index:2
+}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1312px) {
+.illaparent {
+display:flex;
+justify-content:center
+}
+
+.illawrapper {
+display:flex;
+gap:5rem
+}
+
+.left3 {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-top:4rem;
+flex:1 1 47rem;
+width:10rem
+}
+
+.pwrapper {
+width:50%
+}
+
+.pwrapper p {
+font-size:.8rem
+}
+
+.right3 {
+flex:1 1 43rem;
+width:50rem
+}
+
+.btncontainermint {
+bottom:6%;
+position:absolute;
+z-index:2
+}
+}
+
+@media only screen and (min-width: 1280px) and (max-height: 800px) {
+.textContainer {
+top:80vh
+}
+
+.spotifyContainer {
+top:87vh
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width:900px) {
+.btncontainer {
+display:none!important
+}
+
+.btncontainermint {
+display:none!important
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 590px) {
+.buy {
+font-size:1.2rem
+}
+
+.shopWrapper {
+margin-top:1rem;
+display:grid;
+grid-template-columns:0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
+grid-template-rows:0.1fr 0.3fr 0.5fr 1fr 0.4fr 0.1fr;
+gap:1.5rem 0;
+align-items:center;
+grid-template-areas:".. .. i2 i2 .. .." ". . i2 i2 . . " ". . mp mp . . " ". . mp mp . . " ". . i1 i1 . . " ".. .. i1 i1 .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.merchparent h1 {
+position:absolute;
+visibility:hidden
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:5rem!important;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:12rem!important;
+height:auto;
+transition:all .1s ease-in
+}
+
+.eight {
+position:relative;
+top:2px
+}
+
+.three {
+position:relative;
+top:-13px
+}
+
+.btncontainer {
+position:absolute;
+z-index:2;
+bottom:5%
+}
+
+.four {
+position:relative;
+top:-5px
+}
+}
+
+@media only screen and (min-width: 591px) and (max-width: 800px) {
+.shopWrapper {
+display:grid;
+grid-template-columns:0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
+grid-template-rows:0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
+align-items:center;
+grid-template-areas:".. .. .. .. .. .." ". . mp mp . . " ". . mp mp . . " ". i1 i1 i2 i2 . " ". i1 i1 i2 i2 . " ".. .. .. .. .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.seven {
+position:relative;
+top:-7px
+}
+
+.eight {
+position:relative;
+top:-2px
+}
+
+.three {
+position:relative;
+top:-24px
+}
+
+.four {
+position:relative;
+top:-8px
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:7rem!important;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:17rem!important;
+height:auto;
+transition:all .1s ease-in
+}
+
+.btncontainer {
+display:none
+}
+
+.btncontainermint {
+display:none
+}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1001px) {
+.shopWrapper {
+display:grid;
+grid-template-columns:0.4fr 1fr 1.5fr 1.5fr 1fr 0.4fr;
+grid-template-rows:0.6fr 1fr 1fr 1.2fr 1fr 0.3fr;
+align-items:center;
+grid-template-areas:".. .. .. .. .. .." ". . mp mp . . " ". . mp mp . . " ". i1 i1 i2 i2 . " ". i1 i1 i2 i2 . " ".. .. .. .. .. .."
+}
+
+.left2 {
+margin:0;
+grid-area:i1;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.mid2 {
+grid-area:mp
+}
+
+.right2 {
+margin:0;
+grid-area:i2;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem
+}
+
+.seven {
+position:relative;
+top:-7px
+}
+
+.eight {
+position:relative;
+top:-2px
+}
+
+.three {
+position:relative;
+top:-24px
+}
+
+.four {
+position:relative;
+top:-8px
+}
+
+.item {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+.pic {
+width:9rem!important;
+transition:all .3s ease-in-out;
+height:auto
+}
+
+.merchpic {
+width:22rem!important;
+height:auto;
+transition:all .1s ease-in
+}
+
+.btncontainer {
+display:none
+}
+
+.btncontainermint {
+display:none
+}
+
+.illawrapper {
+flex-direction:column;
+gap:0;
+justify-content:center;
+align-items:center
+}
+
+.left3 p {
+font-size:1vh
+}
+
+.left3 {
+margin-top:22rem;
+width:27rem;
+flex:1;
+margin-bottom:1rem
+}
+
+.right3 {
+margin-top:0;
+width:22rem
+}
+
+.btncontainermint {
+position:absolute;
+z-index:2;
+bottom:6%
+}
+
+.mint {
+font-size:5vw
+}
+}
+
+@media (min-width: 356px) and (max-width: 450px) and (max-height: 864px) {
+.pic {
+width:3.7rem!important
+}
+
+.merchpic {
+width:8rem!important
+}
+
+.left3 {
+margin-top:27rem;
+width:15rem
+}
+
+.right3 {
+width:15rem
 }
 }
