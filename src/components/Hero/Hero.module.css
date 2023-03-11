@@ -757,7 +757,7 @@ a:link {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 74.5svh;
+  top: 73.5svh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -768,7 +768,7 @@ a:link {
 
 .spotifyContainer {
   position: absolute;
-  top: 78svh;
+  top: 77svh;
   left: 1%;
 
   width: 25rem;
