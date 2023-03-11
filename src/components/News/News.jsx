@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import bg from "../../container/img/dualbgnew2dark.jpg";
+import bg from "../../container/img/bgresonances1.jpg";
 import styles from "./News.module.css";
 
 // import required modules
@@ -16,7 +16,7 @@ import { Grid, Pagination } from "swiper";
 
 export default function App() {
   return (
-    <div>
+    <div >
       <Swiper
         slidesPerView={5}
         grid={{

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import bg from "../../container/img/bgdark2.jpg";
+import bg from "../../container/img/bgact2.jpg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -11,101 +11,106 @@ import { MVembed2 } from "../sub-components/MVembed2/MVembed2";
 import MVData from "../../Data/MusicVideosData";
 import { MVembed1 } from "../sub-components/MVembed1/MVembed1";
 
-
 const TestPage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  // add state to track the visibility of the Swiper component
-  const [isVisible, setIsVisible] = useState(false);
-  // effect to handle the fade in animation
+  const [trigger, setTrigger] = useState(0);
+  const swiperRef = useRef(null);
+  const swiperRef2 = useRef(null);
+
+
+
+  // Slides per view media query
+  const [slidesPerView, setSlidesPerView] = useState(4);
+  const [swiper1Index, setSwiper1Index] = useState(0);
   useEffect(() => {
-    
-    const handleScroll = () => {
-    
-      if (swiperRef.current) {
-        // get the position of the Swiper component
-        const { top } = swiperRef.current.getBoundingClientRect();
-        // if the top of the Swiper component is within the viewport, set the visibility to true
-        if (top <= window.innerHeight) {
-          setIsVisible(true);
-      
-          
-        } else {
-          setIsVisible(false);
-      
-        }
+   
+
+    const handleWindowResize = () => {
+      if (window.innerWidth <= 600) {
+        setSlidesPerView(2);
+      } else if (window.innerWidth <= 800) {
+        setSlidesPerView(3);
+      } else if (window.innerWidth <= 1279) {
+        setSlidesPerView(4);
+      } else if (window.innerWidth >= 1280 && window.innerWidth <= 1800) {
+        setSlidesPerView(5);
+      } else {
+        setSlidesPerView(7);
       }
     };
 
-    
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleWindowResize();
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  const swiperRef = useRef(null);
-  
-
-  const [trigger, setTrigger] = useState(0);
- 
-
+ // Set .active css to thumb and gallery
+  const checkRef = (swiper) => {
+    setSwiper1Index(swiper.activeIndex)
+  }
 
 
   return (
-    <div className = {mvcss.mvparentwrapper}  ref={swiperRef}style={{ opacity: 1, backgroundImage: `url(${bg})`, }}>
-<div className={mvcss.mainWrapper}>
-
-      <Swiper
-        ref={swiperRef} 
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
-        spaceBetween={10}
-        navigation={false}
-        thumbs={{
-          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-        }}
-        onSlideChange={() => setTrigger((trigger) => trigger + 1)}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className={mvcss.mySwiper2}
-      >
-        {MVData.map((mvItem, index) => {
-          return (
-            <SwiperSlide key={index} className={mvcss.swiperSlide2} >
-              <MVembed2 link={mvItem.link} trigger={trigger}/>
-   
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-
-</div>
-
+    <div
+      className={mvcss.mvparentwrapper}
+      ref={swiperRef}
+      style={{ opacity: 1, backgroundImage: `url(${bg})` }}
+    >
+      <div className={mvcss.mainWrapper}>
+        <Swiper
+          ref={swiperRef}
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
+          }}
+          spaceBetween={10}
+          navigation={false}
+          thumbs={{
+            swiper:
+              thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+          }}
+          onSlideChange={(swiper) => {
+            setTrigger((trigger) => trigger + 1);
+            checkRef(swiper);
+          }}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className={mvcss.mySwiper2}
+        >
+          {MVData.map((mvItem, index) => {
+            return (
+              <SwiperSlide key={index} className={mvcss.swiperSlide2}>
+                <MVembed2 link={mvItem.link} trigger={trigger} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
 
       <div className={mvcss.mvwrapper2x}>
-    <div className={mvcss.mvwrapper2}>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={20}
-        slidesPerView={2}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className={mvcss.mySwiper}
-      >
-        {MVData.map((mvItem, index) => {
-          return (
-            <SwiperSlide key={index} className={mvcss.swiperSlide1}>
-              <MVembed1 thumb={mvItem.thumb} title={mvItem.title} />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
-  </div>
+        <div className={mvcss.mvwrapper2}>
+          <Swiper
+            ref={swiperRef2}
+            onSwiper={setThumbsSwiper}
+            spaceBetween={20}
+            slidesPerView={slidesPerView}
+            freeMode={true}
+            onSlideChange={(swiper) => {
   
-
-
+            }}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className={mvcss.mySwiper}
+          >
+            {MVData.map((mvItem, index) => {
+              return (
+                <SwiperSlide key={index} className={mvcss.swiperSlide1}>   
+                  <MVembed1 index={index} swiperKey = {swiper1Index} thumb={mvItem.thumb} title={mvItem.title} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+      </div>
     </div>
   );
 };

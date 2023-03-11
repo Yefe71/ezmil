@@ -144,13 +144,11 @@ export default function SwiperComp() {
     <div id="swiper-comp">
       <Swiper
         ref={swiperRef}
-        // autoplay={{ delay: 10000 }}
+        autoplay={{ delay: 10000 }}
         modules={[Pagination, Autoplay, Navigation]}
         onSlideChange={checkRef}
         className={HeroCSS.swiper}
-        pagination={{
-          dynamicBullets: true,
-        }}
+        pagination={true}
       >
         <SwiperSlide
           className={`${HeroCSS.swiperSlide} ${HeroCSS.bgclass}`}

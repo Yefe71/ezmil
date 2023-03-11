@@ -30,7 +30,7 @@ flex-direction: column;
  .mySwiper {
   box-sizing: border-box;
   padding: 15px 0;
-  height: 12rem;
+  height: 11rem;
   /* width: 125rem; */
   width: 100vw;
 
@@ -41,7 +41,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-background: rgba(78, 71, 71, 0.219);
+background: rgba(0, 0, 0, 0.349);
 
 }
 

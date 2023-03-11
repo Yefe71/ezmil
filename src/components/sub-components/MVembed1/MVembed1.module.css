@@ -39,7 +39,7 @@
 
 }
 .thumbContainer {
-    filter: brightness(50%);
+    filter: brightness(40%);
     transition: filter 0.3s ease;
   }
   
@@ -50,7 +50,7 @@
   }
 
   .thumbContainer.active {
-    filter: brightness(100%);
+    filter: brightness(110%);
   }
   
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
