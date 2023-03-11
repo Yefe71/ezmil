@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div >
       <Swiper
-        slidesPerView={5}
+        slidesPerView={1}
         grid={{
           rows: 2,
         }}
