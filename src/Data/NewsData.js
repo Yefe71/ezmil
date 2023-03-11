@@ -7,7 +7,7 @@ const tracks = [
       link: "https://www.eventcreate.com/e/gloc-9-and-shantidope?fbclid=IwAR2VKk46PVqttTebpFNVMKAc5i7Pe5BdpYiWnp8UrD0iLmPnK1ynHIlLnI8"
     },
     {
-      title: "THE FULL CONVO with DJ E-Rock",
+      title: "DJ E-Rock TFC Interview",
       date: "February 16, 2023",
       caption: "EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
       img: "https://i.ytimg.com/vi/anLc9IHJou4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrIWieOxVJ85VWmF3Cw0TDLwD3Lg",

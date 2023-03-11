@@ -14,15 +14,31 @@ body {
   padding: 0;
 }
 
+.newsWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76svh;
+
+  
+}
 .mySwiper {
  
   height: 76vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
+
 
 }
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
 
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
 .swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   background: #00000000;

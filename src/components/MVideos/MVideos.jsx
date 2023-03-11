@@ -20,8 +20,8 @@ const TestPage = () => {
 
 
   // Slides per view media query
-  const [slidesPerView, setSlidesPerView] = useState(4);
   const [swiper1Index, setSwiper1Index] = useState(0);
+  const [slidesPerView, setSlidesPerView] = useState(4);
   useEffect(() => {
    
 
