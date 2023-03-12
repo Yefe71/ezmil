@@ -2,14 +2,14 @@ const tracks = [
     {
       title: "HipHop saRap sa America",
       date: "February 28, 2023",
-      caption: "Join Gloc 9 as he Celebrates his 25th Anniversary with special guest Shanti Dope and Heaven Knew and Special Participation from EZ Mil.",
+      caption: "Join Gloc 9 as he Celebrates his 25th Anniversary with special participation Ez Mil and...",
       img: "https://eventcreate-v1.s3.us-west-1.amazonaws.com/uploads%2F8db3eddf-0600-4c3c-be30-93a9d2320657%2F323085903_896813508256301_6210518359028171948_n.jpg",
       link: "https://www.eventcreate.com/e/gloc-9-and-shantidope?fbclid=IwAR2VKk46PVqttTebpFNVMKAc5i7Pe5BdpYiWnp8UrD0iLmPnK1ynHIlLnI8"
     },
     {
-      title: "THE FULL CONVO with DJ E-Rock",
+      title: "DJ E-Rock TFC Interview",
       date: "February 16, 2023",
-      caption: "Internationally critically acclaimed rapper EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
+      caption: "EZ Mil sits with DJ E-Rock to talk about his new album Duality... ",
       img: "https://i.ytimg.com/vi/anLc9IHJou4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrIWieOxVJ85VWmF3Cw0TDLwD3Lg",
       link: "https://www.youtube.com/watch?v=7z3t3Mar7ag"
     },
@@ -49,7 +49,7 @@ const tracks = [
       link: "https://myx.global/ezmil-laclippers-halftime/"
     },
     {
-      title: "Merch Capsule AVAILABLE NOW! ",
+      title: "Merch Capsule Out Now! ",
       date: "November 18, 2022",
       caption: "Check out the official store link here: https://ezmil.lnk.to/DU4LI7Y",
       img: "https://yt3.ggpht.com/b9WZ4VgaWA7uSD7L3Gmg22-tCz81ouOi_rx9hXAETUKZjh6MpxYaBTbx6_8T3soDWl1oc9l3C0dBkg=s1024-c-fcrop64=1,00000000ffffffff-nd-v1",
@@ -63,7 +63,7 @@ const tracks = [
       link: "https://www.youtube.com/watch?v=xYU-b80882c"
     },
     {
-      title: "Ridin' With The Moonlight OMV Out Now!",
+      title: "RWTM OMV Out Now!",
       date: "July 27, 2022",
       caption: "A taste of the unique side of R&B. Enveloped in the elysian piano...",
       img: "https://i.ibb.co/QjLvKcj/rwtmpic.jpg",
@@ -93,7 +93,7 @@ const tracks = [
     },
  
     {
-      title: "Dalawampu't Dalawang Oo OMV Out Now",
+      title: "2200 OMV Out Now",
       date: "June 14, 2022",
       caption: "Representing twenty-two double-o! Paying homage to his hometown, Olongapo...",
       img: "https://i.ytimg.com/vi/Ey2EK0Acn24/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9W6JtJIQo5X5CeewwlRb0MWLBcg",

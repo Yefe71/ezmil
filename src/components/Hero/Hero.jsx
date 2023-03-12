@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, createRef } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,9 +15,10 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 
 // Import Components
 import SpotifySnippet from "../sub-components/SpotifySnippet/SpotifySnippet";
+import SnippetsData from "../../Data/SnippetsData";
 
 // Import Media
-import ezmil from "../../container/img/ezmil3.jpg";
+import ezmil from "../../container/img/ezmil6.jpg";
 import duality from "../../container/img/duality.jpg";
 import dualtitle from "../../container/img/title2.svg";
 import youtube from "../../container/img/logos/youtube.svg";
@@ -36,35 +37,20 @@ import towel from "../../container/img/Photos/Merch/towel.webp";
 import tshirt from "../../container/img/Photos/Merch/tshirt.webp";
 import nftdud from "../../container/img/Photos/nft/nft.png";
 import illalogo from "../../container/img/Photos/nft/illa.png";
-import bodies from "../../container/img/videos/bodies.webm";
-import ridin from "../../container/img/videos/ridin.webm";
-import reup from "../../container/img/videos/reup.webm";
-import dalawa from "../../container/img/videos/dalawa.webm";
-import updown from "../../container/img/videos/updownmv.webm";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
+
 export default function SwiperComp() {
-  const ridin2 = "2EEj4xqP1kOOxN2xK4cQ4i";
-  const bodies2 = "1JHzqHLBk7vwY2Ee3dShyX";
-  const reup2 = "3fOXmBSYqdTAyS6ShT7MMp";
-  const dalawa2 = "54BJkClH2MXQoG0tb5yWUZ";
-  const updown2 = "5RD5K23WM4YSqAUGsHJjis";
-  const videoRef1 = useRef(null);
-  const videoRef2 = useRef(null);
-  const videoRef3 = useRef(null);
-  const videoRef4 = useRef(null);
-  const videoRef5 = useRef(null);
-  const swiperRef = useRef(null);
-  const [isMouseMoving, setIsMouseMoving] = useState(false);
 
+  const videoRefs = useRef(SnippetsData.map(() => createRef()));
+  
+  
   useEffect(() => {
-    videoRef1.current.pause();
-    videoRef2.current.pause();
-    videoRef3.current.pause();
-    videoRef4.current.pause();
+    videoRefs.current.forEach(ref => ref.current.pause());
   }, []);
-
+  
+  const swiperRef = useRef(null);
   const handleNext = () => {
     swiperRef.current.swiper.slideNext();
   };
@@ -74,71 +60,65 @@ export default function SwiperComp() {
   };
 
   const checkRef = (swiper) => {
-  
     switch (swiper.activeIndex) {
       case 0:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
       case 1:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
-
       case 2:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
-
       case 3:
-        videoRef1.current.play();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.play();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
       case 4:
-        videoRef1.current.pause();
-        videoRef2.current.play();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.play();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
       case 5:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.play();
-        videoRef4.current.pause();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.play();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.pause();
         break;
       case 6:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.play();
-        videoRef5.current.pause();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.play();
+        videoRefs.current[4].current.pause();
         break;
-
       case 7:
-        videoRef1.current.pause();
-        videoRef2.current.pause();
-        videoRef3.current.pause();
-        videoRef4.current.pause();
-        videoRef5.current.play();
+        videoRefs.current[0].current.pause();
+        videoRefs.current[1].current.pause();
+        videoRefs.current[2].current.pause();
+        videoRefs.current[3].current.pause();
+        videoRefs.current[4].current.play();
         break;
-
-
       default:
-      // code block
+        // code block
     }
   };
 
@@ -146,14 +126,13 @@ export default function SwiperComp() {
     <div id="swiper-comp">
       <Swiper
         ref={swiperRef}
-        // autoplay={{ delay: 10000 }}
+        autoplay={{ delay: 10000 }}
         modules={[Pagination, Autoplay, Navigation]}
         onSlideChange={checkRef}
         className={HeroCSS.swiper}
-        pagination={{
-          dynamicBullets: true,
-        }}
+        pagination={true}
       >
+        {console.log(videoRefs)}
         <SwiperSlide
           className={`${HeroCSS.swiperSlide} ${HeroCSS.bgclass}`}
           style={{ backgroundImage: `url(${ezmil})` }}
@@ -162,19 +141,6 @@ export default function SwiperComp() {
             <div className={HeroCSS.mainHeader2}>
               <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
 
-              {/* <div className={HeroCSS.outpic}>
-                <h2 className={HeroCSS.bottom}>OUT NOW</h2>
-                <div className={HeroCSS.dualpicphonewrapper}>
-                  <img
-                    onClick="https://ezmil.lnk.to/DU4LI7Y"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.dualpicphone}
-                    src={duality}
-                    alt=""
-                  />
-                </div>
-              </div> */}
             </div>
 
             <div className={HeroCSS.imgWrapper}>
@@ -241,16 +207,7 @@ export default function SwiperComp() {
           style={{ backgroundImage: `url(${ezbg})` }}
         >
           <div className={HeroCSS.merchparent}>
-            <div className={HeroCSS.btncontainer}>
-              <a
-                href="https://shop.virginmusic.com/collections/ez-mil"
-                rel="noreferrer"
-                target="_blank"
-                className={HeroCSS.buy}
-              >
-                BUY NOW
-              </a>
-            </div>
+
 
             <div className={HeroCSS.shopWrapper}>
               <div className={HeroCSS.left2}>
@@ -287,7 +244,11 @@ export default function SwiperComp() {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <img className={`${HeroCSS.pic} ${HeroCSS.towel}`} src={towel} alt="" />
+                      <img
+                        className={`${HeroCSS.pic} ${HeroCSS.towel}`}
+                        src={towel}
+                        alt=""
+                      />
                     </a>
                     <h1 className={HeroCSS.threetitle}>Ez Mil - Towel</h1>
                   </div>
@@ -370,6 +331,17 @@ export default function SwiperComp() {
                 </div>
               </div>
             </div>
+
+            <div className={HeroCSS.btncontainer}>
+              <a
+                href="https://shop.virginmusic.com/collections/ez-mil"
+                rel="noreferrer"
+                target="_blank"
+                className={HeroCSS.buy}
+              >
+                BUY NOW
+              </a>
+            </div>
           </div>
         </SwiperSlide>
 
@@ -378,278 +350,105 @@ export default function SwiperComp() {
           style={{ background: "rgb(227, 204, 173)" }}
         >
 
-<div className={HeroCSS.btncontainermint}>
-            <a
-              href="https://app.niftykit.com/drops/illazillazelementz"
-              rel="noreferrer"
-              target="_blank"
-              className={HeroCSS.mint}
-            >
-              MINT NOW
-            </a>
-          </div>
           <div className={HeroCSS.illaparent}>
- 
+            <div className={HeroCSS.illawrapper}>
+              <div className={HeroCSS.left3}>
+                <a href="https://www.illazillaz.com/">
+                  <img src={illalogo} alt="" className={HeroCSS.illalogo} />
+                </a>
+                <div className={HeroCSS.pwrapper}>
+                  <p>
+                    Slashzilla holders will receive a copy of an original story
+                    board booklet from the music video of his upcoming single
+                    "Rapture". Stay tuned for more announcements.
+                  </p>
+                </div>
+              </div>
 
-<div className={HeroCSS.illawrapper}>
+              <div className={HeroCSS.right3}>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://app.niftykit.com/drops/illazillazelementz"
+                >
+                  <img src={nftdud} alt="" className={HeroCSS.nftdud} />
+                </a>
+              </div>
+            </div>
 
+            <div className={HeroCSS.btncontainermint}>
+              <a
+                href="https://app.niftykit.com/drops/illazillazelementz"
+                rel="noreferrer"
+                target="_blank"
+                className={HeroCSS.mint}
+              >
+                MINT NOW
+              </a>
+            </div>
+          </div>
 
-<div className={HeroCSS.left3}>
-      <a href="https://www.illazillaz.com/">
-        <img src={illalogo} alt="" className={HeroCSS.illalogo} />
-      </a>
-      <div className={HeroCSS.pwrapper}>
-        <p>
-          Slashzilla holders will receive a copy of an original story
-          board booklet from the music video of his upcoming single
-          "Rapture". Stay tuned for more announcements.
-        </p>
-      </div>
-    </div>
-
-    <div className={HeroCSS.right3}>
-      <a href="https://app.niftykit.com/drops/illazillazelementz">
-        <img src={nftdud} alt="" className={HeroCSS.nftdud} />
-      </a>
-    </div>
-  </div>
-
-
-</div>
 
         </SwiperSlide>
 
-        <SwiperSlide className={HeroCSS.swiperSlide}>
-          <div className={HeroCSS.videoContainer}>
-            <video
-              className={HeroCSS.video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={updown}
-              ref={videoRef1}
-            />
-            <div className={HeroCSS.spotifyContainer}>
-              <SpotifySnippet
-                tracklink={updown2}
-                className={HeroCSS.spotifySnippet}
-              />
-            </div>
 
-            <div className={HeroCSS.textContainer}>
-              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>Up Down (Step & Walk)</h1>
-              <div className={HeroCSS.btns}>
-                <div className={HeroCSS.btncontainerlisten}>
-                  <a
-                    href="https://open.spotify.com/track/5RD5K23WM4YSqAUGsHJjis"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Listen
-                  </a>
-                </div>
-                <div className={HeroCSS.btncontainerwatch}>
-                  <a
-                    href="https://www.youtube.com/watch?v=f4YWrr2gmAs"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Watch
-                  </a>
-                </div>
+        {SnippetsData.map((mv, index) => (
+        <SwiperSlide className={HeroCSS.swiperSlide}>
+        <div className={HeroCSS.videoContainer}>
+          <video
+            className={HeroCSS.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={mv.vid}
+            ref={videoRefs.current[index]}
+          />
+
+          <div className={HeroCSS.spotframeWrapper}>
+
+          <div className={HeroCSS.spotifyContainer}>
+            <SpotifySnippet
+              tracklink={mv.spot}
+              className={HeroCSS.spotifySnippet}
+            />
+          </div>
+
+          <div className={HeroCSS.textContainer}>
+            <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
+            <h1 className={HeroCSS.title}>{mv.title}</h1>
+            <div className={HeroCSS.btns}>
+              <div className={HeroCSS.btncontainerlisten}>
+                <a
+                  href={mv.listen}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={HeroCSS.buy}
+                >
+                  Listen
+                </a>
+              </div>
+              <div className={HeroCSS.btncontainerwatch}>
+                <a
+                  href={mv.watch}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={HeroCSS.buy}
+                >
+                  Watch
+                </a>
               </div>
             </div>
           </div>
-        </SwiperSlide>
 
-        <SwiperSlide className={HeroCSS.swiperSlide}>
-          <div className={HeroCSS.videoContainer}>
-            <video
-              className={HeroCSS.video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={ridin}
-              ref={videoRef2}
-            />
-            <div className={HeroCSS.spotifyContainer}>
-              <SpotifySnippet
-                tracklink={ridin2}
-                className={HeroCSS.spotifySnippet}
-              />
-            </div>
-
-            <div className={HeroCSS.textContainer}>
-              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>Ridin' With The Moonlight</h1>
-              <div className={HeroCSS.btns}>
-                <div className={HeroCSS.btncontainerlisten}>
-                  <a
-                    href="https://open.spotify.com/track/2EEj4xqP1kOOxN2xK4cQ4i?si=ec4ab9c584fe4bd7"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Listen
-                  </a>
-                </div>
-                <div className={HeroCSS.btncontainerwatch}>
-                  <a
-                    href="https://www.youtube.com/watch?v=f2O00lZQ6q0"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Watch
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-        </SwiperSlide>
+          
+        </div>
+      </SwiperSlide>
+        ))}
 
-        <SwiperSlide className={HeroCSS.swiperSlide}>
-          <div className={HeroCSS.videoContainer}>
-            <video
-              ref={videoRef3}
-              className={HeroCSS.video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={bodies}
-            />
-            <div className={HeroCSS.spotifyContainer}>
-              <SpotifySnippet
-                tracklink={bodies2}
-                className={HeroCSS.spotifySnippet}
-              />
-            </div>
-            <div className={HeroCSS.textContainer}>
-              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>27 BODIES</h1>
-              <div className={HeroCSS.btns}>
-                <div className={HeroCSS.btncontainerlisten}>
-                  <a
-                    href="https://open.spotify.com/track/1DtzPOWTRDU6ywUvgaT317?si=e88e785ee18b4a61"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Listen
-                  </a>
-                </div>
-                <div className={HeroCSS.btncontainerwatch}>
-                  <a
-                    href="https://www.youtube.com/watch?v=WycGOjeEI0I"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Watch
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide className={HeroCSS.swiperSlide}>
-          <div className={HeroCSS.videoContainer}>
-            <video
-              ref={videoRef4}
-              className={HeroCSS.video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={reup}
-            />
-            <div className={HeroCSS.spotifyContainer}>
-              <SpotifySnippet
-                tracklink={reup2}
-                className={HeroCSS.spotifySnippet}
-              />
-            </div>
-            <div className={HeroCSS.textContainer}>
-              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>Re Up</h1>
-              <div className={HeroCSS.btns}>
-                <div className={HeroCSS.btncontainerlisten}>
-                  <a
-                    href="https://open.spotify.com/track/7FMvgrhxrIXy9yLCoCzDm4?si=e62524ad37a04a99"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Listen
-                  </a>
-                </div>
-                <div className={HeroCSS.btncontainerwatch}>
-                  <a
-                    href="https://www.youtube.com/watch?v=TpJjpTyBx_g"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Watch
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide className={HeroCSS.swiperSlide}>
-          <div className={HeroCSS.videoContainer}>
-            <video
-              ref={videoRef5}
-              className={HeroCSS.video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={dalawa}
-            />
-            <div className={HeroCSS.spotifyContainer}>
-              <SpotifySnippet
-                tracklink={dalawa2}
-                className={HeroCSS.spotifySnippet}
-              />
-            </div>
-            <div className={HeroCSS.textContainer}>
-              <img className={HeroCSS.dualtitlevid} src={dualtitle} alt="" />
-              <h1 className={HeroCSS.title}>Dalawampu't Dalawang Oo</h1>
-              <div className={HeroCSS.btns}>
-                <div className={HeroCSS.btncontainerlisten}>
-                  <a
-                    href="https://open.spotify.com/track/4w4XUSwVTn7LCOQXdwYZsY?si=d23bd30e543f406b"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Listen
-                  </a>
-                </div>
-                <div className={HeroCSS.btncontainerwatch}>
-                  <a
-                    href="https://www.youtube.com/watch?v=Ey2EK0Acn24"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.buy}
-                  >
-                    Watch
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
 
         <div className={HeroCSS.swiperbuttonprev}>
           <img

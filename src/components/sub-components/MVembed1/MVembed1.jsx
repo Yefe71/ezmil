@@ -3,32 +3,16 @@ import styles from "./MVembed1.module.css";
 
 export const MVembed1 = (props) => {
   const thumbRef = useRef(null);
-  const [isActive, setIsActive] = useState(false);
 
-  const handleThumbClick = () => {
-    setIsActive(true);
-  };
-
-  useEffect(() => {
-    const handleClick = (e) => {
-      if (thumbRef.current && !thumbRef.current.contains(e.target)) {
-        setIsActive(false);
-      }
-    };
-    document.addEventListener("click", handleClick);
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  }, []);
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.titleWrapper} ref={thumbRef} onClick={handleThumbClick}>
+      <div className={styles.titleWrapper} ref={thumbRef}>
         <h3 className={styles.title}>{props.title}</h3>
       </div>
       <div
         
-        className={`${styles.thumbContainer} ${isActive ? styles.active : ""}`}
+        className={`${styles.thumbContainer} ${props.swiperKey === props.index ? styles.active : ""}`}
         style={{
           backgroundImage: `url(${props.thumb})`,
           ...(props.link === "abKwhST8Qv0" && { backgroundPosition: "top" }),

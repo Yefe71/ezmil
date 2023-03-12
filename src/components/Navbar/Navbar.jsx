@@ -46,7 +46,7 @@ function Navbar(props) {
 
   
   return (
-    <nav id="navbar" className={navbarActive ? "navbar-active" : ""}>
+    <nav id="navbar" className={"navbar-active"}>
       <div className={`menu ${menuOpen ? "menu-open" : ""}`}>
         <div>
           <img src={logo} className="logo" alt="" />

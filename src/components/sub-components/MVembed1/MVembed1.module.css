@@ -31,15 +31,15 @@
 }
 .title{
     color: white;
-    font-family: "Roboto";
-    font-weight: 100;
+    font-family: "Poppins";
+    font-weight: 200;
     font-size: small;
     margin: 0;
     padding: 0;
 
 }
 .thumbContainer {
-    filter: brightness(50%);
+    filter: brightness(40%);
     transition: filter 0.3s ease;
   }
   
@@ -50,14 +50,14 @@
   }
 
   .thumbContainer.active {
-    filter: brightness(100%);
+    filter: brightness(110%);
   }
   
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
 
     .title{
         color: white;
-        font-family: "Roboto";
+        font-family: "Poppins";
         font-weight: 100;
         font-size: 0.5rem;
         margin: 0;

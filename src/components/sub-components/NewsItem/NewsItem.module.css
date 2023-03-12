@@ -1,11 +1,12 @@
+
 .newsImg{
 
-    width: 18rem;
-    height: 18rem;
+    width: 100%;
+    height:10rem;
     object-fit: cover;
     
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0.8rem;
+
 }
 
 
@@ -14,18 +15,24 @@
     display: flex;
     flex-direction: column;
     color: white;
-    width: 15rem;
+    width: 18rem;
     transition: all 0.5 ease-in-out;
+    text-align: left;
+    margin-top: 3vh;
+    transition: all 0.2s ease-in-out;
+
 
 }
 
 .newsWrapper:hover{
     filter: brightness(80%);
+    scale: 1.1;
+
 
 }
 
 .newsWrapper p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     
 }
 
@@ -45,7 +52,74 @@
 }
 
 .swiperNews{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: grid;
+        place-items: center;
+    
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+
+    .newsImg{
+
+        width: 100%;
+        height:8.5rem;
+        object-fit: cover;
+    
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+
+
+    .newsWrapper{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 16.5rem;
+        transition: all 0.5 ease-in-out;
+        text-align: left;
+        margin-top: 6vh;
+        transition: all 0.2s ease-in-out;
+
+
+    }
+
+    .newsWrapper:hover{
+        filter: brightness(80%);
+        scale: 1.1;
+
+
+    }
+
+    .newsWrapper p {
+        font-size: 0.5rem;
+    
+    }
+
+    .date, .title, .caption{
+        margin: 0.1rem;
+
+        font-family: "Poppins";
+    }
+
+    .title{
+        font-size: 0.8rem;
+    }
+
+    .date{
+        color: rgba(255, 255, 255, 0.69);
+        margin-top: 1rem;
+    }
+
+    .right-top-info *{
+        color: white;
+    }
+
+    .swiperNews{
+            display: grid;
+            place-items: center;
+    
+    }
+
 }
