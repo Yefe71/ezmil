@@ -237,16 +237,7 @@ export default function SwiperComp() {
           style={{ backgroundImage: `url(${ezbg})` }}
         >
           <div className={HeroCSS.merchparent}>
-            <div className={HeroCSS.btncontainer}>
-              <a
-                href="https://shop.virginmusic.com/collections/ez-mil"
-                rel="noreferrer"
-                target="_blank"
-                className={HeroCSS.buy}
-              >
-                BUY NOW
-              </a>
-            </div>
+
 
             <div className={HeroCSS.shopWrapper}>
               <div className={HeroCSS.left2}>
@@ -369,6 +360,17 @@ export default function SwiperComp() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className={HeroCSS.btncontainer}>
+              <a
+                href="https://shop.virginmusic.com/collections/ez-mil"
+                rel="noreferrer"
+                target="_blank"
+                className={HeroCSS.buy}
+              >
+                BUY NOW
+              </a>
             </div>
           </div>
         </SwiperSlide>
