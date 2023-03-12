@@ -1,3 +1,5 @@
+
+
 const SnippetsData = [
   {
     title: "Up Down (Step & Walk)",
@@ -15,7 +17,7 @@ const SnippetsData = [
   },
   {
     title: "27 Bodies",
-    vid: "bodies.webm",
+    vid: "videos/bodies.webm",
     spot: "1JHzqHLBk7vwY2Ee3dShyX",
     listen: "https://open.spotify.com/track/1DtzPOWTRDU6ywUvgaT317?si=e88e785ee18b4a61",
     watch: "https://www.youtube.com/watch?v=WycGOjeEI0I"
@@ -29,7 +31,7 @@ const SnippetsData = [
   },
   {
     title: "Dalawampu't Dalawang Oo",
-    vid: "dalawa.webm",
+    vid: "videos/dalawa.webm",
     spot: "54BJkClH2MXQoG0tb5yWUZ",
     listen: "https://open.spotify.com/track/4w4XUSwVTn7LCOQXdwYZsY?si=d23bd30e543f406b",
     watch: "https://www.youtube.com/watch?v=Ey2EK0Acn24"
