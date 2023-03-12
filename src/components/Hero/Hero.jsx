@@ -393,7 +393,6 @@ export default function SwiperComp() {
         {SnippetsData.map((mv, index) => (
         <SwiperSlide className={HeroCSS.swiperSlide}>
         <div className={HeroCSS.videoContainer}>
-          {console.log(mv.vid)}
           <video
             className={HeroCSS.video}
             autoPlay
@@ -403,6 +402,9 @@ export default function SwiperComp() {
             src={mv.vid}
             ref={videoRefs.current[index]}
           />
+
+          <div className={HeroCSS.spotframeWrapper}>
+
           <div className={HeroCSS.spotifyContainer}>
             <SpotifySnippet
               tracklink={mv.spot}
@@ -436,6 +438,9 @@ export default function SwiperComp() {
               </div>
             </div>
           </div>
+
+          </div>
+          
         </div>
       </SwiperSlide>
         ))}
