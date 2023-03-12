@@ -36,20 +36,11 @@ import towel from "../../container/img/Photos/Merch/towel.webp";
 import tshirt from "../../container/img/Photos/Merch/tshirt.webp";
 import nftdud from "../../container/img/Photos/nft/nft.png";
 import illalogo from "../../container/img/Photos/nft/illa.png";
-import bodies from "../../container/img/videos/bodies.webm";
-import ridin from "../../container/img/videos/ridin.webm";
-import reup from "../../container/img/videos/reup.webm";
-import dalawa from "../../container/img/videos/dalawa.webm";
-import updown from "../../container/img/videos/updownmv.webm";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
 export default function SwiperComp() {
-  const ridin2 = "2EEj4xqP1kOOxN2xK4cQ4i";
-  const bodies2 = "1JHzqHLBk7vwY2Ee3dShyX";
-  const reup2 = "3fOXmBSYqdTAyS6ShT7MMp";
-  const dalawa2 = "54BJkClH2MXQoG0tb5yWUZ";
-  const updown2 = "5RD5K23WM4YSqAUGsHJjis";
+
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
   const videoRef3 = useRef(null);
@@ -158,19 +149,6 @@ export default function SwiperComp() {
             <div className={HeroCSS.mainHeader2}>
               <img className={HeroCSS.dualtitle} src={dualtitle} alt="" />
 
-              {/* <div className={HeroCSS.outpic}>
-                <h2 className={HeroCSS.bottom}>OUT NOW</h2>
-                <div className={HeroCSS.dualpicphonewrapper}>
-                  <img
-                    onClick="https://ezmil.lnk.to/DU4LI7Y"
-                    rel="noreferrer"
-                    target="_blank"
-                    className={HeroCSS.dualpicphone}
-                    src={duality}
-                    alt=""
-                  />
-                </div>
-              </div> */}
             </div>
 
             <div className={HeroCSS.imgWrapper}>

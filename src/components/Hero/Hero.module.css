@@ -579,7 +579,6 @@ width: 100%;
 flex-direction: column;
 height: 57svh; */
 
-outline: 1px solid red;
 }
 
 .illawrapper {
@@ -595,7 +594,6 @@ padding-top: 10vh;
     height: 13svh !important;
     justify-content: center;
     align-items: center;
-    outline: 1px solid blue;
 }
 
 
