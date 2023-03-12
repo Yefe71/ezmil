@@ -378,13 +378,6 @@ transition:all .1s ease-in
 }
 
 
-
-.btncontainermint {
-bottom:6%;
-position:absolute;
-z-index:2
-}
-
 .buy {
 padding:.65em 1.6em;
 border:3px solid #fff;
@@ -577,22 +570,38 @@ width:25rem
 width:90rem
 }
 
+.illaparent {
+/* display:flex;
+justify-content:center;
+align-items: center; */
+width: 100%;
+/* margin: 0 6vw;
+flex-direction: column;
+height: 57svh; */
+
+outline: 1px solid red;
+}
+
 .illawrapper {
 display:flex;
-gap:18rem;
-width: 90%;
+width: 100%;
+height: 63svh !important;
+padding-top: 10vh;
+
 }
 
-.illaparent {
-display:flex;
-justify-content:center;
-width: 100%;
-margin: 0 6vw;
+.btncontainermint {
+    display: flex;
+    height: 13svh !important;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid blue;
 }
+
 
 .illalogo {
-width:100%;
-height:auto;
+width:65%;
+
 transition:all .4s ease
 }
 
@@ -601,12 +610,15 @@ scale:1.02
 }
 
 .right3 {
-width:50rem
+width:50rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .nftdud {
-width:100%;
-height:auto;
+width:65%;
+height: 65%;
 cursor:pointer;
 transition:all .4s ease
 }
@@ -675,11 +687,7 @@ margin:0
 width:50%
 }
 
-.btncontainermint {
-position:absolute;
-z-index:2;
-bottom:6%
-}
+
 
 .mint {
 padding:.65em 1.6em;
@@ -1379,11 +1387,7 @@ z-index:2;
 bottom:6%
 }
 
-.btncontainermint {
-position:absolute;
-z-index:2;
-bottom:6%!important
-}
+
 }
 
 @media only screen and (min-width: 740px) and (max-width: 900px) {
@@ -2116,7 +2120,7 @@ width:15rem
 }
 }
 
-@media only screen and (min-width: 1313px) and (max-width: 1800px) {
+/* @media only screen and (min-width: 1313px) and (max-width: 1800px) {
 .illaparent {
 display:flex;
 justify-content:center
@@ -2196,7 +2200,7 @@ bottom:6%;
 position:absolute;
 z-index:2
 }
-}
+} */
 
 @media only screen and (min-width: 1280px) and (max-height: 800px) {
 .textContainer {

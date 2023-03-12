@@ -379,16 +379,7 @@ export default function SwiperComp() {
           className={HeroCSS.swiperSlide}
           style={{ background: "rgb(227, 204, 173)" }}
         >
-          <div className={HeroCSS.btncontainermint}>
-            <a
-              href="https://app.niftykit.com/drops/illazillazelementz"
-              rel="noreferrer"
-              target="_blank"
-              className={HeroCSS.mint}
-            >
-              MINT NOW
-            </a>
-          </div>
+
           <div className={HeroCSS.illaparent}>
             <div className={HeroCSS.illawrapper}>
               <div className={HeroCSS.left3}>
@@ -414,7 +405,20 @@ export default function SwiperComp() {
                 </a>
               </div>
             </div>
+
+            <div className={HeroCSS.btncontainermint}>
+              <a
+                href="https://app.niftykit.com/drops/illazillazelementz"
+                rel="noreferrer"
+                target="_blank"
+                className={HeroCSS.mint}
+              >
+                MINT NOW
+              </a>
+            </div>
           </div>
+
+
         </SwiperSlide>
 
         <SwiperSlide className={HeroCSS.swiperSlide}>
