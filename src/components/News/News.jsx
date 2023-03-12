@@ -10,12 +10,22 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 import bg from "../../container/img/bgresonances1.jpg";
 import styles from "./News.module.css";
-
+import arrow from "../../container/img/arrow.svg";
+import arrow2 from "../../container/img/arrow.svg";
 // import required modules
 import { Grid, Pagination } from "swiper";
 
 export default function App() {
   const [slidesPerView, setSlidesPerView] = useState(4);
+  const swiperRef = useRef(null);
+
+  const handleNext = () => {
+    swiperRef.current.swiper.slideNext();
+  };
+
+  const handlePrev = () => {
+    swiperRef.current.swiper.slidePrev();
+  };
   useEffect(() => {
    
 
@@ -40,14 +50,13 @@ export default function App() {
   return (
     <div className={styles.newsWrapper}>
         <Swiper
+        ref = {swiperRef}
           slidesPerView={slidesPerView}
           grid={{
             rows: 2,
           }}
           spaceBetween={0}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={true}
           modules={[Grid, Pagination]}
           className={styles.mySwiper}
         >
@@ -60,6 +69,24 @@ export default function App() {
           </SwiperSlide>
           )
         })}
+
+<div className={styles.swiperbuttonprevwrap}>
+          <img
+            src={arrow}
+            className={styles.swiperbuttonprev}
+            onClick={handlePrev}
+            alt=""
+          />
+        </div>
+
+        <div className={styles.swiperbuttonnextwrap}>
+          <img
+            src={arrow2}
+            className={styles.swiperbuttonnext}
+            onClick={handleNext}
+            alt=""
+          />
+        </div>
       </Swiper>
     </div>
   );

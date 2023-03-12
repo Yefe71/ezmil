@@ -24,7 +24,7 @@ const mvData = [
     thumb: "thumbs/27bodies.jpg"
   },
   {
-    title: "DALAWAMPU'T DALAWANG OO (2200)",
+    title: "DALAWAMPU'T DALAWANG OO",
     date: "Jun 14, 2022",
     link: "Ey2EK0Acn24",
     thumb: "thumbs/2200.jpg"
@@ -42,7 +42,7 @@ const mvData = [
     thumb: "thumbs/panalopac.jpg"
   },
   {
-    title: "PANALO REMIX (LIVE W/ 1500 OR NOTHIN)",
+    title: "PANALO REMIX W/ 1500 OR NOTHIN",
     date: "Mar 8, 2021",
     link: "ecI_Wj8OxCI",
     thumb: "thumbs/panaloremix.jpg"

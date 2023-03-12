@@ -4,24 +4,36 @@ import bg from "../../container/img/bgact2.jpg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import mvcss from "./MVideos.module.css";
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { FreeMode, Navigation, Thumbs, Pagination } from "swiper";
 import { MVembed2 } from "../sub-components/MVembed2/MVembed2";
 import MVData from "../../Data/MusicVideosData";
 import { MVembed1 } from "../sub-components/MVembed1/MVembed1";
+import arrow from "../../container/img/arrow.svg";
+import arrow2 from "../../container/img/arrow.svg";
 
 const TestPage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [trigger, setTrigger] = useState(0);
   const swiperRef = useRef(null);
-  const swiperRef2 = useRef(null);
-
-
-
+  
+  
+  
   // Slides per view media query
   const [swiper1Index, setSwiper1Index] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(4);
+  
+  const swiperRef2 = useRef(null);
+
+  const handleNext = () => {
+    swiperRef2.current.swiper.slideNext();
+  };
+
+  const handlePrev = () => {
+    swiperRef2.current.swiper.slidePrev();
+  };
   useEffect(() => {
    
 
@@ -94,11 +106,12 @@ const TestPage = () => {
             spaceBetween={20}
             slidesPerView={slidesPerView}
             freeMode={true}
+            pagination = {true}
             onSlideChange={(swiper) => {
   
             }}
             watchSlidesProgress={true}
-            modules={[FreeMode, Navigation, Thumbs]}
+            modules={[FreeMode, Navigation, Thumbs, Pagination]}
             className={mvcss.mySwiper}
           >
             {MVData.map((mvItem, index) => {
@@ -108,6 +121,23 @@ const TestPage = () => {
                 </SwiperSlide>
               );
             })}
+            <div className={mvcss.swiperbuttonprevwrap}>
+              <img
+                src={arrow}
+                className={mvcss.swiperbuttonprev}
+                onClick={handlePrev}
+                alt=""
+              />
+            </div>
+
+            <div className={mvcss.swiperbuttonnextwrap}>
+              <img
+                src={arrow2}
+                className={mvcss.swiperbuttonnext}
+                onClick={handleNext}
+                alt=""
+              />
+            </div>
           </Swiper>
         </div>
       </div>

@@ -765,7 +765,7 @@ transform: translate(-12.5%, -15%);
 margin-right: auto; /* push the first image to the left edge */
 margin-bottom: 0; /* remove default margin */
 flex: 1;
-transform: translate(3%, -4%);
+transform: translate(2%, -4%);
 }
 
 .spotframeWrapper{
@@ -800,14 +800,14 @@ margin-left:5px
 }
 
 .dualtitlevid {
-width:12rem
+width:10rem
 }
 
 .swiperbuttonprev,.swiperbuttonnext {
 position:absolute;
 top:50%;
-width:60px;
-height:60px;
+width:55px;
+height:55px;
 margin-top:-30px;
 z-index:10;
 cursor:pointer;
@@ -826,15 +826,17 @@ filter:brightness(70%)
 }
 
 .swiperbuttonprev {
-left:10px;
+left:13px;
 filter:opacity(90%);
-transition:all .2s ease-in-out
+transition:all .2s ease-in-out;
+
 }
 
 .swiperbuttonnext {
-right:10px;
+right:13px;
 filter:opacity(90%);
-transition:all .2s ease-in-out
+transition:all .2s ease-in-out;
+
 }
 
 .navButtons {
@@ -848,7 +850,7 @@ opacity:1
 
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
 .swiperbuttonnext,.swiperbuttonprev {
-filter:opacity(50%)
+filter:opacity(80%)
 }
 
 .mask {
@@ -927,7 +929,16 @@ margin-top:-.8rem
 
 .swiperbuttonprev,.swiperbuttonnext {
 width:35px;
-height:35px
+height:35px;
+
+}
+
+.swiperbuttonprev{
+    left: 7px;
+}
+
+.swiperbuttonnext {
+    right: 7px;
 }
 
 .bgclass {
@@ -1159,6 +1170,7 @@ border-radius:.5rem
 .dualtitle {
 width:38rem
 }
+
 
 .mainHeader {
 margin-top:-39rem
@@ -1993,7 +2005,7 @@ font-size:5vw
 @media only screen and (min-width: 320px) and (max-width: 1171px) {
 .spotifyContainer {
 position:absolute;
-top:8%;
+top:10%;
 left:50%;
 width:230px;
 height:80px;
@@ -2007,11 +2019,12 @@ transform:translate(-50%,-50%)
 
 .btns {
 margin:25px;
-margin-top:18px
+margin-top:22px
 }
 
 .title {
-font-size:20px
+font-size:20px;
+margin-top: 5px;
 }
 
 

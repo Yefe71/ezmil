@@ -16,6 +16,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 // Import Components
 import SpotifySnippet from "../sub-components/SpotifySnippet/SpotifySnippet";
 import SnippetsData from "../../Data/SnippetsData";
+
 // Import Media
 import ezmil from "../../container/img/ezmil6.jpg";
 import duality from "../../container/img/duality.jpg";
@@ -39,16 +40,17 @@ import illalogo from "../../container/img/Photos/nft/illa.png";
 import arrow from "../../container/img/arrow.png";
 import arrow2 from "../../container/img/arrow2.png";
 
+
 export default function SwiperComp() {
 
   const videoRefs = useRef(SnippetsData.map(() => createRef()));
-  const swiperRef = useRef(null);
-  const [isMouseMoving, setIsMouseMoving] = useState(false);
-
+  
+  
   useEffect(() => {
     videoRefs.current.forEach(ref => ref.current.pause());
   }, []);
-
+  
+  const swiperRef = useRef(null);
   const handleNext = () => {
     swiperRef.current.swiper.slideNext();
   };
