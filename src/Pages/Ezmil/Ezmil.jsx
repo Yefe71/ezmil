@@ -201,7 +201,6 @@ export const Ezmil = () => {
                 MV Producer and Director
               </h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.vfxArtist}`}>VFX Artist</h3>
-    
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.beatboxer}`}>Beatboxer</h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.poet}`}>Poet</h3>
               <h3 data-aos = "fade" data-aos-delay="5000" className={`${ezmilcss.talent} ${ezmilcss.guitarist}`}>Guitarist</h3>
