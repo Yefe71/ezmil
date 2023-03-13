@@ -52,7 +52,7 @@ body.light {
   width: 48vw;
   font-family: "Bentham", serif !important;
   font-weight: 400;
-  margin-top: 25vh;
+  /* margin-top: 25vh; */
   font-size: 2.5rem;
 }
 
@@ -524,17 +524,20 @@ margin-top: 10vh;
   .textContainer {
     height: 100svh;
     display: flex;
-    /* justify-content: center; */
+   
     align-items: center;
     flex-direction: column;
   }
 
   .headerCaption {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     text-align: center;
     width: 86vw;
     font-family: "Bentham", serif !important;
     font-weight: 400;
-    margin-top: 17vh;
     font-size: 1.4rem;
   }
 
@@ -1057,17 +1060,20 @@ order: 2;
   .textContainer {
     height: 100svh;
     display: flex;
-    /* justify-content: center; */
+   
     align-items: center;
     flex-direction: column;
   }
 
   .headerCaption {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     text-align: center;
     width: 48vw;
     font-family: "Bentham", serif !important;
     font-weight: 400;
-    margin-top: 25vh;
     font-size: 2.5rem;
   }
 
