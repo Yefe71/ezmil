@@ -494,6 +494,15 @@ margin-top: 10vh;
 
 
 @media only screen and (min-width: 320px) and (max-width: 1008px){
+
+  .tapNote{
+    display: block;
+    font-size: 0.5rem;
+    text-align: center;
+    font-family: Poppins;
+    margin: 0.5rem !important;
+    filter: opacity(0.5);
+  }
   .hero {
     background-position: 85% center;
   }
@@ -548,7 +557,7 @@ margin-top: 10vh;
   }
 
   .headerSectionTitle {
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-family: Helvetica, "Roboto", sans-serif !important;
     letter-spacing: 3px;
     margin: 10vh 0% 0% 0%;
@@ -952,8 +961,8 @@ order: 2;
     right: 0%;
   }
   .vfxArtist {
-    top: 72%;
-    left: 67%;
+    top: 65%;
+    left: 72%;
     bottom: 0%;
     right: 0%;
   }
@@ -1031,9 +1040,29 @@ order: 2;
       font-size: 0.8rem !important;
     
   }
+
+  .tapNote2{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1009px){
+
+  .tapNote{
+    display: none;
+  }
+  .tapNote2{
+    display: block;
+  }
+
+  .tapNote2{
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: Poppins;
+    margin: 0.8rem !important;
+    filter: opacity(0.5);
+  }
   .ezmilWrapper * {
     box-sizing: border-box;
     margin: 0;

@@ -122,6 +122,8 @@ export const Ezmil = () => {
               </h1>
             </div>
             <div data-aos = "fade-up" data-aos-delay="150" className={ezmilcss.right3}>
+            <p className={ezmilcss.tapNote}>*Tap video to hear, tap outside the video to deafen*</p>
+            <p className={ezmilcss.tapNote2}>*Hover mouse in video to hear*</p>
             <HoverVideo src={rebel} className="about-video"/>
             
         
