@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import bg from "../../container/img/bgresonances1.jpg";
+import bg from "../../container/img/ezblue.jpg";
 import styles from "./News.module.css";
 import arrow from "../../container/img/arrow.svg";
 import arrow2 from "../../container/img/arrow.svg";
@@ -48,7 +48,7 @@ export default function App() {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
   return (
-    <div className={styles.newsWrapper}>
+    <div className={styles.newsWrapper}  style={{ opacity: 1, backgroundImage: `url(${bg})` }}> 
         <Swiper
         ref = {swiperRef}
           slidesPerView={slidesPerView}

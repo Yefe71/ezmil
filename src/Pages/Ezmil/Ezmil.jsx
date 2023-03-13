@@ -12,7 +12,7 @@ import fam2 from "../../container/img/aboutimgs/img.jpg";
 import rebel from "../../container/img/aboutimgs/rebel.mp4";
 import far from "../../container/img/aboutimgs/far.jpg";
 import endimg from "../../container/img/aboutimgs/endsection.jpg";
-import buskdance from "../../container/img/aboutimgs/buskdance.mp4";
+import buskdance from "../../container/img/aboutimgs/lead.mp4";
 import jabdance from "../../container/img/aboutimgs/jabvid.mp4";
 import farawayvid from "../../container/img/aboutimgs/farawayvid.mp4";
 import Aos from "aos"

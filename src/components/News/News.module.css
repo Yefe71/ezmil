@@ -20,6 +20,7 @@ body {
   align-items: center;
   height: 76svh;
 
+
   
 }
 .mySwiper {
@@ -46,6 +47,8 @@ body {
 
 
 }
+
+
 
 .swiperbuttonprev,.swiperbuttonnext {
   position:absolute;
