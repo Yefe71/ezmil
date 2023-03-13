@@ -491,7 +491,9 @@ margin-top: 10vh;
   letter-spacing: 3px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1027px) {
+
+
+@media only screen and (min-width: 320px) and (max-width: 1008px){
   .hero {
     background-position: 85% center;
   }
@@ -532,8 +534,8 @@ margin-top: 10vh;
     width: 86vw;
     font-family: "Bentham", serif !important;
     font-weight: 400;
-    margin-top: 22vh;
-    font-size: 1.6rem;
+    margin-top: 17vh;
+    font-size: 1.4rem;
   }
 
   .headerTitle {
@@ -589,6 +591,7 @@ margin-top: 10vh;
   }
   .section1 {
     height: 80vh;
+   
   }
   .section1 {
     display: flex;
@@ -604,11 +607,14 @@ margin-top: 10vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
+  .left1{
+    order: 2;
+  }
   .left1 h1 {
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -632,14 +638,14 @@ margin-top: 10vh;
   }
 
 
-  .left2{
-order: 2;
-  }
+
 
   .right2{
-
+order: 2;
   }
-
+.left3{
+  order: 2;
+}
 
   .left2 img {
     width: 75vw;
@@ -650,7 +656,7 @@ order: 2;
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -679,11 +685,12 @@ order: 2;
  
   }
 
+ 
   .left3 h1 {
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -703,7 +710,7 @@ order: 2;
     justify-content: center;
     align-items: center;
   }
-.left4{
+.right4{
   order: 2;
 }
   .left4 video {
@@ -715,7 +722,7 @@ order: 2;
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -745,10 +752,13 @@ order: 2;
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
+  .left5{
+    order: 2;
+  }
   /* SECTION 6 */
 
   .section6 * {
@@ -757,7 +767,7 @@ order: 2;
   }
   .section6 {
     height: 70vh;
-    order: 2;
+
   }
   .section6 {
     display: flex;
@@ -771,15 +781,15 @@ order: 2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-  .left6{
-    order: 2;
-  }
+ .right6{
+  order: 2;
+ }
 
   .right6 h1 {
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -814,12 +824,14 @@ order: 2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-
+.left7{
+  order: 2;
+}
   .left7 h1 {
     width: 68vw;
     font-weight: 100;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
   }
 
@@ -838,7 +850,7 @@ order: 2;
 
   .midTxt8 h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 200;
     filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
     text-align: center;
@@ -857,6 +869,7 @@ order: 2;
   }
 
   /* Positioning each talent */
+
   .rapper {
     top: 20%;
     left: 5%;
@@ -955,13 +968,13 @@ order: 2;
   }
   .pianist {
     top: 13%;
-    left: 90%;
+    left: 75%;
     bottom: 0%;
     right: 0%;
   }
   .voiceImpressionist {
-    top: 70%;
-    left: 88%;
+    top: 78%;
+    left: 68%;
     bottom: 0%;
     right: 0%;
   }
@@ -986,7 +999,7 @@ order: 2;
 
   .midTxt9 h1 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight:100;
   line-height: 40px;
   font-family: "Bentham", serif !important;
@@ -1009,12 +1022,15 @@ order: 2;
     width: 45vw;
     letter-spacing: 3px;
   }
-}
-@media only screen and (min-width: 1027px){
-  .hero {
-    background-position: 85% center;
-  }
 
+  .talent{
+   
+      font-size: 0.8rem !important;
+    
+  }
+}
+
+@media only screen and (min-width: 1009px){
   .ezmilWrapper * {
     box-sizing: border-box;
     margin: 0;
@@ -1048,11 +1064,11 @@ order: 2;
 
   .headerCaption {
     text-align: center;
-    width: 86vw;
+    width: 48vw;
     font-family: "Bentham", serif !important;
     font-weight: 400;
-    margin-top: 22vh;
-    font-size: 1.6rem;
+    margin-top: 25vh;
+    font-size: 2.5rem;
   }
 
   .headerTitle {
@@ -1119,16 +1135,13 @@ order: 2;
   }
 
   .right1 img {
-    width: 75vw;
+    width: 40vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .left1 h1 {
-    width: 68vw;
+    width: 30vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   /* SECTION 2 */
@@ -1140,7 +1153,6 @@ order: 2;
     color: white;
     margin-left: 5vh;
     margin-right: 5vh;
-    margin: 1vh 0;
   }
 
   .section2 {
@@ -1150,27 +1162,15 @@ order: 2;
     flex-wrap: nowrap;
   }
 
-
-  .left2{
-order: 2;
-  }
-
-  .right2{
-
-  }
-
-
   .left2 img {
-    width: 75vw;
+    width: 40vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .right2 h1 {
-    width: 68vw;
+    width: 30vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
+    text-align: right;
   }
 
   /* SECTION 3 */
@@ -1193,17 +1193,14 @@ order: 2;
   }
 
   .right3 video {
-    width: 75vw;
+    width: 40vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  
   }
 
   .left3 h1 {
-    width: 68vw;
+    width: 30vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   /* SECTION 4 */
@@ -1222,20 +1219,16 @@ order: 2;
     justify-content: center;
     align-items: center;
   }
-.left4{
-  order: 2;
-}
+
   .left4 video {
-    width: 75vw;
+    width: 40vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .right4 h1 {
-    width: 68vw;
+    width: 30vw;
+    text-align: right;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   /* SECTION 5 */
@@ -1256,27 +1249,24 @@ order: 2;
   }
 
   .right5 video {
-    width: 75vw;
+    width: 45vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .left5 h1 {
-    width: 68vw;
+    width: 25vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   /* SECTION 6 */
 
   .section6 * {
     color: white;
-
+    margin-left: 5vh;
+    margin-right: 5vh;
   }
   .section6 {
     height: 70vh;
-    order: 2;
   }
   .section6 {
     display: flex;
@@ -1286,20 +1276,14 @@ order: 2;
   }
 
   .left6 video {
-    width: 75vw;
+    width: 46vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-  .left6{
-    order: 2;
-  }
-
   .right6 h1 {
-    width: 68vw;
+    text-align: right;
+    width: 25vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   .right6 {
@@ -1315,31 +1299,25 @@ order: 2;
     color: white;
     margin-left: 5vh;
     margin-right: 5vh;
-    margin: 1vh 0;
   }
   .section7 {
     height: 80vh;
   }
   .section7 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
   }
 
   .right7 img {
-    width: 75vw;
+    width: 30vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-
   .left7 h1 {
-    width: 68vw;
+    width: 25vw;
     font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 35px;
   }
 
   /* SECTION 8*/
@@ -1357,10 +1335,9 @@ order: 2;
 
   .midTxt8 h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 200;
     filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
-    text-align: center;
   }
 
   .talentWrapper {
