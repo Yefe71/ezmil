@@ -21,13 +21,14 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 0.3rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.516) 0px 0px 24px;
     z-index: 1;
     cursor: pointer;
+    
 }
 .title{
     color: white;
@@ -35,7 +36,11 @@
     font-weight: 200;
     font-size: small;
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.369);
+    text-align: center;
+
 
 }
 .thumbContainer {
@@ -49,6 +54,9 @@
     filter: brightness(1);
   }
 
+  .titleWrapper:hover ~ .title {
+
+  }
   .thumbContainer.active {
     filter: brightness(110%);
   }
